@@ -1,0 +1,19 @@
+# Word documents
+*.docx
+
+# Datasets / spreadsheets
+*.xlsx
+*.xls
+
+# Real / non-anonymized patient data — NEVER commit (contains PHI)
+clean_data.csv
+synthetic_data/GaussianCopula.csv
+synthetic_data/CTGAN.csv
+synthetic_data/CopulaGAN.csv
+synthetic_data/TVAE.csv
+
+# Fitted synthesizer models (trained on real data; can regenerate PHI)
+copula_synthesizer.pkl
+ctgan_synthesizer.pkl
+gaussian_synthesizer.pkl
+tvae_synthesizer.pkl
