@@ -17,3 +17,6 @@ copula_synthesizer.pkl
 ctgan_synthesizer.pkl
 gaussian_synthesizer.pkl
 tvae_synthesizer.pkl
+
+# Revision analysis outputs (include synthetic data fitted on real data)
+revision/outputs/
