@@ -27,7 +27,7 @@ from sklearn.neighbors import KNeighborsClassifier, KNeighborsRegressor
 from sklearn.pipeline import make_pipeline
 from sklearn.preprocessing import OneHotEncoder, StandardScaler
 
-from common import (BASELINE, COLORS, INK, INK_2, MODELS, OUT, as_str, build_metadata, compare_sources, generate,
+from common import (DISPLAY, BASELINE, COLORS, INK, INK_2, MODELS, OUT, as_str, build_metadata, compare_sources, generate,
                     independent_marginals, load_real, mean_ci, save, style, tick_label)
 
 # Manuscript's attacker-known fields (kept for continuity with the original analysis).
@@ -189,7 +189,7 @@ def plot_by_target(worst):
     ax.set_xlabel("Real patients whose value was correctly inferred, % (strongest attacker per run)")
     handles = [plt.Line2D([], [], color=INK, lw=1.6, label="Prior-only guess (no attacker knowledge)")]
     handles += [plt.Line2D([], [], color=COLORS[s], marker="o", lw=1.4, ms=5.5, mec="white",
-                           label=f"{s} (mean, range over seeds)") for s in sources]
+                           label=f"{DISPLAY.get(s, s).replace(chr(10), chr(32))} (mean, range over seeds)") for s in sources]
     ax.legend(handles=handles, loc="upper center", bbox_to_anchor=(0.45, -0.11), ncol=2, fontsize=8)
     save(fig, "S_privacy_revised_attack_by_target")
 

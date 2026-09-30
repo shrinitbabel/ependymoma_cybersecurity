@@ -5,13 +5,13 @@ results are in privacy_revised_by_run.csv.
 """
 import pandas as pd
 
-from common import MODELS, OUT, ROOT, generate, load_real
+from common import PRIVATE, MODELS, OUT, ROOT, generate, load_real
 from identifier_comparison import identifier_metadata
 from privacy_analysis import ATTACKERS, CAT_TARGETS, NUM_TARGETS, attack, attack_applicable, prior_guess
 
 
 def main(seeds=10):
-    full = pd.read_csv(ROOT / "clean_data.csv")
+    full = pd.read_csv(PRIVATE / "clean_data.csv")
     real = load_real()
     meta = identifier_metadata(real, faker=False)
     n = len(real)

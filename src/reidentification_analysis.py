@@ -20,7 +20,7 @@ import matplotlib.pyplot as plt
 import numpy as np
 import pandas as pd
 
-from common import (BASELINE, COLORS, INK, INK_2, MODELS, OUT, as_str, build_metadata, compare_sources, generate,
+from common import (DISPLAY, BASELINE, COLORS, INK, INK_2, MODELS, OUT, as_str, build_metadata, compare_sources, generate,
                     independent_marginals, load_real, match_fraction, mean_ci, save, style)
 
 QI = ["Age band", "Sex", "Cranial Location (Infratentorial, supratentorial)", "WHO Grade"]
@@ -113,7 +113,7 @@ def plot(per_run, real_min_dcr):
         ax.tick_params(axis="x", labelsize=7)
         ax.grid(axis="y", visible=False)
     axes[0].set_yticks(ys)
-    axes[0].set_yticklabels([s.replace(" baseline", "\nbaseline") for s in sources], fontsize=7.5)
+    axes[0].set_yticklabels([DISPLAY.get(s, s) for s in sources], fontsize=7.5)
     axes[0].tick_params(axis="y", length=0)
     fig.tight_layout()
     save(fig, "S_reidentification")

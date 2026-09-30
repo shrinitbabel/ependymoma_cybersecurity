@@ -29,7 +29,7 @@ from scipy.stats import mannwhitneyu, wilcoxon
 from sdv.metadata import Metadata
 from statsmodels.stats.multitest import multipletests
 
-from common import (COLORS, INK_2, MODELS, N_SYNTH, ORIGINAL_PARAMS, OUT, ROOT, SYNTH_DIR, SYNTHESIZERS, as_str, build_metadata,
+from common import (PRIVATE, COLORS, INK_2, MODELS, N_SYNTH, ORIGINAL_PARAMS, OUT, ROOT, SYNTH_DIR, SYNTHESIZERS, as_str, build_metadata,
                     generate, load_real, match_fraction, metadata_columns, save, seed_all, style)
 from privacy_analysis import ATTACKERS, CAT_TARGETS, NUM_TARGETS, attack, attack_applicable, prior_guess
 from reidentification_analysis import qi_linkage
@@ -147,7 +147,7 @@ def main():
     parser.add_argument("--seeds", type=int, default=10)
     args = parser.parse_args()
 
-    full = pd.read_csv(ROOT / "clean_data.csv")
+    full = pd.read_csv(PRIVATE / "clean_data.csv")
     real = load_real()
     meta_retained, meta_faker = identifier_metadata(real, faker=False), identifier_metadata(real, faker=True)
     meta_clin = build_metadata(real)
