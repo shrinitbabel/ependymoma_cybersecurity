@@ -1,0 +1,19 @@
+# Python 3.13. Versions used for the published analyses.
+sdv==1.38.5
+sdmetrics==0.32.0
+rdt==1.21.0
+torch==2.11.0
+numpy==2.4.4
+pandas==2.3.3
+scipy==1.17.1
+scikit-learn==1.6.1
+statsmodels==0.14.6
+umap-learn==0.5.12
+matplotlib==3.10.9
+pillow==12.2.0
+openpyxl==3.1.5
+python-docx==1.2.0
+
+# Archived notebooks (notebooks/) only
+missingno
+seaborn==0.13.2
