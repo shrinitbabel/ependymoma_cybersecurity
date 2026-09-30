@@ -1,22 +1,41 @@
-# Word documents
-*.docx
-
-# Datasets / spreadsheets
+# ---------------------------------------------------------------------------
+# PATIENT DATA: NEVER COMMIT
+# Real cohort, source database, and anything fitted on or generated from it
+# without anonymization. All of it lives in data/private/.
+# ---------------------------------------------------------------------------
+data/private/
+clean_data.csv
+raw_data.csv
 *.xlsx
 *.xls
+*_synthesizer.pkl
 
-# Real / non-anonymized patient data — NEVER commit (contains PHI)
-clean_data.csv
-synthetic_data/GaussianCopula.csv
-synthetic_data/CTGAN.csv
-synthetic_data/CopulaGAN.csv
-synthetic_data/TVAE.csv
+# Generated synthetic datasets (fitted on real data), logs, and patient-level result files
+results/synthetic_runs/
+results/logs/
+results/tables/*by_patient*.csv
+results/tables/*predictions*.csv
 
-# Fitted synthesizer models (trained on real data; can regenerate PHI)
-copula_synthesizer.pkl
-ctgan_synthesizer.pkl
-gaussian_synthesizer.pkl
-tvae_synthesizer.pkl
+# Exploratory analyses not part of the manuscript
+results/tables/dp_*.csv
+results/tables/trts_*.csv
+results/figures/S_dp_*
+results/tables/holdout_tstr*
+results/figures/S_holdout_tstr*
 
-# Revision analysis outputs (include synthetic data fitted on real data)
-revision/outputs/
+# Print-resolution TIFF copies of figures (for journal submission; PNGs are committed)
+results/figures/*.tiff
+
+# Manuscript working files and supplement drafts (shared via the journal, not the repository)
+*.docx
+~$*
+*.tmp
+results/supplement/
+
+# Python / OS / editor
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+.DS_Store
+Thumbs.db
+.vscode/
