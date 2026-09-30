@@ -1,6 +1,6 @@
 """Assemble the Supplementary Material (.docx) from the methods/results drafts, analysis CSVs and figures.
 
-Run after the analysis scripts. Output: revision/outputs/Supplementary_Material_revision.docx
+Run after the analysis scripts. Output: results/supplement/Supplementary_Material_revision.docx
 """
 import re
 
@@ -13,10 +13,10 @@ from docx.oxml import OxmlElement
 from docx.oxml.ns import qn
 from docx.shared import Inches, Pt, RGBColor
 
-from common import BASELINE, FIG_DIR, MODELS, OUT
+from common import BASELINE, FIG_DIR, MODELS, OUT, SUPPLEMENT_DIR
 
 SOURCES = MODELS + [BASELINE]
-SHORT_SOURCE = {BASELINE: "Indep. baseline"}
+SHORT_SOURCE = {BASELINE: "Reshuffled reference"}
 MAX_FIG_HEIGHT = 7.8  # inches
 
 SAFE_HARBOR = [
@@ -47,51 +47,46 @@ SAFE_HARBOR = [
 ]
 
 FIGURES = [
-    ("S_missingness", "Supplementary Figure S1. Variable-level missingness before imputation (variables with ≥ 1 "
-     "missing value; labels give the number of missing patients out of 18)."),
-    ("S_fidelity_by_seed", "Supplementary Figure S2. SDMetrics quality scores across 10 independently seeded runs "
-     "per synthesizer. Points are individual runs; bars are means. The independent-marginals baseline keeps "
-     "each variable's distribution but has no relationships between variables."),
-    ("S_utility_associations", "Supplementary Figure S3. Prespecified clinical associations in the real cohort "
-     "(black, log odds ratio with 95% CI) and in synthetic data (mean and range across 10 runs)."),
-    ("S_utility_global_structure", "Supplementary Figure S4. Preservation of the global correlation structure. "
-     "Left: correlation between the 1,485 real and synthetic pairwise Spearman correlations. Right: sign "
-     "agreement among strong real correlations (|ρ| ≥ 0.3). Points are individual runs; bars are means."),
-    ("S_privacy_original_method_evaluable", "Supplementary Figure S5. Original attack specification: number of "
-     "real patients (of 18) for whom the SDMetrics attacker could make any prediction, per attack, sensitive "
-     "field and run. Patients without a prediction were scored as protected."),
-    ("S_privacy_revised_attack_by_target", "Supplementary Figure S6. Revised attribute inference attack: "
-     "percentage of the 18 real patients whose target value was correctly inferred by the strongest attacker "
-     "in each run (mean and range across 10 runs), compared with a prior-only guess that ignores the "
-     "attacker's knowledge (black bar)."),
-    ("S_privacy_revised_lift_by_seed", "Supplementary Figure S7. Attack success above the prior-only guess, "
-     "averaged over eight targets, for each of 10 runs per synthesizer. Values ≤ 0 indicate that the synthetic "
-     "data gave the attacker no information beyond guessing."),
-    ("S_holdout_membership", "Supplementary Figure S8. Memorization and membership inference with synthesizers "
-     "retrained in 6-fold cross-validation (2 repetitions). Left: similarity of each real patient to the "
-     "closest synthetic record when the patient was in the synthesizer's training data (colored) or held out "
-     "(gray). Right: area under the ROC curve for separating training from held-out patients."),
-    ("S_holdout_tstr", "Supplementary Figure S9. Train-on-synthetic, test-on-real (TSTR) and train-on-real, "
-     "test-on-real (TRTR) discrimination for two endpoints (postoperative complication, 6/18 events; "
-     "radiotherapy, 12/18 events), with bootstrap 95% CIs. Dashed line: chance."),
-    ("S_distribution_tests", "Supplementary Figure S10. Univariate and pairwise distributional similarity "
-     "across 10 runs: mean Kolmogorov–Smirnov statistic over numerical variables, mean Jensen–Shannon "
-     "divergence over categorical variables, and mean Jensen–Shannon divergence of the joint distribution of "
-     "binary variable pairs (lower = more similar). The independent-marginals baseline is the ceiling for "
-     "univariate similarity."),
-    ("S_relationships_heatmaps", "Supplementary Figure S11. Spearman correlation matrices of the real cohort "
-     "and of one synthetic dataset per synthesizer (55 binary and numerical variables; same variable order in "
-     "every panel, from hierarchical clustering of the real correlations)."),
-    ("S_relationships_key_variables", "Supplementary Figure S12. Spearman correlations among 15 clinically "
-     "interpretable variables in the real cohort and in GaussianCopula, TVAE and CTGAN data (synthetic matrices "
-     "averaged over 10 runs). Binary variables are coded as the real cohort's less frequent category, as "
-     "labeled."),
-    ("S_relationships_metrics", "Supplementary Figure S13. Relationship metrics across 10 runs per "
-     "synthesizer. Points are individual runs; bars are means."),
+    ("orig:fig1", "Supplementary Figure S1. Molecular and imaging feature prevalence in the real cohort."),
+    ("orig:fig2", "Supplementary Figure S2. Symptom trajectories in the real cohort."),
+    ("S_symptom_trajectories", "Supplementary Figure S3. Symptom prevalence across the clinical course in the real "
+     "cohort (black) and in each model's synthetic data (mean of 10 runs; vertical lines show the range across "
+     "runs)."),
+    ("S_discharge_disposition", "Supplementary Figure S4. Discharge disposition in the real cohort and in synthetic "
+     "data (mean of 10 runs; error bars show the range across runs)."),
+    ("S_extent_of_resection", "Supplementary Figure S5. Extent of resection in the real cohort and in synthetic data "
+     "(mean of 10 runs; error bars show the range across runs)."),
+    ("S_missingness", "Supplementary Figure S6. Variable-level missingness before imputation (variables with at "
+     "least one missing value; labels give the number of missing patients out of 18)."),
+    ("S_distribution_tests", "Supplementary Figure S7. Univariate and pairwise distributional similarity across 10 "
+     "runs: mean Kolmogorov–Smirnov statistic over numerical variables, mean Jensen–Shannon divergence over "
+     "categorical variables, and mean Jensen–Shannon divergence of the joint distribution of binary variable "
+     "pairs (lower = more similar). The reshuffled reference is the ceiling for univariate similarity."),
+    ("S_utility_associations", "Supplementary Figure S8. Prespecified clinical associations in the real cohort "
+     "(black; log odds ratio with 95% CI) and in synthetic data (mean and range across 10 runs)."),
+    ("S_relationships_heatmaps", "Supplementary Figure S9. Spearman correlation matrices of the real cohort and of "
+     "one synthetic dataset per model (55 binary and numerical variables; same variable order in every panel, "
+     "from hierarchical clustering of the real correlations)."),
+    ("S_relationships_metrics", "Supplementary Figure S10. Nine relationship metrics across 10 runs per model. "
+     "Points are individual runs; bars are means."),
+    ("S_privacy_by_anonymization", "Supplementary Figure S11. Attribute inference with direct identifiers (A) "
+     "retained in training or (B) anonymized with AnonymizedFaker, and (C) the memorization test. Markers show "
+     "each attacker for each of 10 runs; dashed lines indicate guessing (A, B) and no difference between training "
+     "and held-out patients (C). Anonymization did not change attack success on clinical variables."),
+    ("S_privacy_revised_attack_by_target", "Supplementary Figure S12. Attribute inference by target: percentage of "
+     "the 18 real patients whose value was correctly inferred by the strongest attacker in each run (mean and "
+     "range across 10 runs), compared with a prior-only guess that ignores the attacker's knowledge (black bar)."),
+    ("S_holdout_membership", "Supplementary Figure S13. Membership inference with models retrained in 6-fold "
+     "cross-validation (2 repetitions). Left: similarity of each real patient to the closest synthetic record "
+     "when the patient was in the model's training data (colored) or held out (gray). Right: area under the ROC "
+     "curve for separating training from held-out patients; the reshuffled reference gives the reference level."),
     ("S_reidentification", "Supplementary Figure S14. Record-level re-identification risk across 10 runs: "
-     "synthetic records matching a real patient on ≥ 95% of variables; synthetic records closer to a real "
+     "synthetic records matching a real patient on at least 95% of variables; synthetic records closer to a real "
      "patient than the closest pair of real patients; and real patients whose non-obvious sensitive value is "
      "revealed by linking four quasi-identifiers to the synthetic data."),
+    ("S_privacy_original_method_evaluable", "Supplementary Figure S15. Re-analysis of the original attack: number "
+     "of real patients (of 18) for whom the original SDMetrics attacker could make any prediction, per attack, "
+     "sensitive field and run. Patients without a prediction were scored as protected by default."),
 ]
 
 
@@ -131,7 +126,15 @@ def add_markdown(doc, path):
             add_runs(doc.add_paragraph(), line)
 
 
+def display(text):
+    """Figures and text call the relationship-free reference the 'reshuffled reference'."""
+    return (str(text).replace("Independent baseline", "Reshuffled reference")
+            .replace("independent-marginals baseline", "reshuffled reference"))
+
+
 def add_table(doc, title, header, rows, widths, note=None, font=8):
+    title, header, note = display(title), [display(h) for h in header], note and display(note)
+    rows = [[display(c) for c in row] for row in rows]
     heading = doc.add_paragraph()
     heading.add_run(title).bold = True
     heading.paragraph_format.keep_with_next = True
@@ -167,14 +170,14 @@ def table_missingness(doc):
     t = pd.read_csv(OUT / "missingness_table.csv")
     t = t[t.Missing > 0]
     rows = [(r.Variable, r.Type, f"{r.Missing}/18 ({r.Missing_pct:.1f}%)", r.Imputation) for r in t.itertuples()]
-    add_table(doc, "Supplementary Table S1. Variable-level missingness before imputation",
+    add_table(doc, "Supplementary Table S2. Variable-level missingness before imputation",
               ["Variable", "Type", "Missing", "Imputation"], rows, [3.0, 1.0, 1.2, 1.6],
               note="Variables not listed had no missing values (21 of 61). Blank cells and cells recorded as "
                    "'Missing' in the source database were counted as missing.")
 
 
 def table_safe_harbor(doc):
-    add_table(doc, "Supplementary Table S2. Audit of study variables against the 18 HIPAA Safe Harbor identifier "
+    add_table(doc, "Supplementary Table S3. Audit of study variables against the 18 HIPAA Safe Harbor identifier "
                    "categories (45 CFR §164.514(b)(2))",
               ["Identifier category", "Present in study data", "Handling"], SAFE_HARBOR, [2.0, 2.1, 2.7],
               note="This audit documents how each identifier category was handled; it is not a formal "
@@ -183,21 +186,29 @@ def table_safe_harbor(doc):
 
 def table_fidelity(doc):
     s = pd.read_csv(OUT / "fidelity_summary.csv").set_index(["Source", "Metric"])
+    d = pd.read_csv(OUT / "distribution_tests_summary.csv").set_index(["Source", "Metric"])
     rows = []
     for src in SOURCES:
         row = [src]
         for m in ["Overall", "Column Shapes", "Column Pair Trends"]:
             r = s.loc[(src, m)]
             row.append(f"{r.Mean:.1f} ± {r.SD:.1f} ({r.Min:.1f}–{r.Max:.1f})")
+        row.append(f"{d.loc[(src, 'Mean_KS_numerical')].Mean:.2f}")
+        row.append(f"{d.loc[(src, 'Mean_JSD_categorical')].Mean:.3f} "
+                   f"({d.loc[(src, 'Pct_categorical_JSD_below_0.1')].Mean:.0f}%)")
         rows.append(row)
     tests = pd.read_csv(OUT / "fidelity_tests.csv")
     kw = tests[tests.Comparison.str.startswith("Kruskal")].set_index("Metric").p
-    add_table(doc, "Supplementary Table S3. SDMetrics fidelity across 10 seeded runs per synthesizer",
-              ["Source", "Overall, %", "Column shapes, %", "Column pair trends, %"], rows, [1.5, 1.8, 1.8, 1.8],
-              note="Mean ± SD (range) across 10 runs. Kruskal–Wallis across the four synthesizers: overall "
+    add_table(doc, "Supplementary Table S5. Fidelity across 10 runs per synthesizer: SDMetrics quality report and "
+                   "distributional tests",
+              ["Source", "SDMetrics overall, %", "Column shapes, %", "Column pair trends, %", "KS, numerical",
+               "JSD, categorical (% < 0.1)"], rows, [1.35, 1.25, 1.25, 1.25, 0.8, 1.1], font=7,
+              note="SDMetrics: mean ± SD (range) across 10 runs; Kruskal–Wallis across the four synthesizers: overall "
                    f"p {fmt_p(kw['Overall'])}, column shapes p {fmt_p(kw['Column Shapes'])}, column pair trends "
-                   f"p {fmt_p(kw['Column Pair Trends'])}. Holm-adjusted pairwise comparisons are provided in "
-                   "the analysis repository (fidelity_tests.csv).")
+                   f"p {fmt_p(kw['Column Pair Trends'])}. KS, mean Kolmogorov–Smirnov statistic over numerical "
+                   "variables; JSD, mean Jensen–Shannon divergence over categorical variables (percentage of "
+                   "variables with JSD < 0.1); lower is more similar. The reshuffled reference resamples observed "
+                   "values and is the ceiling for univariate similarity.")
 
 
 def table_associations(doc):
@@ -212,7 +223,7 @@ def table_associations(doc):
             r = g.loc[src]
             row.append(f"{r.logOR_mean:.2f} [{r.Same_direction_runs_pct:.0f}%]")
         rows.append(row)
-    add_table(doc, "Supplementary Table S4. Reproduction of prespecified clinical associations",
+    add_table(doc, "Supplementary Table S6. Reproduction of prespecified clinical associations",
               ["Association", "Real log OR (95% CI)"] + [SHORT_SOURCE.get(s, s) for s in SOURCES], rows,
               [1.75, 1.15] + [0.8] * 5, font=7,
               note="Synthetic entries: mean log odds ratio across 10 runs [percentage of runs with the same "
@@ -241,7 +252,7 @@ def table_original_attack(doc):
     r = pd.read_csv(OUT / "privacy_original_risk_by_seed.csv").set_index("Source")
     rows = [[src, f"{s.loc[src].Evaluable_mean:.1f} (max {s.loc[src].Evaluable_max:.0f})",
              f"{r.loc[src]['mean']:.1f} ({r.loc[src]['min']:.1f}–{r.loc[src]['max']:.1f})"] for src in SOURCES]
-    add_table(doc, "Supplementary Table S6. Re-analysis of the original SDMetrics attack specification across "
+    add_table(doc, "Supplementary Table S13. Re-analysis of the original SDMetrics attack specification across "
                    "10 runs",
               ["Source", "Patients evaluable per attack, of 18", "Reported risk per run, % mean (range)"], rows,
               [1.8, 2.4, 2.6],
@@ -261,7 +272,7 @@ def table_revised_by_target(doc):
             r = g.loc[src]
             row.append(f"{r.Median_correct_of_18}/18 ({round(r.Mean_lift_pp, 1) + 0.0:+.1f})")
         rows.append(row)
-    add_table(doc, "Supplementary Table S7. Revised attribute inference attack by target (strongest attacker per run)",
+    add_table(doc, "Supplementary Table S9. Attribute inference attack by target (strongest attacker per run)",
               ["Target", "Prior-only guess, correct of 18"] + [SHORT_SOURCE.get(s, s) for s in SOURCES], rows,
               [1.55, 0.9] + [0.87] * 5, font=7,
               note="Median number of real patients correctly inferred across 10 runs (mean lift over the "
@@ -282,9 +293,9 @@ def table_revised_by_model(doc):
                      f"{lift.Mean:+.1f} ({lift.CI95_low:+.1f} to {lift.CI95_high:+.1f})",
                      "—" if src == BASELINE else fmt_p(vs_base[src])])
     kw = tests[tests.Comparison.str.startswith("Kruskal")].p.iloc[0]
-    add_table(doc, "Supplementary Table S8. Revised attribute inference attack by synthesizer",
+    add_table(doc, "Supplementary Table S10. Attribute inference attack by synthesizer",
               ["Source", "Mean success, % (95% CI)", "Lift over prior-only guess, pp (95% CI)",
-               "Holm p vs baseline"], rows, [1.5, 1.8, 2.1, 1.3],
+               "Holm p vs reference"], rows, [1.5, 1.8, 2.1, 1.3],
               note=f"Averaged over eight targets per run (strongest attacker); 95% CI across 10 runs. "
                    f"Kruskal–Wallis across synthesizers p {fmt_p(kw)}.")
 
@@ -299,7 +310,7 @@ def table_holdout(doc):
                      f"{100 * a.Median_similarity_members:.1f} / {100 * a.Median_similarity_nonmembers:.1f}",
                      f"{b.Success_members_pct:.1f} / {b.Success_nonmembers_pct:.1f}",
                      f"{b.Member_minus_nonmember_pp:+.1f} ({b.CI95_low:+.1f} to {b.CI95_high:+.1f})"])
-    add_table(doc, "Supplementary Table S9. Memorization and membership analyses (6-fold cross-validation, "
+    add_table(doc, "Supplementary Table S11. Memorization and membership analyses (6-fold cross-validation, "
                    "2 repetitions)",
               ["Source", "Membership AUC, mean (range)", "Closest-record similarity, %, members / held-out",
                "Attack success, %, members / held-out", "Difference in lift, pp (95% CI)"], rows,
@@ -366,7 +377,17 @@ def table_relationships(doc):
                     cell += "*" if (mean > base) == higher_better else "†"
             row.append(cell)
         rows.append(row)
-    add_table(doc, "Supplementary Table S12. Relationship (multivariable) metrics across 10 runs per synthesizer",
+    g = pd.read_csv(OUT / "utility_global_summary.csv").set_index(["Source", "Metric"])
+    gt = pd.read_csv(OUT / "utility_global_tests.csv")
+    gt = gt[gt.Metric == "Sign_agreement_strong_pct"]
+    row = ["Sign agreement, strong correlations, % (↑)"]
+    for src in SOURCES:
+        cell = f"{g.loc[(src, 'Sign_agreement_strong_pct')].Mean:.1f}"
+        if src != BASELINE and gt[gt.Comparison == f"{src} vs {BASELINE}"].p_Holm.iloc[0] < 0.05:
+            cell += "*"
+        row.append(cell)
+    rows.insert(4, row)
+    add_table(doc, "Supplementary Table S7. Relationship (multivariable) metrics across 10 runs per synthesizer",
               ["Metric"] + [SHORT_SOURCE.get(src, src) for src in SOURCES], rows, [2.1] + [0.94] * 5, font=7,
               note="Mean across 10 runs. * significantly better and † significantly worse than the "
                    "independent-marginals baseline (Holm-adjusted p < 0.05, two-sided Mann–Whitney). CMD, correlation matrix distance. Uncorrected Cramér's V, Theil's U and mutual "
@@ -385,7 +406,7 @@ def table_reidentification(doc):
                      _summary_cell(s, src, "QI_disclosed_patients", 1),
                      f"{g.Disclosed_members_pct:.1f} / {g.Disclosed_heldout_pct:.1f} "
                      f"({g.Difference_pp:+.1f}; {g.CI95_low:+.1f} to {g.CI95_high:+.1f})"])
-    add_table(doc, "Supplementary Table S13. Record-level re-identification risk",
+    add_table(doc, "Supplementary Table S12. Record-level re-identification risk",
               ["Source", "Exact / ≥ 95% copies, % of records", "Closer than closest real pair, % (95% CI)",
                "DCR, 5th percentile", "Patients with QI disclosure, of 18 (95% CI)",
                "QI disclosure, % training / held-out (difference; 95% CI)"], rows,
@@ -395,6 +416,57 @@ def table_reidentification(doc):
                    f"variables; {int(ctx.Real_unique_patients_on_QIs)} of 18 patients unique on the four "
                    f"quasi-identifiers (k-anonymity = {int(ctx.Real_k_anonymity_min_k)}). QI, quasi-identifier "
                    "(10-year age band, sex, cranial location, WHO grade); DCR, distance to closest record.")
+
+
+def table_tumor(doc):
+    """Supplementary Table S1 from the original submission, unchanged."""
+    rows = [
+        ("Cranial location", "13 (72%) infratentorial; 5 (28%) supratentorial"),
+        ("Laterality", "8 (44%) midline; 6 (33%) left; 4 (22%) right"),
+        ("Intraventricular vs extraventricular vs both", "9 (50%) intraventricular; 5 (28%) extraventricular; "
+                                                         "3 (17%) both*"),
+        ("Orthogonal dimensions (cm)", "3.14 (IQR 2.15–3.95); 2.40 (IQR 1.78–2.95); 2.40 (IQR 1.78–3.40)"),
+    ]
+    add_table(doc, "Supplementary Table S1. Tumor characteristics of the real-world ependymoma cohort (n = 18)",
+              ["Tumor characteristic", "Value"], rows, [2.4, 4.4])
+
+
+def table_settings(doc):
+    rows = [
+        ("GaussianCopula", "—", "Per-variable parametric (normal, truncated normal, gamma); default truncated normal",
+         "Rounded to real-data precision"),
+        ("CopulaGAN", "1,000", "Per-variable parametric (as GaussianCopula); default beta", "None"),
+        ("CTGAN", "1,000", "Learned (mode-specific normalization)", "None"),
+        ("TVAE", "500", "Learned", "None"),
+    ]
+    add_table(doc, "Supplementary Table S4. Synthesizer settings",
+              ["Model", "Training epochs", "Numerical marginal distributions", "Rounding"], rows,
+              [1.3, 1.0, 3.2, 1.3],
+              note="Settings reproduce those of the models fitted in the original analysis (SDV 1.17.3); all other "
+                   "hyperparameters, including network architectures, batch size (500) and learning rates, were SDV "
+                   "defaults. Each model was trained and sampled under 10 random seeds (1,000 records per run).")
+
+
+def table_identifiers(doc):
+    t = pd.read_csv(OUT / "identifier_reproduction_tests.csv")
+    rows = []
+    for version, label in [("Identifiers retained", "Retained"), ("AnonymizedFaker", "AnonymizedFaker")]:
+        for model in MODELS:
+            row = [f"{model} ({label})"]
+            for ident in ["MRN", "Initials", "Date of Birth", "Date of Sx"]:
+                r = t[(t.Model == model) & (t.Version == version) & (t.Identifier == ident)].iloc[0]
+                star = "*" if r.Exact_mean > r.Chance_mean and r.p_Wilcoxon < 0.05 else ""
+                row.append(f"{r.Exact_mean:.1f} ({r.Chance_mean:.1f}){star}")
+            rows.append(row)
+    add_table(doc, "Supplementary Table S8. Reproduction of real direct identifiers with identifiers retained in "
+                   "training vs feature-level anonymization (AnonymizedFaker)",
+              ["Model (variant)", "MRN", "Initials", "Date of birth", "Date of surgery"], rows,
+              [2.4, 1.0, 1.1, 1.1, 1.1], font=7.5,
+              note="Real patients (of 18) whose identifier appeared exactly in the synthetic data, mean over 10 runs "
+                   "(number expected by chance). Chance reference: for dates, matches to the real dates shifted by "
+                   "8–30 days; for initials, expected matches of uniformly random two-letter strings. * above "
+                   "chance, paired Wilcoxon p < 0.05. MRN was the table's primary key, for which SDV generates new "
+                   "identifiers.")
 
 
 def main():
@@ -424,28 +496,28 @@ def main():
     doc.add_paragraph("Cybersecurity and AI in Neuro-oncology: An Exploratory Evaluation of Synthetic Data "
                       "Privacy and Fidelity in a Rare Brain Tumor Cohort")
 
-    add_markdown(doc, OUT / "Supplementary_Methods_draft.md")
+    add_markdown(doc, SUPPLEMENT_DIR / "Supplementary_Methods_draft.md")
     doc.add_page_break()
-    add_markdown(doc, OUT / "Supplementary_Results_draft.md")
+    add_markdown(doc, SUPPLEMENT_DIR / "Supplementary_Results_draft.md")
 
     doc.add_heading("Supplementary Tables", level=1).paragraph_format.page_break_before = True
+    table_tumor(doc)
     table_missingness(doc)
     table_safe_harbor(doc)
+    table_settings(doc)
     table_fidelity(doc)
     table_associations(doc)
-    table_global(doc)
-    table_original_attack(doc)
+    table_relationships(doc)
+    table_identifiers(doc)
     table_revised_by_target(doc)
     table_revised_by_model(doc)
     table_holdout(doc)
-    table_tstr(doc)
-    table_distribution(doc)
-    table_relationships(doc)
     table_reidentification(doc)
+    table_original_attack(doc)
 
     doc.add_heading("Supplementary Figures", level=1).paragraph_format.page_break_before = True
     for name, caption in FIGURES:
-        path = FIG_DIR / f"{name}.png"
+        path = (SUPPLEMENT_DIR / "original_figures" / f"{name[5:]}.png") if name.startswith("orig:") else FIG_DIR / f"{name}.png"
         with Image.open(path) as im:
             aspect = im.height / im.width
         # Cap height so each figure fits on a page with its caption.
@@ -455,7 +527,7 @@ def main():
         add_runs(p, caption)
         p.runs[0].font.size = Pt(9)
 
-    out = OUT / "Supplementary_Material_revision.docx"
+    out = SUPPLEMENT_DIR / "Supplementary_Material_revision.docx"
     doc.save(out)
     print(f"saved {out}")
 

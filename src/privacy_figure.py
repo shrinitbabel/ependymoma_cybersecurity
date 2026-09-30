@@ -112,9 +112,38 @@ def main_figure():
     save(fig, "Figure6_privacy_attacks")
 
 
+
+
+def single_panel_figure(retained=False, name="Figure6_attack_success", ylim=(-30, 17)):
+    """Main-text Figure 6: attack success above guessing only. retained=True uses the synthetic data trained with
+    direct identifiers retained; otherwise the anonymized data. Both versions share the same y-axis."""
+    style()
+    fig, ax = plt.subplots(figsize=(7.2, 3.4))
+    panel_gain(ax, retained, "")
+    ax.set_title("")
+    ax.set_ylim(*ylim)
+    ax.set_xticks(range(len(SOURCES)))
+    ax.set_xticklabels([DISPLAY.get(s, s).replace(chr(10), " ") for s in SOURCES], fontsize=8)
+    ax.grid(axis="x", visible=False)
+    ax.tick_params(axis="y", labelsize=7.5)
+    handles = [plt.Line2D([], [], ls="", markersize=6,
+                          **({"marker": "x", "color": INK} if m == "x" else
+                             {"marker": m, "markerfacecolor": "#d9d8d4", "markeredgecolor": INK}), label=a)
+               for a, (m, _) in ATTACKERS.items()]
+    ax.legend(handles=handles, title="Attacker", fontsize=7, title_fontsize=7.5, loc="lower right", frameon=True)
+    fig.tight_layout()
+    save(fig, name)
+
+
+def single_panel_figures():
+    single_panel_figure(False, "Figure6_attack_success_anonymized")
+    single_panel_figure(True, "Figure6_attack_success_identifiers_retained")
+
+
 def main():
-    main_figure()
-    anonymization_figure()
+    single_panel_figures()   # main-text Figure 6 (with and without anonymization)
+    anonymization_figure()   # Supplementary Figure S11
+    main_figure()            # two-panel version (attack success + memorization)
 
 
 if __name__ == "__main__":
