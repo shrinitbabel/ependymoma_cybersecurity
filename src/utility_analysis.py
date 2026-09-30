@@ -17,7 +17,7 @@ import numpy as np
 import pandas as pd
 from scipy.stats import fisher_exact
 
-from common import (BASELINE, COLORS, INK, INK_2, MODELS, OUT, build_metadata, compare_sources, generate,
+from common import (DISPLAY, BASELINE, COLORS, INK, INK_2, MODELS, OUT, build_metadata, compare_sources, generate,
                     independent_marginals, indicator, load_real, mean_ci, numeric_columns, save, style, tick_label)
 
 N_SUBSAMPLE = 500
@@ -161,7 +161,7 @@ def plot_associations(assoc):
     ax.set_xlabel("Log odds ratio (Haldane-corrected)")
     handles = [plt.Line2D([], [], color=INK, marker="D", lw=1.4, ms=6, mec="white", label="Real cohort (95% CI)")]
     handles += [plt.Line2D([], [], color=COLORS[s], marker="o", lw=1.4, ms=5.5, mec="white",
-                           label=f"{s} (mean, range over seeds)") for s in sources]
+                           label=f"{DISPLAY.get(s, s).replace(chr(10), chr(32))} (mean, range over seeds)") for s in sources]
     ax.legend(handles=handles, loc="upper center", bbox_to_anchor=(0.45, -0.1), ncol=2, fontsize=8)
     save(fig, "S_utility_associations")
 

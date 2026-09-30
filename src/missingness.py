@@ -1,13 +1,13 @@
 """Variable-level missingness before imputation (Reviewer 2 comment 4).
 
-Source: the 'CranialEPEdits' sheet of the master database (same 18 patients as clean_data.csv).
+Source: the 'CranialEPEdits' sheet of the master database (same 18 patients as data/private/clean_data.csv).
 Derived columns are traced to their source column (IHC markers -> 'molecular marker(s)',
 Ki-67 index -> 'Ki-67').
 """
 import matplotlib.pyplot as plt
 import pandas as pd
 
-from common import COLORS, INK_2, OUT, ROOT, load_real, numeric_columns, save, style
+from common import COLORS, INK_2, OUT, PRIVATE, ROOT, load_real, numeric_columns, save, style
 
 DERIVED_FROM = {"TERT_marker": "molecular marker(s)", "Synaptophysin_marker": "molecular marker(s)",
                 "GFAP_marker": "molecular marker(s)", "Olig2_marker": "molecular marker(s)",
@@ -16,7 +16,7 @@ DERIVED_FROM = {"TERT_marker": "molecular marker(s)", "Synaptophysin_marker": "m
 
 def main():
     real = load_real()
-    raw = pd.read_excel(ROOT / "Ependymoma Database.xlsx", sheet_name="CranialEPEdits")
+    raw = pd.read_excel(PRIVATE / "Ependymoma Database.xlsx", sheet_name="CranialEPEdits")
     num = numeric_columns(real)
     rows = []
     for c in real.columns:

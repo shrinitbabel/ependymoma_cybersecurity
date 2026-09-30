@@ -27,7 +27,7 @@ from sklearn.cluster import KMeans
 from sklearn.metrics import normalized_mutual_info_score
 from sklearn.preprocessing import OneHotEncoder, StandardScaler
 
-from common import (BASELINE, COLORS, INK, INK_2, MODELS, OUT, as_str, build_metadata, compare_sources, generate,
+from common import (DISPLAY, BASELINE, COLORS, INK, INK_2, MODELS, OUT, as_str, build_metadata, compare_sources, generate,
                     independent_marginals, load_real, mean_ci, numeric_columns, save, style)
 from utility_analysis import encoded_matrix, upper
 
@@ -270,7 +270,7 @@ def plot_metrics(per_run):
         ax.grid(axis="y", visible=False)
     axes[0].set_yticks(ys)
     for ax in (axes[0], axes[4]):
-        ax.set_yticklabels([s.replace(" baseline", "\nbaseline") for s in sources], fontsize=7.5)
+        ax.set_yticklabels([DISPLAY.get(s, s) for s in sources], fontsize=7.5)
         ax.tick_params(axis="y", length=0)
     fig.tight_layout()
     save(fig, "S_relationships_metrics")
@@ -329,6 +329,7 @@ def main():
     tests.to_csv(OUT / "relationships_tests.csv", index=False)
     plot_heatmaps(real, datasets)
     plot_key_heatmaps(real, datasets, args.seeds)
+    plot_key_heatmaps_main(real, datasets, args.seeds, summary)
     plot_metrics(per_run)
 
     pd.set_option("display.width", 200)

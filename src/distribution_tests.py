@@ -18,7 +18,7 @@ import pandas as pd
 from scipy.spatial.distance import jensenshannon
 from scipy.stats import ks_2samp
 
-from common import (BASELINE, COLORS, INK, MODELS, OUT, as_str, build_metadata, compare_sources, generate,
+from common import (DISPLAY, BASELINE, COLORS, INK, MODELS, OUT, as_str, build_metadata, compare_sources, generate,
                     independent_marginals, load_real, mean_ci, numeric_columns, save, style)
 
 
@@ -79,7 +79,7 @@ def plot(per_run):
         ax.set_xlim(left=0)
         ax.grid(axis="y", visible=False)
     axes[0].set_yticks(ys)
-    axes[0].set_yticklabels([s.replace(" baseline", "\nbaseline") for s in sources], fontsize=8)
+    axes[0].set_yticklabels([DISPLAY.get(s, s) for s in sources], fontsize=8)
     axes[0].tick_params(axis="y", length=0)
     fig.tight_layout()
     save(fig, "S_distribution_tests")
