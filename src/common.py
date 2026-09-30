@@ -1,7 +1,8 @@
-"""Shared setup for the revision analyses: data loading, SDV metadata, cached synthesizer runs, plotting style.
+"""Shared setup for all analyses: data loading, SDV metadata, cached synthesizer runs, plotting style.
 
-All analyses read clean_data.csv (real patient data; never commit) and write under
-revision/outputs/ (gitignored), including the synthetic data they generate.
+All analyses read the real cohort from data/private/ (patient data; gitignored, never commit) and write tables to
+results/tables/, figures to results/figures/, and the synthetic datasets they generate to
+results/synthetic_runs/ (gitignored).
 """
 import json
 import random
@@ -27,9 +28,12 @@ from sdv.single_table import (
 warnings.filterwarnings("ignore")
 
 ROOT = Path(__file__).resolve().parents[1]
-OUT = ROOT / "revision" / "outputs"
-SYNTH_DIR = OUT / "synth"
-FIG_DIR = OUT / "figures"
+PRIVATE = ROOT / "data" / "private"
+RESULTS = ROOT / "results"
+OUT = RESULTS / "tables"
+SYNTH_DIR = RESULTS / "synthetic_runs"
+FIG_DIR = RESULTS / "figures"
+SUPPLEMENT_DIR = RESULTS / "supplement"
 
 IDENTIFIERS = ["MRN", "Date of Sx", "Initials", "Date of Birth"]
 SYNTHESIZERS = {
@@ -80,11 +84,11 @@ def seed_all(seed):
 
 
 def load_real():
-    return pd.read_csv(ROOT / "clean_data.csv").drop(columns=IDENTIFIERS)
+    return pd.read_csv(PRIVATE / "clean_data.csv").drop(columns=IDENTIFIERS)
 
 
 def metadata_columns(real):
-    with open(ROOT / "metadata.json") as f:
+    with open(ROOT / "data" / "metadata.json") as f:
         cols = json.load(f)["tables"]["table"]["columns"]
     cols = {c: spec for c, spec in cols.items() if c not in IDENTIFIERS}
     # Surgical Approach was flagged as PII in the original metadata, so SDV replaced it
