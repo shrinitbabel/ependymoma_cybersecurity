@@ -39,6 +39,23 @@ SYNTHESIZERS = {
     "TVAE": TVAESynthesizer,
 }
 MODELS = list(SYNTHESIZERS)
+
+# Settings of the original analysis, read from its fitted synthesizers (SDV 1.17.3): the revision reproduces them
+# exactly. (With SDV's defaults, e.g. 300 epochs, CTGAN and CopulaGAN are badly undertrained on 18 rows.)
+NUMERICAL_DISTRIBUTIONS = {
+    "Age at Diagnosis": "norm", "Age at Sx": "norm", "BMI": "truncnorm", "Tumor Size 1 (cm)": "gamma",
+    "Tumor Size 2 (cm)": "gamma", "Tumor Size 3 (cm)": "gamma", "Duration of symptoms preop (months)": "gamma",
+    "EBL": "gamma", "Mitotic figures in 10 hpf": "gamma", "PFS (After Sx; Months)": "truncnorm",
+    "Overall Survival (yrs)": "truncnorm", "Length of followup (months)": "truncnorm", "LOS (days)": "gamma",
+}
+ORIGINAL_PARAMS = {
+    "GaussianCopula": dict(enforce_rounding=True, numerical_distributions=NUMERICAL_DISTRIBUTIONS,
+                           default_distribution="truncnorm"),
+    "CopulaGAN": dict(enforce_rounding=False, epochs=1000, numerical_distributions=NUMERICAL_DISTRIBUTIONS,
+                      default_distribution="beta"),
+    "CTGAN": dict(enforce_rounding=False, epochs=1000),
+    "TVAE": dict(enforce_rounding=False, epochs=500),
+}
 BASELINE = "Independent baseline"
 N_SYNTH = 1000
 
@@ -88,7 +105,7 @@ def generate(train, metadata, model, seed, tag=""):
     if path.exists():
         return pd.read_csv(path)
     seed_all(seed)
-    synth = SYNTHESIZERS[model](metadata)
+    synth = SYNTHESIZERS[model](metadata, **ORIGINAL_PARAMS[model])
     synth.fit(train)
     # SDV otherwise samples from a fixed internal random state, making every GaussianCopula run identical.
     synth._set_random_state(seed)
@@ -158,8 +175,12 @@ def mean_ci(values):
     return m, sd, m - half, m + half
 
 
+# Display names for figures (the data files keep the internal label BASELINE).
+DISPLAY = {BASELINE: "Reshuffled\nreference"}
+
+
 def tick_label(source):
-    return {"GaussianCopula": "Gaussian-\nCopula", BASELINE: "Independent\nbaseline",
+    return {"GaussianCopula": "Gaussian-\nCopula", BASELINE: "Reshuffled\nreference",
             "Real (TRTR)": "Real\n(TRTR)"}.get(source, source)
 
 

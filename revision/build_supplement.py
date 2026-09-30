@@ -74,6 +74,24 @@ FIGURES = [
     ("S_holdout_tstr", "Supplementary Figure S9. Train-on-synthetic, test-on-real (TSTR) and train-on-real, "
      "test-on-real (TRTR) discrimination for two endpoints (postoperative complication, 6/18 events; "
      "radiotherapy, 12/18 events), with bootstrap 95% CIs. Dashed line: chance."),
+    ("S_distribution_tests", "Supplementary Figure S10. Univariate and pairwise distributional similarity "
+     "across 10 runs: mean Kolmogorov–Smirnov statistic over numerical variables, mean Jensen–Shannon "
+     "divergence over categorical variables, and mean Jensen–Shannon divergence of the joint distribution of "
+     "binary variable pairs (lower = more similar). The independent-marginals baseline is the ceiling for "
+     "univariate similarity."),
+    ("S_relationships_heatmaps", "Supplementary Figure S11. Spearman correlation matrices of the real cohort "
+     "and of one synthetic dataset per synthesizer (55 binary and numerical variables; same variable order in "
+     "every panel, from hierarchical clustering of the real correlations)."),
+    ("S_relationships_key_variables", "Supplementary Figure S12. Spearman correlations among 15 clinically "
+     "interpretable variables in the real cohort and in GaussianCopula, TVAE and CTGAN data (synthetic matrices "
+     "averaged over 10 runs). Binary variables are coded as the real cohort's less frequent category, as "
+     "labeled."),
+    ("S_relationships_metrics", "Supplementary Figure S13. Relationship metrics across 10 runs per "
+     "synthesizer. Points are individual runs; bars are means."),
+    ("S_reidentification", "Supplementary Figure S14. Record-level re-identification risk across 10 runs: "
+     "synthetic records matching a real patient on ≥ 95% of variables; synthetic records closer to a real "
+     "patient than the closest pair of real patients; and real patients whose non-obvious sensitive value is "
+     "revealed by linking four quasi-identifiers to the synthetic data."),
 ]
 
 
@@ -304,6 +322,81 @@ def table_tstr(doc):
                    "over 6 folds and averaged over 2 repetitions; bootstrap 95% CI.")
 
 
+def _summary_cell(s, source, metric, digits=2, ci=True):
+    r = s.loc[(source, metric)]
+    def f(x):
+        return f"{max(round(x, digits), 0.0) + 0.0 if metric.endswith(('pct', 'patients')) else round(x, digits) + 0.0:.{digits}f}"
+    return f"{f(r.Mean)} ({f(r.CI95_low)} to {f(r.CI95_high)})" if ci else f(r.Mean)
+
+
+def table_distribution(doc):
+    s = pd.read_csv(OUT / "distribution_tests_summary.csv").set_index(["Source", "Metric"])
+    rows = [[src, _summary_cell(s, src, "Mean_KS_numerical"), _summary_cell(s, src, "Mean_JSD_numerical"),
+             _summary_cell(s, src, "Mean_JSD_categorical", 3), _summary_cell(s, src, "Pct_categorical_JSD_below_0.1", 0),
+             _summary_cell(s, src, "Mean_JSD_pairs", 3)] for src in SOURCES]
+    add_table(doc, "Supplementary Table S11. Univariate and pairwise distributional similarity (KS statistic and "
+                   "Jensen–Shannon divergence)",
+              ["Source", "KS, numerical", "JSD, numerical", "JSD, categorical", "Categorical with JSD < 0.1, %",
+               "JSD, binary pairs"], rows, [1.3, 1.1, 1.1, 1.15, 1.1, 1.15], font=7,
+              note="Mean (95% CI) across 10 runs; lower KS and JSD indicate greater similarity. The "
+                   "independent-marginals baseline resamples observed values and is the ceiling for univariate "
+                   "similarity.")
+
+
+def table_relationships(doc):
+    s = pd.read_csv(OUT / "relationships_summary.csv").set_index(["Source", "Metric"])
+    tests = pd.read_csv(OUT / "relationships_tests.csv")
+    metrics = [("Spearman_r", "Spearman matrix correlation (↑)"), ("Kendall_r", "Kendall matrix correlation (↑)"),
+               ("Spearman_CMD", "Spearman CMD (↓)"), ("Kendall_CMD", "Kendall CMD (↓)"),
+               ("NMI_r", "Mutual information (↑)"), ("CramersV_r", "Cramér's V (↑)"),
+               ("CramersV_corrected_r", "Bias-corrected Cramér's V (↑)"), ("TheilsU_r", "Theil's U (↑)"),
+               ("Log_cluster", "Log-cluster (↓)")]
+    rows = []
+    for metric, label in metrics:
+        row = [label]
+        t = tests[tests.Metric == metric]
+        higher_better = "(↑)" in label
+        base = s.loc[(BASELINE, metric)].Mean
+        for src in SOURCES:
+            mean = s.loc[(src, metric)].Mean
+            cell = f"{round(mean, 2) + 0.0:.2f}"
+            if src != BASELINE:
+                p = t[t.Comparison == f"{src} vs {BASELINE}"].p_Holm.iloc[0]
+                if p < 0.05:
+                    cell += "*" if (mean > base) == higher_better else "†"
+            row.append(cell)
+        rows.append(row)
+    add_table(doc, "Supplementary Table S12. Relationship (multivariable) metrics across 10 runs per synthesizer",
+              ["Metric"] + [SHORT_SOURCE.get(src, src) for src in SOURCES], rows, [2.1] + [0.94] * 5, font=7,
+              note="Mean across 10 runs. * significantly better and † significantly worse than the "
+                   "independent-marginals baseline (Holm-adjusted p < 0.05, two-sided Mann–Whitney). CMD, correlation matrix distance. Uncorrected Cramér's V, Theil's U and mutual "
+                   "information are positively biased at n = 18; the bias-corrected Cramér's V was added post hoc.")
+
+
+def table_reidentification(doc):
+    s = pd.read_csv(OUT / "reidentification_summary.csv").set_index(["Source", "Metric"])
+    h = pd.read_csv(OUT / "reidentification_qi_holdout.csv").set_index("Source")
+    ctx = pd.read_csv(OUT / "reidentification_real_context.csv").iloc[0]
+    rows = []
+    for src in SOURCES:
+        g = h.loc[src]
+        rows.append([src, f"{s.loc[(src, 'Exact_copies_pct')].Mean:.1f} / {s.loc[(src, 'Near_copies_95_pct')].Mean:.1f}",
+                     _summary_cell(s, src, "Too_close_pct", 1), _summary_cell(s, src, "DCR_5th_pct", 2, ci=False),
+                     _summary_cell(s, src, "QI_disclosed_patients", 1),
+                     f"{g.Disclosed_members_pct:.1f} / {g.Disclosed_heldout_pct:.1f} "
+                     f"({g.Difference_pp:+.1f}; {g.CI95_low:+.1f} to {g.CI95_high:+.1f})"])
+    add_table(doc, "Supplementary Table S13. Record-level re-identification risk",
+              ["Source", "Exact / ≥ 95% copies, % of records", "Closer than closest real pair, % (95% CI)",
+               "DCR, 5th percentile", "Patients with QI disclosure, of 18 (95% CI)",
+               "QI disclosure, % training / held-out (difference; 95% CI)"], rows,
+              [1.2, 1.0, 1.25, 0.8, 1.25, 1.6], font=7,
+              note=f"Mean across 10 runs (holdout column: 6-fold cross-validation, 2 repetitions). Real cohort: "
+                   f"closest pair of distinct patients differs on {100 * ctx.Real_nearest_neighbor_DCR_min:.1f}% of "
+                   f"variables; {int(ctx.Real_unique_patients_on_QIs)} of 18 patients unique on the four "
+                   f"quasi-identifiers (k-anonymity = {int(ctx.Real_k_anonymity_min_k)}). QI, quasi-identifier "
+                   "(10-year age band, sex, cranial location, WHO grade); DCR, distance to closest record.")
+
+
 def main():
     doc = Document()
     for section in doc.sections:
@@ -346,6 +439,9 @@ def main():
     table_revised_by_model(doc)
     table_holdout(doc)
     table_tstr(doc)
+    table_distribution(doc)
+    table_relationships(doc)
+    table_reidentification(doc)
 
     doc.add_heading("Supplementary Figures", level=1).paragraph_format.page_break_before = True
     for name, caption in FIGURES:

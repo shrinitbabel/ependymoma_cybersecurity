@@ -11,7 +11,7 @@ import numpy as np
 import pandas as pd
 from sdmetrics.reports.single_table import QualityReport
 
-from common import (BASELINE, COLORS, INK, MODELS, OUT, build_metadata, compare_sources, generate,
+from common import (BASELINE, COLORS, DISPLAY, INK, MODELS, OUT, build_metadata, compare_sources, generate,
                     independent_marginals, load_real, mean_ci, metadata_columns, save, style, tick_label)
 
 METRICS = ["Overall", "Column Shapes", "Column Pair Trends"]
@@ -28,21 +28,22 @@ def quality(real, synth, meta):
 def plot(scores):
     style()
     sources = MODELS + [BASELINE]
-    fig, axes = plt.subplots(1, 3, figsize=(7.2, 2.6), sharey=True)
+    fig, axes = plt.subplots(1, 3, figsize=(7.2, 2.8), sharey=True)
     rng = np.random.default_rng(0)
     ys = np.arange(len(sources))[::-1]
     for ax, metric in zip(axes, METRICS):
         for y, s in zip(ys, sources):
             v = 100 * scores[scores.Source == s][metric].to_numpy()
-            ax.scatter(v, y + rng.uniform(-0.12, 0.12, len(v)), s=14, color=COLORS[s], alpha=0.75, lw=0)
-            m, _, lo, hi = mean_ci(v)
-            ax.plot([m, m], [y - 0.28, y + 0.28], color=INK, lw=1.6)
+            ax.boxplot(v, positions=[y], vert=False, widths=0.55, patch_artist=True, showfliers=False,
+                       medianprops=dict(color=INK, lw=1.4), whiskerprops=dict(color=COLORS[s], lw=1),
+                       capprops=dict(color=COLORS[s], lw=1),
+                       boxprops=dict(facecolor=COLORS[s], alpha=0.25, edgecolor=COLORS[s], lw=1))
+            ax.scatter(v, y + rng.uniform(-0.14, 0.14, len(v)), s=10, color=COLORS[s], alpha=0.9, lw=0, zorder=3)
         ax.set_title(metric, fontsize=9, loc="left")
         ax.grid(axis="y", visible=False)
         ax.set_xlabel("SDMetrics score, %")
     axes[0].set_yticks(ys)
-    axes[0].set_yticklabels([s.replace(" baseline", "\nbaseline") if s == BASELINE else s for s in sources],
-                            fontsize=8)
+    axes[0].set_yticklabels([DISPLAY.get(s, s) for s in sources], fontsize=8)
     axes[0].tick_params(axis="y", length=0)
     fig.tight_layout()
     save(fig, "S_fidelity_by_seed")
