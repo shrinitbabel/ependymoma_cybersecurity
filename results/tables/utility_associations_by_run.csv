@@ -1,0 +1,358 @@
+Association,Source,Seed,logOR,CI_low,CI_high,Fisher_p,Table_a_b_c_d,Same_direction,Same_direction_n18_pct,Inside_real_CI
+Infratentorial → preop hydrocephalus,Real,,0.9555114450274363,-1.17004360566033,3.0810664957152025,0.5955882352941175,"[6, 7, 1, 4]",,,
+Infratentorial → preop hydrocephalus,GaussianCopula,0.0,0.15954059289195843,,,,,1.0,49.2,1.0
+Infratentorial → preop hydrocephalus,GaussianCopula,1.0,0.06208798158849489,,,,,1.0,46.6,1.0
+Infratentorial → preop hydrocephalus,GaussianCopula,2.0,0.1965375034307144,,,,,1.0,47.8,1.0
+Infratentorial → preop hydrocephalus,GaussianCopula,3.0,-0.005780588685725857,,,,,0.0,46.400000000000006,1.0
+Infratentorial → preop hydrocephalus,GaussianCopula,4.0,0.44131123988130017,,,,,1.0,58.599999999999994,1.0
+Infratentorial → preop hydrocephalus,GaussianCopula,5.0,0.30973956581993395,,,,,1.0,56.00000000000001,1.0
+Infratentorial → preop hydrocephalus,GaussianCopula,6.0,0.2917346373002126,,,,,1.0,53.400000000000006,1.0
+Infratentorial → preop hydrocephalus,GaussianCopula,7.0,-0.06871859502254625,,,,,0.0,40.400000000000006,1.0
+Infratentorial → preop hydrocephalus,GaussianCopula,8.0,0.11421831238531807,,,,,1.0,48.199999999999996,1.0
+Infratentorial → preop hydrocephalus,GaussianCopula,9.0,0.06173625425364775,,,,,1.0,47.199999999999996,1.0
+Infratentorial → preop hydrocephalus,CopulaGAN,0.0,2.176188140777281,,,,,1.0,95.39999999999999,1.0
+Infratentorial → preop hydrocephalus,CopulaGAN,1.0,1.9732238000922018,,,,,1.0,94.19999999999999,1.0
+Infratentorial → preop hydrocephalus,CopulaGAN,2.0,1.9548866792941537,,,,,1.0,93.0,1.0
+Infratentorial → preop hydrocephalus,CopulaGAN,3.0,2.1376013729240295,,,,,1.0,97.2,1.0
+Infratentorial → preop hydrocephalus,CopulaGAN,4.0,1.9118285496261818,,,,,1.0,91.2,1.0
+Infratentorial → preop hydrocephalus,CopulaGAN,5.0,1.7138230469878362,,,,,1.0,88.0,1.0
+Infratentorial → preop hydrocephalus,CopulaGAN,6.0,1.6350361597752177,,,,,1.0,95.19999999999999,1.0
+Infratentorial → preop hydrocephalus,CopulaGAN,7.0,1.597270002147489,,,,,1.0,80.2,1.0
+Infratentorial → preop hydrocephalus,CopulaGAN,8.0,1.4227909811509625,,,,,1.0,87.2,1.0
+Infratentorial → preop hydrocephalus,CopulaGAN,9.0,1.4370573546966163,,,,,1.0,78.0,1.0
+Infratentorial → preop hydrocephalus,CTGAN,0.0,1.9241029941307985,,,,,1.0,94.19999999999999,1.0
+Infratentorial → preop hydrocephalus,CTGAN,1.0,1.9563156325055842,,,,,1.0,91.8,1.0
+Infratentorial → preop hydrocephalus,CTGAN,2.0,1.7263471794045255,,,,,1.0,93.2,1.0
+Infratentorial → preop hydrocephalus,CTGAN,3.0,1.781696543752179,,,,,1.0,90.0,1.0
+Infratentorial → preop hydrocephalus,CTGAN,4.0,1.8742818585689327,,,,,1.0,93.0,1.0
+Infratentorial → preop hydrocephalus,CTGAN,5.0,1.7995096068735552,,,,,1.0,91.0,1.0
+Infratentorial → preop hydrocephalus,CTGAN,6.0,1.9462966971853681,,,,,1.0,93.60000000000001,1.0
+Infratentorial → preop hydrocephalus,CTGAN,7.0,1.8706768470560626,,,,,1.0,94.19999999999999,1.0
+Infratentorial → preop hydrocephalus,CTGAN,8.0,2.017039161193557,,,,,1.0,96.8,1.0
+Infratentorial → preop hydrocephalus,CTGAN,9.0,1.7828190736421137,,,,,1.0,91.0,1.0
+Infratentorial → preop hydrocephalus,TVAE,0.0,1.4130354742326015,,,,,1.0,78.8,1.0
+Infratentorial → preop hydrocephalus,TVAE,1.0,1.2786114716342432,,,,,1.0,76.0,1.0
+Infratentorial → preop hydrocephalus,TVAE,2.0,1.1523774407622478,,,,,1.0,68.8,1.0
+Infratentorial → preop hydrocephalus,TVAE,3.0,1.8055859792202746,,,,,1.0,81.0,1.0
+Infratentorial → preop hydrocephalus,TVAE,4.0,0.9358938891147665,,,,,1.0,63.800000000000004,1.0
+Infratentorial → preop hydrocephalus,TVAE,5.0,1.522099906563537,,,,,1.0,78.2,1.0
+Infratentorial → preop hydrocephalus,TVAE,6.0,1.298014207196795,,,,,1.0,79.60000000000001,1.0
+Infratentorial → preop hydrocephalus,TVAE,7.0,0.8894177807483274,,,,,1.0,64.0,1.0
+Infratentorial → preop hydrocephalus,TVAE,8.0,1.8250199932370477,,,,,1.0,81.6,1.0
+Infratentorial → preop hydrocephalus,TVAE,9.0,1.2373352336693821,,,,,1.0,76.0,1.0
+Infratentorial → preop hydrocephalus,Independent baseline,0.0,-0.055011760467005295,,,,,0.0,42.4,1.0
+Infratentorial → preop hydrocephalus,Independent baseline,1.0,-0.16402758842702256,,,,,0.0,41.0,1.0
+Infratentorial → preop hydrocephalus,Independent baseline,2.0,-0.029741813011361983,,,,,0.0,44.2,1.0
+Infratentorial → preop hydrocephalus,Independent baseline,3.0,-0.08157473202880439,,,,,0.0,44.800000000000004,1.0
+Infratentorial → preop hydrocephalus,Independent baseline,4.0,0.05451117280770067,,,,,1.0,48.4,1.0
+Infratentorial → preop hydrocephalus,Independent baseline,5.0,-0.003888165449499915,,,,,0.0,49.6,1.0
+Infratentorial → preop hydrocephalus,Independent baseline,6.0,-0.06464454499498373,,,,,0.0,43.0,1.0
+Infratentorial → preop hydrocephalus,Independent baseline,7.0,-0.14838846220660368,,,,,0.0,42.4,1.0
+Infratentorial → preop hydrocephalus,Independent baseline,8.0,-0.15631551099444116,,,,,0.0,41.0,1.0
+Infratentorial → preop hydrocephalus,Independent baseline,9.0,0.05246956985272687,,,,,1.0,49.0,1.0
+Infratentorial → preop cerebellar signs,Real,,2.1972245773362196,-0.011445208354303738,4.405894363026743,0.04738562091503268,"[10, 3, 1, 4]",,,
+Infratentorial → preop cerebellar signs,GaussianCopula,0.0,0.20444428484579058,,,,,1.0,59.599999999999994,1.0
+Infratentorial → preop cerebellar signs,GaussianCopula,1.0,0.1598137222497458,,,,,1.0,55.00000000000001,1.0
+Infratentorial → preop cerebellar signs,GaussianCopula,2.0,0.17716179142711044,,,,,1.0,58.8,1.0
+Infratentorial → preop cerebellar signs,GaussianCopula,3.0,0.37444422042322284,,,,,1.0,59.199999999999996,1.0
+Infratentorial → preop cerebellar signs,GaussianCopula,4.0,0.14614298505893716,,,,,1.0,52.800000000000004,1.0
+Infratentorial → preop cerebellar signs,GaussianCopula,5.0,0.02784839250831496,,,,,1.0,50.2,1.0
+Infratentorial → preop cerebellar signs,GaussianCopula,6.0,0.15678115952234278,,,,,1.0,54.400000000000006,1.0
+Infratentorial → preop cerebellar signs,GaussianCopula,7.0,0.379523059487967,,,,,1.0,65.0,1.0
+Infratentorial → preop cerebellar signs,GaussianCopula,8.0,-0.07313625387553943,,,,,0.0,48.4,0.0
+Infratentorial → preop cerebellar signs,GaussianCopula,9.0,0.1112250044405036,,,,,1.0,51.0,1.0
+Infratentorial → preop cerebellar signs,CopulaGAN,0.0,1.904025732759375,,,,,1.0,94.6,1.0
+Infratentorial → preop cerebellar signs,CopulaGAN,1.0,2.038158456908174,,,,,1.0,96.8,1.0
+Infratentorial → preop cerebellar signs,CopulaGAN,2.0,1.7868683827649614,,,,,1.0,91.8,1.0
+Infratentorial → preop cerebellar signs,CopulaGAN,3.0,1.9358572109483314,,,,,1.0,95.8,1.0
+Infratentorial → preop cerebellar signs,CopulaGAN,4.0,1.9360340066172668,,,,,1.0,96.0,1.0
+Infratentorial → preop cerebellar signs,CopulaGAN,5.0,1.893232738687163,,,,,1.0,94.6,1.0
+Infratentorial → preop cerebellar signs,CopulaGAN,6.0,1.987255292946642,,,,,1.0,96.8,1.0
+Infratentorial → preop cerebellar signs,CopulaGAN,7.0,1.5811605634702721,,,,,1.0,91.4,1.0
+Infratentorial → preop cerebellar signs,CopulaGAN,8.0,1.9919986500230198,,,,,1.0,95.6,1.0
+Infratentorial → preop cerebellar signs,CopulaGAN,9.0,1.7807356380138961,,,,,1.0,94.0,1.0
+Infratentorial → preop cerebellar signs,CTGAN,0.0,2.229716776575852,,,,,1.0,97.0,1.0
+Infratentorial → preop cerebellar signs,CTGAN,1.0,2.623584434312014,,,,,1.0,99.0,1.0
+Infratentorial → preop cerebellar signs,CTGAN,2.0,2.3275119234524158,,,,,1.0,98.6,1.0
+Infratentorial → preop cerebellar signs,CTGAN,3.0,1.7737056010983694,,,,,1.0,96.2,1.0
+Infratentorial → preop cerebellar signs,CTGAN,4.0,2.4949996571330444,,,,,1.0,97.6,1.0
+Infratentorial → preop cerebellar signs,CTGAN,5.0,2.112406258346656,,,,,1.0,97.6,1.0
+Infratentorial → preop cerebellar signs,CTGAN,6.0,2.4186788625637337,,,,,1.0,99.6,1.0
+Infratentorial → preop cerebellar signs,CTGAN,7.0,2.0221207254285343,,,,,1.0,98.6,1.0
+Infratentorial → preop cerebellar signs,CTGAN,8.0,1.9538373667483069,,,,,1.0,95.0,1.0
+Infratentorial → preop cerebellar signs,CTGAN,9.0,2.112650953990971,,,,,1.0,94.19999999999999,1.0
+Infratentorial → preop cerebellar signs,TVAE,0.0,1.691381548054944,,,,,1.0,90.8,1.0
+Infratentorial → preop cerebellar signs,TVAE,1.0,1.62729384088913,,,,,1.0,89.4,1.0
+Infratentorial → preop cerebellar signs,TVAE,2.0,2.0243558209442125,,,,,1.0,91.60000000000001,1.0
+Infratentorial → preop cerebellar signs,TVAE,3.0,1.632230921962657,,,,,1.0,88.6,1.0
+Infratentorial → preop cerebellar signs,TVAE,4.0,1.4304709844691175,,,,,1.0,88.2,1.0
+Infratentorial → preop cerebellar signs,TVAE,5.0,2.220873265583487,,,,,1.0,95.8,1.0
+Infratentorial → preop cerebellar signs,TVAE,6.0,1.6185018582371695,,,,,1.0,88.8,1.0
+Infratentorial → preop cerebellar signs,TVAE,7.0,1.4754769173652984,,,,,1.0,85.39999999999999,1.0
+Infratentorial → preop cerebellar signs,TVAE,8.0,1.4574681185396743,,,,,1.0,87.6,1.0
+Infratentorial → preop cerebellar signs,TVAE,9.0,2.2738435497976157,,,,,1.0,94.8,1.0
+Infratentorial → preop cerebellar signs,Independent baseline,0.0,0.009958588525577928,,,,,1.0,50.6,1.0
+Infratentorial → preop cerebellar signs,Independent baseline,1.0,-0.288987727413205,,,,,0.0,38.800000000000004,0.0
+Infratentorial → preop cerebellar signs,Independent baseline,2.0,0.11966587415397875,,,,,1.0,52.800000000000004,1.0
+Infratentorial → preop cerebellar signs,Independent baseline,3.0,0.11389341297699702,,,,,1.0,48.6,1.0
+Infratentorial → preop cerebellar signs,Independent baseline,4.0,-0.0033858485202825045,,,,,0.0,50.0,1.0
+Infratentorial → preop cerebellar signs,Independent baseline,5.0,0.24674911741807762,,,,,1.0,59.0,1.0
+Infratentorial → preop cerebellar signs,Independent baseline,6.0,-0.031129990258526793,,,,,0.0,46.6,0.0
+Infratentorial → preop cerebellar signs,Independent baseline,7.0,-0.1922293026979856,,,,,0.0,45.4,0.0
+Infratentorial → preop cerebellar signs,Independent baseline,8.0,-0.15633100873449438,,,,,0.0,43.8,0.0
+Infratentorial → preop cerebellar signs,Independent baseline,9.0,-0.1314046021057039,,,,,0.0,43.2,0.0
+Infratentorial → preop nausea/vomiting,Real,,2.540996116439044,-0.5387606020732223,5.62075283495131,0.10130718954248366,"[7, 6, 0, 5]",,,
+Infratentorial → preop nausea/vomiting,GaussianCopula,0.0,0.15636083565318812,,,,,1.0,48.4,1.0
+Infratentorial → preop nausea/vomiting,GaussianCopula,1.0,0.16309379054825834,,,,,1.0,56.599999999999994,1.0
+Infratentorial → preop nausea/vomiting,GaussianCopula,2.0,0.17961854025822588,,,,,1.0,49.4,1.0
+Infratentorial → preop nausea/vomiting,GaussianCopula,3.0,0.0985505663093969,,,,,1.0,47.8,1.0
+Infratentorial → preop nausea/vomiting,GaussianCopula,4.0,0.4506259267859339,,,,,1.0,62.2,1.0
+Infratentorial → preop nausea/vomiting,GaussianCopula,5.0,0.28553902958581767,,,,,1.0,55.2,1.0
+Infratentorial → preop nausea/vomiting,GaussianCopula,6.0,0.1614605794558833,,,,,1.0,49.8,1.0
+Infratentorial → preop nausea/vomiting,GaussianCopula,7.0,0.29119626562594053,,,,,1.0,58.599999999999994,1.0
+Infratentorial → preop nausea/vomiting,GaussianCopula,8.0,0.13308243725127572,,,,,1.0,52.2,1.0
+Infratentorial → preop nausea/vomiting,GaussianCopula,9.0,0.3399195380270364,,,,,1.0,57.199999999999996,1.0
+Infratentorial → preop nausea/vomiting,CopulaGAN,0.0,1.851494486113757,,,,,1.0,92.80000000000001,1.0
+Infratentorial → preop nausea/vomiting,CopulaGAN,1.0,2.152561793624325,,,,,1.0,84.39999999999999,1.0
+Infratentorial → preop nausea/vomiting,CopulaGAN,2.0,1.7078004694399704,,,,,1.0,87.2,1.0
+Infratentorial → preop nausea/vomiting,CopulaGAN,3.0,2.0695934266878897,,,,,1.0,94.39999999999999,1.0
+Infratentorial → preop nausea/vomiting,CopulaGAN,4.0,2.0357126093516453,,,,,1.0,95.0,1.0
+Infratentorial → preop nausea/vomiting,CopulaGAN,5.0,1.8173518720608042,,,,,1.0,87.2,1.0
+Infratentorial → preop nausea/vomiting,CopulaGAN,6.0,1.6973410670213296,,,,,1.0,92.0,1.0
+Infratentorial → preop nausea/vomiting,CopulaGAN,7.0,1.5834684493108167,,,,,1.0,90.60000000000001,1.0
+Infratentorial → preop nausea/vomiting,CopulaGAN,8.0,1.7403655859581153,,,,,1.0,91.60000000000001,1.0
+Infratentorial → preop nausea/vomiting,CopulaGAN,9.0,1.980455778155356,,,,,1.0,89.60000000000001,1.0
+Infratentorial → preop nausea/vomiting,CTGAN,0.0,2.601977965840919,,,,,1.0,96.6,1.0
+Infratentorial → preop nausea/vomiting,CTGAN,1.0,2.1485819529413193,,,,,1.0,95.8,1.0
+Infratentorial → preop nausea/vomiting,CTGAN,2.0,1.968265977573703,,,,,1.0,91.2,1.0
+Infratentorial → preop nausea/vomiting,CTGAN,3.0,1.7253058220572586,,,,,1.0,92.0,1.0
+Infratentorial → preop nausea/vomiting,CTGAN,4.0,1.9729566634422953,,,,,1.0,94.6,1.0
+Infratentorial → preop nausea/vomiting,CTGAN,5.0,2.189842146914396,,,,,1.0,92.60000000000001,1.0
+Infratentorial → preop nausea/vomiting,CTGAN,6.0,2.2631454776344504,,,,,1.0,97.39999999999999,1.0
+Infratentorial → preop nausea/vomiting,CTGAN,7.0,1.6248775803791435,,,,,1.0,88.2,1.0
+Infratentorial → preop nausea/vomiting,CTGAN,8.0,1.6058776420579934,,,,,1.0,87.2,1.0
+Infratentorial → preop nausea/vomiting,CTGAN,9.0,1.778859401877869,,,,,1.0,87.8,1.0
+Infratentorial → preop nausea/vomiting,TVAE,0.0,3.406017302937923,,,,,1.0,96.6,1.0
+Infratentorial → preop nausea/vomiting,TVAE,1.0,2.571616341233461,,,,,1.0,97.6,1.0
+Infratentorial → preop nausea/vomiting,TVAE,2.0,5.498187095267499,,,,,1.0,97.39999999999999,1.0
+Infratentorial → preop nausea/vomiting,TVAE,3.0,3.015794131948546,,,,,1.0,94.39999999999999,1.0
+Infratentorial → preop nausea/vomiting,TVAE,4.0,4.024654298525079,,,,,1.0,94.8,1.0
+Infratentorial → preop nausea/vomiting,TVAE,5.0,4.585311717310787,,,,,1.0,97.39999999999999,1.0
+Infratentorial → preop nausea/vomiting,TVAE,6.0,2.609073510668479,,,,,1.0,90.8,1.0
+Infratentorial → preop nausea/vomiting,TVAE,7.0,4.416050675509676,,,,,1.0,97.8,1.0
+Infratentorial → preop nausea/vomiting,TVAE,8.0,2.8331214639596776,,,,,1.0,90.2,1.0
+Infratentorial → preop nausea/vomiting,TVAE,9.0,2.7044909924214537,,,,,1.0,91.4,1.0
+Infratentorial → preop nausea/vomiting,Independent baseline,0.0,0.10286831548507537,,,,,1.0,49.2,1.0
+Infratentorial → preop nausea/vomiting,Independent baseline,1.0,0.0666321657554726,,,,,1.0,49.2,1.0
+Infratentorial → preop nausea/vomiting,Independent baseline,2.0,-0.02322984827912866,,,,,0.0,46.6,1.0
+Infratentorial → preop nausea/vomiting,Independent baseline,3.0,-0.03483457721678996,,,,,0.0,39.0,1.0
+Infratentorial → preop nausea/vomiting,Independent baseline,4.0,-0.008296816640453956,,,,,0.0,47.199999999999996,1.0
+Infratentorial → preop nausea/vomiting,Independent baseline,5.0,0.09819252907022785,,,,,1.0,53.800000000000004,1.0
+Infratentorial → preop nausea/vomiting,Independent baseline,6.0,-0.18487812874901355,,,,,0.0,37.0,1.0
+Infratentorial → preop nausea/vomiting,Independent baseline,7.0,-0.12391622003113587,,,,,0.0,43.6,1.0
+Infratentorial → preop nausea/vomiting,Independent baseline,8.0,-0.017459012666802748,,,,,0.0,43.6,1.0
+Infratentorial → preop nausea/vomiting,Independent baseline,9.0,0.0582378959961952,,,,,1.0,47.599999999999994,1.0
+WHO grade 3 → radiotherapy,Real,,-0.13580154115906176,-2.4078151988218104,2.1362121165036867,1.0,"[2, 1, 10, 5]",,,
+WHO grade 3 → radiotherapy,GaussianCopula,0.0,-0.497970777774495,,,,,1.0,68.8,1.0
+WHO grade 3 → radiotherapy,GaussianCopula,1.0,0.512113680150163,,,,,0.0,65.8,1.0
+WHO grade 3 → radiotherapy,GaussianCopula,2.0,0.3149879186396249,,,,,0.0,71.6,1.0
+WHO grade 3 → radiotherapy,GaussianCopula,3.0,-0.8063201933437341,,,,,1.0,80.80000000000001,1.0
+WHO grade 3 → radiotherapy,GaussianCopula,4.0,0.04573932052065905,,,,,0.0,70.6,1.0
+WHO grade 3 → radiotherapy,GaussianCopula,5.0,-0.02363865813713961,,,,,1.0,64.60000000000001,1.0
+WHO grade 3 → radiotherapy,GaussianCopula,6.0,-0.0777128975592251,,,,,1.0,68.2,1.0
+WHO grade 3 → radiotherapy,GaussianCopula,7.0,-0.15268315960880433,,,,,1.0,69.0,1.0
+WHO grade 3 → radiotherapy,GaussianCopula,8.0,0.16010961231035511,,,,,0.0,67.0,1.0
+WHO grade 3 → radiotherapy,GaussianCopula,9.0,0.8541800223892834,,,,,0.0,54.6,1.0
+WHO grade 3 → radiotherapy,CopulaGAN,0.0,1.7226010350198537,,,,,0.0,9.8,1.0
+WHO grade 3 → radiotherapy,CopulaGAN,1.0,1.747629077201856,,,,,0.0,24.6,1.0
+WHO grade 3 → radiotherapy,CopulaGAN,2.0,1.8164599747862746,,,,,0.0,13.200000000000001,1.0
+WHO grade 3 → radiotherapy,CopulaGAN,3.0,1.1277359139082848,,,,,0.0,27.0,1.0
+WHO grade 3 → radiotherapy,CopulaGAN,4.0,1.4272679807365556,,,,,0.0,17.4,1.0
+WHO grade 3 → radiotherapy,CopulaGAN,5.0,0.9034337984439542,,,,,0.0,51.0,1.0
+WHO grade 3 → radiotherapy,CopulaGAN,6.0,1.6375709339857643,,,,,0.0,23.0,1.0
+WHO grade 3 → radiotherapy,CopulaGAN,7.0,1.3088194438962297,,,,,0.0,24.2,1.0
+WHO grade 3 → radiotherapy,CopulaGAN,8.0,1.831497984897356,,,,,0.0,10.8,1.0
+WHO grade 3 → radiotherapy,CopulaGAN,9.0,1.774273716467907,,,,,0.0,21.4,1.0
+WHO grade 3 → radiotherapy,CTGAN,0.0,0.5819696583821351,,,,,0.0,42.6,1.0
+WHO grade 3 → radiotherapy,CTGAN,1.0,1.8579027651762796,,,,,0.0,6.0,1.0
+WHO grade 3 → radiotherapy,CTGAN,2.0,1.6198580653305639,,,,,0.0,8.799999999999999,1.0
+WHO grade 3 → radiotherapy,CTGAN,3.0,0.6240074985317333,,,,,0.0,36.4,1.0
+WHO grade 3 → radiotherapy,CTGAN,4.0,1.389916878835003,,,,,0.0,16.2,1.0
+WHO grade 3 → radiotherapy,CTGAN,5.0,1.3893089810916943,,,,,0.0,17.2,1.0
+WHO grade 3 → radiotherapy,CTGAN,6.0,1.7200655919138015,,,,,0.0,11.799999999999999,1.0
+WHO grade 3 → radiotherapy,CTGAN,7.0,1.3911729565032653,,,,,0.0,25.6,1.0
+WHO grade 3 → radiotherapy,CTGAN,8.0,1.4302446763207932,,,,,0.0,15.6,1.0
+WHO grade 3 → radiotherapy,CTGAN,9.0,1.793295926993824,,,,,0.0,12.0,1.0
+WHO grade 3 → radiotherapy,TVAE,0.0,0.3602104963520605,,,,,0.0,69.19999999999999,1.0
+WHO grade 3 → radiotherapy,TVAE,1.0,-0.025995312206544264,,,,,1.0,66.8,1.0
+WHO grade 3 → radiotherapy,TVAE,2.0,0.21990969758280082,,,,,0.0,71.0,1.0
+WHO grade 3 → radiotherapy,TVAE,3.0,-0.4176837973895942,,,,,1.0,73.6,1.0
+WHO grade 3 → radiotherapy,TVAE,4.0,0.29770032800415674,,,,,0.0,69.39999999999999,1.0
+WHO grade 3 → radiotherapy,TVAE,5.0,0.10474738712940282,,,,,0.0,55.800000000000004,1.0
+WHO grade 3 → radiotherapy,TVAE,6.0,0.04521888734558127,,,,,0.0,65.2,1.0
+WHO grade 3 → radiotherapy,TVAE,7.0,-0.5412806836655367,,,,,1.0,83.0,1.0
+WHO grade 3 → radiotherapy,TVAE,8.0,0.4658969163428186,,,,,0.0,64.0,1.0
+WHO grade 3 → radiotherapy,TVAE,9.0,0.2515136783766619,,,,,0.0,59.599999999999994,1.0
+WHO grade 3 → radiotherapy,Independent baseline,0.0,0.149230784257389,,,,,0.0,50.6,1.0
+WHO grade 3 → radiotherapy,Independent baseline,1.0,0.0064949671085319325,,,,,0.0,48.4,1.0
+WHO grade 3 → radiotherapy,Independent baseline,2.0,-0.38007335036361767,,,,,1.0,63.800000000000004,1.0
+WHO grade 3 → radiotherapy,Independent baseline,3.0,0.042074566930600264,,,,,0.0,48.4,1.0
+WHO grade 3 → radiotherapy,Independent baseline,4.0,-0.003115919664432208,,,,,1.0,51.4,1.0
+WHO grade 3 → radiotherapy,Independent baseline,5.0,0.12866169915174067,,,,,0.0,45.4,1.0
+WHO grade 3 → radiotherapy,Independent baseline,6.0,-0.06583922650719583,,,,,1.0,53.6,1.0
+WHO grade 3 → radiotherapy,Independent baseline,7.0,-0.12594046305382472,,,,,1.0,57.99999999999999,1.0
+WHO grade 3 → radiotherapy,Independent baseline,8.0,0.053713642552454255,,,,,0.0,50.6,1.0
+WHO grade 3 → radiotherapy,Independent baseline,9.0,0.14886745523587394,,,,,0.0,46.800000000000004,1.0
+WHO grade 3 → death,Real,,-0.6729444732424258,-3.8644532073680273,2.5185642608831755,1.0,"[0, 3, 3, 12]",,,
+WHO grade 3 → death,GaussianCopula,0.0,-0.8638957517962415,,,,,1.0,8.4,1.0
+WHO grade 3 → death,GaussianCopula,1.0,-2.255482166905122,,,,,1.0,5.800000000000001,1.0
+WHO grade 3 → death,GaussianCopula,2.0,-2.2773139888838507,,,,,1.0,7.000000000000001,1.0
+WHO grade 3 → death,GaussianCopula,3.0,-2.6612654367564206,,,,,1.0,8.6,1.0
+WHO grade 3 → death,GaussianCopula,4.0,-2.2572825637985963,,,,,1.0,6.2,1.0
+WHO grade 3 → death,GaussianCopula,5.0,-1.3351934854360317,,,,,1.0,9.6,1.0
+WHO grade 3 → death,GaussianCopula,6.0,-0.5961818083250264,,,,,1.0,5.4,1.0
+WHO grade 3 → death,GaussianCopula,7.0,-0.3696095283626503,,,,,1.0,10.6,1.0
+WHO grade 3 → death,GaussianCopula,8.0,-2.3834460966824302,,,,,1.0,7.8,1.0
+WHO grade 3 → death,GaussianCopula,9.0,-1.1584624648390824,,,,,1.0,7.199999999999999,1.0
+WHO grade 3 → death,CopulaGAN,0.0,-0.049421145366095,,,,,1.0,29.599999999999998,1.0
+WHO grade 3 → death,CopulaGAN,1.0,-0.45985511643194094,,,,,1.0,50.4,1.0
+WHO grade 3 → death,CopulaGAN,2.0,-0.20609758949148843,,,,,1.0,16.6,1.0
+WHO grade 3 → death,CopulaGAN,3.0,0.041508949879815606,,,,,0.0,33.800000000000004,1.0
+WHO grade 3 → death,CopulaGAN,4.0,-0.3333137344356975,,,,,1.0,52.0,1.0
+WHO grade 3 → death,CopulaGAN,5.0,0.19602501023403954,,,,,0.0,27.200000000000003,1.0
+WHO grade 3 → death,CopulaGAN,6.0,-0.21195414693747885,,,,,1.0,20.200000000000003,1.0
+WHO grade 3 → death,CopulaGAN,7.0,-0.24752320068089548,,,,,1.0,36.8,1.0
+WHO grade 3 → death,CopulaGAN,8.0,-0.07804117813745765,,,,,1.0,35.0,1.0
+WHO grade 3 → death,CopulaGAN,9.0,-0.9839691669532867,,,,,1.0,47.8,1.0
+WHO grade 3 → death,CTGAN,0.0,-0.6998767258951518,,,,,1.0,44.800000000000004,1.0
+WHO grade 3 → death,CTGAN,1.0,-0.21969807932694857,,,,,1.0,37.6,1.0
+WHO grade 3 → death,CTGAN,2.0,-0.1342233512031299,,,,,1.0,28.599999999999998,1.0
+WHO grade 3 → death,CTGAN,3.0,-0.591533856976347,,,,,1.0,62.8,1.0
+WHO grade 3 → death,CTGAN,4.0,-0.20901236511872098,,,,,1.0,41.199999999999996,1.0
+WHO grade 3 → death,CTGAN,5.0,0.15567657684367447,,,,,0.0,36.0,1.0
+WHO grade 3 → death,CTGAN,6.0,-0.24493721880298056,,,,,1.0,48.6,1.0
+WHO grade 3 → death,CTGAN,7.0,-0.00996669435294415,,,,,1.0,32.2,1.0
+WHO grade 3 → death,CTGAN,8.0,-0.001278431964458372,,,,,1.0,41.199999999999996,1.0
+WHO grade 3 → death,CTGAN,9.0,-0.6381960910374591,,,,,1.0,19.8,1.0
+WHO grade 3 → death,TVAE,0.0,0.35107767041301885,,,,,0.0,2.8000000000000003,1.0
+WHO grade 3 → death,TVAE,1.0,-0.8914307805983555,,,,,1.0,3.8,1.0
+WHO grade 3 → death,TVAE,2.0,-0.42842887271769803,,,,,1.0,3.4000000000000004,1.0
+WHO grade 3 → death,TVAE,3.0,-0.4245824296292898,,,,,1.0,2.4,1.0
+WHO grade 3 → death,TVAE,4.0,-0.9000545527682587,,,,,1.0,4.2,1.0
+WHO grade 3 → death,TVAE,5.0,0.24597460976755128,,,,,0.0,3.5999999999999996,1.0
+WHO grade 3 → death,TVAE,6.0,-0.8611923074597195,,,,,1.0,9.0,1.0
+WHO grade 3 → death,TVAE,7.0,-1.385064768779714,,,,,1.0,1.0,1.0
+WHO grade 3 → death,TVAE,8.0,-2.2529492991743196,,,,,1.0,4.0,1.0
+WHO grade 3 → death,TVAE,9.0,-1.7548632711203622,,,,,1.0,2.4,1.0
+WHO grade 3 → death,Independent baseline,0.0,0.37107262170592703,,,,,0.0,28.799999999999997,1.0
+WHO grade 3 → death,Independent baseline,1.0,-0.022213642993649464,,,,,1.0,37.0,1.0
+WHO grade 3 → death,Independent baseline,2.0,-0.5709723263951969,,,,,1.0,41.0,1.0
+WHO grade 3 → death,Independent baseline,3.0,-0.05111119477856147,,,,,1.0,37.4,1.0
+WHO grade 3 → death,Independent baseline,4.0,0.4131548773961846,,,,,0.0,27.400000000000002,1.0
+WHO grade 3 → death,Independent baseline,5.0,-0.16582314046834642,,,,,1.0,38.2,1.0
+WHO grade 3 → death,Independent baseline,6.0,-0.09243805412825418,,,,,1.0,41.0,1.0
+WHO grade 3 → death,Independent baseline,7.0,-0.09484932579825987,,,,,1.0,37.4,1.0
+WHO grade 3 → death,Independent baseline,8.0,-0.07830938808000622,,,,,1.0,36.4,1.0
+WHO grade 3 → death,Independent baseline,9.0,-0.1438884544688093,,,,,1.0,35.8,1.0
+Non-GTR → radiotherapy,Real,,0.5877866649021191,-1.3022820264738473,2.477855356278085,0.6380090497737557,"[6, 2, 6, 4]",,,
+Non-GTR → radiotherapy,GaussianCopula,0.0,0.31363198991283653,,,,,1.0,63.6,1.0
+Non-GTR → radiotherapy,GaussianCopula,1.0,0.2741500662332047,,,,,1.0,58.599999999999994,1.0
+Non-GTR → radiotherapy,GaussianCopula,2.0,0.34897510290178774,,,,,1.0,61.4,1.0
+Non-GTR → radiotherapy,GaussianCopula,3.0,0.33181697219855655,,,,,1.0,57.8,1.0
+Non-GTR → radiotherapy,GaussianCopula,4.0,0.43892100215293894,,,,,1.0,66.0,1.0
+Non-GTR → radiotherapy,GaussianCopula,5.0,0.08418379330578589,,,,,1.0,47.4,1.0
+Non-GTR → radiotherapy,GaussianCopula,6.0,0.3496369829628583,,,,,1.0,62.2,1.0
+Non-GTR → radiotherapy,GaussianCopula,7.0,0.3870198367404307,,,,,1.0,62.4,1.0
+Non-GTR → radiotherapy,GaussianCopula,8.0,0.12233515984592425,,,,,1.0,52.2,1.0
+Non-GTR → radiotherapy,GaussianCopula,9.0,0.1462669531984518,,,,,1.0,55.400000000000006,1.0
+Non-GTR → radiotherapy,CopulaGAN,0.0,-0.30670430800569554,,,,,0.0,33.4,1.0
+Non-GTR → radiotherapy,CopulaGAN,1.0,-0.51660598668149,,,,,0.0,30.0,1.0
+Non-GTR → radiotherapy,CopulaGAN,2.0,-0.4790254185679788,,,,,0.0,31.4,1.0
+Non-GTR → radiotherapy,CopulaGAN,3.0,-0.43808260976129215,,,,,0.0,29.599999999999998,1.0
+Non-GTR → radiotherapy,CopulaGAN,4.0,-0.3431662097729492,,,,,0.0,30.4,1.0
+Non-GTR → radiotherapy,CopulaGAN,5.0,-0.4315851972157475,,,,,0.0,32.4,1.0
+Non-GTR → radiotherapy,CopulaGAN,6.0,-0.5859006086307104,,,,,0.0,27.6,1.0
+Non-GTR → radiotherapy,CopulaGAN,7.0,-0.18557888014885782,,,,,0.0,38.0,1.0
+Non-GTR → radiotherapy,CopulaGAN,8.0,-0.4937086582661459,,,,,0.0,27.6,1.0
+Non-GTR → radiotherapy,CopulaGAN,9.0,-0.3442531766798654,,,,,0.0,29.4,1.0
+Non-GTR → radiotherapy,CTGAN,0.0,-0.028996192479520472,,,,,0.0,47.199999999999996,1.0
+Non-GTR → radiotherapy,CTGAN,1.0,-0.28398377420056364,,,,,0.0,33.800000000000004,1.0
+Non-GTR → radiotherapy,CTGAN,2.0,-0.688116186452469,,,,,0.0,24.2,1.0
+Non-GTR → radiotherapy,CTGAN,3.0,-0.2799049477264745,,,,,0.0,37.0,1.0
+Non-GTR → radiotherapy,CTGAN,4.0,-0.2498567479363835,,,,,0.0,35.199999999999996,1.0
+Non-GTR → radiotherapy,CTGAN,5.0,-0.5065279666789385,,,,,0.0,29.4,1.0
+Non-GTR → radiotherapy,CTGAN,6.0,-0.4829126216812819,,,,,0.0,28.4,1.0
+Non-GTR → radiotherapy,CTGAN,7.0,-0.29494165564322794,,,,,0.0,32.4,1.0
+Non-GTR → radiotherapy,CTGAN,8.0,-0.12604054589774716,,,,,0.0,42.199999999999996,1.0
+Non-GTR → radiotherapy,CTGAN,9.0,-0.30736484523275925,,,,,0.0,31.0,1.0
+Non-GTR → radiotherapy,TVAE,0.0,-0.17511227398772336,,,,,0.0,36.4,1.0
+Non-GTR → radiotherapy,TVAE,1.0,-0.31521093153689134,,,,,0.0,31.8,1.0
+Non-GTR → radiotherapy,TVAE,2.0,0.04843063987363264,,,,,1.0,43.4,1.0
+Non-GTR → radiotherapy,TVAE,3.0,0.7063012218708278,,,,,1.0,61.199999999999996,1.0
+Non-GTR → radiotherapy,TVAE,4.0,0.47508729123560356,,,,,1.0,57.4,1.0
+Non-GTR → radiotherapy,TVAE,5.0,-0.19111933365200937,,,,,0.0,36.0,1.0
+Non-GTR → radiotherapy,TVAE,6.0,-0.3594803633308627,,,,,0.0,34.0,1.0
+Non-GTR → radiotherapy,TVAE,7.0,0.3477082268473115,,,,,1.0,56.39999999999999,1.0
+Non-GTR → radiotherapy,TVAE,8.0,-0.24877316884105435,,,,,0.0,36.4,1.0
+Non-GTR → radiotherapy,TVAE,9.0,0.363953858852682,,,,,1.0,58.599999999999994,1.0
+Non-GTR → radiotherapy,Independent baseline,0.0,-0.07711153280987978,,,,,0.0,44.800000000000004,1.0
+Non-GTR → radiotherapy,Independent baseline,1.0,0.037707980702441725,,,,,1.0,49.8,1.0
+Non-GTR → radiotherapy,Independent baseline,2.0,-0.04174826042477628,,,,,0.0,48.199999999999996,1.0
+Non-GTR → radiotherapy,Independent baseline,3.0,0.28244348526027857,,,,,1.0,56.99999999999999,1.0
+Non-GTR → radiotherapy,Independent baseline,4.0,-0.11373996945405818,,,,,0.0,38.6,1.0
+Non-GTR → radiotherapy,Independent baseline,5.0,-0.10775072093511752,,,,,0.0,40.2,1.0
+Non-GTR → radiotherapy,Independent baseline,6.0,-0.20195592374134771,,,,,0.0,40.0,1.0
+Non-GTR → radiotherapy,Independent baseline,7.0,0.011332186361201766,,,,,1.0,48.6,1.0
+Non-GTR → radiotherapy,Independent baseline,8.0,0.10351400957167596,,,,,1.0,50.6,1.0
+Non-GTR → radiotherapy,Independent baseline,9.0,0.11618862549107094,,,,,1.0,50.6,1.0
+Ki-67 ≥7% → WHO grade 3,Real,,1.783791299578878,-0.5619782259002699,4.129560825058026,0.17156862745098042,"[2, 3, 1, 12]",,,
+Ki-67 ≥7% → WHO grade 3,GaussianCopula,0.0,1.4488493675355762,,,,,1.0,88.4,1.0
+Ki-67 ≥7% → WHO grade 3,GaussianCopula,1.0,1.2244673902918894,,,,,1.0,87.0,1.0
+Ki-67 ≥7% → WHO grade 3,GaussianCopula,2.0,1.5464990460188848,,,,,1.0,91.0,1.0
+Ki-67 ≥7% → WHO grade 3,GaussianCopula,3.0,0.892884180919251,,,,,1.0,83.0,1.0
+Ki-67 ≥7% → WHO grade 3,GaussianCopula,4.0,1.2318265330866187,,,,,1.0,84.39999999999999,1.0
+Ki-67 ≥7% → WHO grade 3,GaussianCopula,5.0,1.9960936885847684,,,,,1.0,91.0,1.0
+Ki-67 ≥7% → WHO grade 3,GaussianCopula,6.0,1.9379294754204908,,,,,1.0,93.8,1.0
+Ki-67 ≥7% → WHO grade 3,GaussianCopula,7.0,1.3895992512864468,,,,,1.0,88.2,1.0
+Ki-67 ≥7% → WHO grade 3,GaussianCopula,8.0,2.3042619003772185,,,,,1.0,94.39999999999999,1.0
+Ki-67 ≥7% → WHO grade 3,GaussianCopula,9.0,2.417118136031339,,,,,1.0,93.4,1.0
+Ki-67 ≥7% → WHO grade 3,CopulaGAN,0.0,2.2426567517473113,,,,,1.0,95.39999999999999,1.0
+Ki-67 ≥7% → WHO grade 3,CopulaGAN,1.0,1.903442926191995,,,,,1.0,90.8,1.0
+Ki-67 ≥7% → WHO grade 3,CopulaGAN,2.0,2.4184437687454303,,,,,1.0,96.8,1.0
+Ki-67 ≥7% → WHO grade 3,CopulaGAN,3.0,2.694202289930272,,,,,1.0,98.2,1.0
+Ki-67 ≥7% → WHO grade 3,CopulaGAN,4.0,2.397290806843399,,,,,1.0,97.0,1.0
+Ki-67 ≥7% → WHO grade 3,CopulaGAN,5.0,1.9425569577986916,,,,,1.0,93.2,1.0
+Ki-67 ≥7% → WHO grade 3,CopulaGAN,6.0,2.5682744250056726,,,,,1.0,97.0,1.0
+Ki-67 ≥7% → WHO grade 3,CopulaGAN,7.0,1.703992651577226,,,,,1.0,90.0,1.0
+Ki-67 ≥7% → WHO grade 3,CopulaGAN,8.0,1.9612640539039914,,,,,1.0,94.0,1.0
+Ki-67 ≥7% → WHO grade 3,CopulaGAN,9.0,2.253464034711802,,,,,1.0,92.80000000000001,1.0
+Ki-67 ≥7% → WHO grade 3,CTGAN,0.0,2.2083366108082747,,,,,1.0,94.39999999999999,1.0
+Ki-67 ≥7% → WHO grade 3,CTGAN,1.0,2.686279055265658,,,,,1.0,98.2,1.0
+Ki-67 ≥7% → WHO grade 3,CTGAN,2.0,2.562304405359991,,,,,1.0,98.0,1.0
+Ki-67 ≥7% → WHO grade 3,CTGAN,3.0,1.7862194744594417,,,,,1.0,94.0,1.0
+Ki-67 ≥7% → WHO grade 3,CTGAN,4.0,2.308633371884088,,,,,1.0,94.6,1.0
+Ki-67 ≥7% → WHO grade 3,CTGAN,5.0,2.4520379595017405,,,,,1.0,97.6,1.0
+Ki-67 ≥7% → WHO grade 3,CTGAN,6.0,2.7349931937822447,,,,,1.0,97.8,1.0
+Ki-67 ≥7% → WHO grade 3,CTGAN,7.0,2.077449831634391,,,,,1.0,93.4,1.0
+Ki-67 ≥7% → WHO grade 3,CTGAN,8.0,2.3783239029154086,,,,,1.0,95.0,1.0
+Ki-67 ≥7% → WHO grade 3,CTGAN,9.0,2.2641637808291484,,,,,1.0,95.6,1.0
+Ki-67 ≥7% → WHO grade 3,TVAE,0.0,1.9173536160665223,,,,,1.0,91.0,1.0
+Ki-67 ≥7% → WHO grade 3,TVAE,1.0,1.9872075589914995,,,,,1.0,93.2,1.0
+Ki-67 ≥7% → WHO grade 3,TVAE,2.0,2.329997197635402,,,,,1.0,95.8,1.0
+Ki-67 ≥7% → WHO grade 3,TVAE,3.0,1.5620637493104088,,,,,1.0,92.2,1.0
+Ki-67 ≥7% → WHO grade 3,TVAE,4.0,2.4402471180557677,,,,,1.0,96.6,1.0
+Ki-67 ≥7% → WHO grade 3,TVAE,5.0,2.4603601450019585,,,,,1.0,96.2,1.0
+Ki-67 ≥7% → WHO grade 3,TVAE,6.0,1.9350222693028016,,,,,1.0,95.39999999999999,1.0
+Ki-67 ≥7% → WHO grade 3,TVAE,7.0,1.5834986759548788,,,,,1.0,92.80000000000001,1.0
+Ki-67 ≥7% → WHO grade 3,TVAE,8.0,2.2330282250962186,,,,,1.0,95.6,1.0
+Ki-67 ≥7% → WHO grade 3,TVAE,9.0,2.3304938811111224,,,,,1.0,95.19999999999999,1.0
+Ki-67 ≥7% → WHO grade 3,Independent baseline,0.0,0.009219025112946394,,,,,1.0,58.4,1.0
+Ki-67 ≥7% → WHO grade 3,Independent baseline,1.0,-0.17908544793076045,,,,,0.0,53.0,1.0
+Ki-67 ≥7% → WHO grade 3,Independent baseline,2.0,0.12355023937854116,,,,,1.0,55.60000000000001,1.0
+Ki-67 ≥7% → WHO grade 3,Independent baseline,3.0,0.0920574845496111,,,,,1.0,56.8,1.0
+Ki-67 ≥7% → WHO grade 3,Independent baseline,4.0,0.032855975765135416,,,,,1.0,50.8,1.0
+Ki-67 ≥7% → WHO grade 3,Independent baseline,5.0,-0.35097641716692873,,,,,0.0,41.8,1.0
+Ki-67 ≥7% → WHO grade 3,Independent baseline,6.0,0.03093235434346644,,,,,1.0,50.0,1.0
+Ki-67 ≥7% → WHO grade 3,Independent baseline,7.0,-0.14129221554071253,,,,,0.0,49.6,1.0
+Ki-67 ≥7% → WHO grade 3,Independent baseline,8.0,-0.3495834678117005,,,,,0.0,45.4,1.0
+Ki-67 ≥7% → WHO grade 3,Independent baseline,9.0,-0.0970258610670385,,,,,0.0,48.4,1.0

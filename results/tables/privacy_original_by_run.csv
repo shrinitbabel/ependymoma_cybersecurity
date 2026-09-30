@@ -1,0 +1,1201 @@
+Source,Seed,Attacker,Sensitive,Evaluable,Correct,Reported_risk_pct
+GaussianCopula,0,kNN,Death (Y/N),3,2,11.11111111111111
+GaussianCopula,0,kNN,Recurrence,3,2,11.11111111111111
+GaussianCopula,0,kNN,Postop complication,3,2,11.11111111111111
+GaussianCopula,0,kNN,Age at Diagnosis,3,1,5.555555555555555
+GaussianCopula,0,kNN,BMI,3,0,0.0
+GaussianCopula,0,kNN,"Cranial Location (Infratentorial, supratentorial)",3,3,16.666666666666668
+GaussianCopula,0,kNN,"EOR (GTR, NTR, STR, biopsy)",3,0,0.0
+GaussianCopula,0,kNN,WHO Grade,3,3,16.666666666666668
+GaussianCopula,0,Naive Bayes,Death (Y/N),3,2,11.11111111111111
+GaussianCopula,0,Naive Bayes,Recurrence,3,2,11.11111111111111
+GaussianCopula,0,Naive Bayes,Postop complication,3,3,16.666666666666668
+GaussianCopula,0,Naive Bayes,Age at Diagnosis,3,1,5.555555555555555
+GaussianCopula,0,Naive Bayes,BMI,3,0,0.0
+GaussianCopula,0,Naive Bayes,"Cranial Location (Infratentorial, supratentorial)",3,3,16.666666666666668
+GaussianCopula,0,Naive Bayes,"EOR (GTR, NTR, STR, biopsy)",3,0,0.0
+GaussianCopula,0,Naive Bayes,WHO Grade,3,3,16.666666666666668
+GaussianCopula,0,Random Forest,Death (Y/N),3,2,11.11111111111111
+GaussianCopula,0,Random Forest,Recurrence,3,2,11.11111111111111
+GaussianCopula,0,Random Forest,Postop complication,3,3,16.666666666666668
+GaussianCopula,0,Random Forest,Age at Diagnosis,3,2,11.11111111111111
+GaussianCopula,0,Random Forest,BMI,3,2,11.11111111111111
+GaussianCopula,0,Random Forest,"Cranial Location (Infratentorial, supratentorial)",3,3,16.666666666666668
+GaussianCopula,0,Random Forest,"EOR (GTR, NTR, STR, biopsy)",3,0,0.0
+GaussianCopula,0,Random Forest,WHO Grade,3,3,16.666666666666668
+CopulaGAN,0,kNN,Death (Y/N),1,1,5.555555555555555
+CopulaGAN,0,kNN,Recurrence,1,1,5.555555555555555
+CopulaGAN,0,kNN,Postop complication,1,1,5.555555555555555
+CopulaGAN,0,kNN,Age at Diagnosis,1,1,5.555555555555555
+CopulaGAN,0,kNN,BMI,1,1,5.555555555555555
+CopulaGAN,0,kNN,"Cranial Location (Infratentorial, supratentorial)",1,1,5.555555555555555
+CopulaGAN,0,kNN,"EOR (GTR, NTR, STR, biopsy)",1,1,5.555555555555555
+CopulaGAN,0,kNN,WHO Grade,1,1,5.555555555555555
+CopulaGAN,0,Naive Bayes,Death (Y/N),1,1,5.555555555555555
+CopulaGAN,0,Naive Bayes,Recurrence,1,1,5.555555555555555
+CopulaGAN,0,Naive Bayes,Postop complication,1,1,5.555555555555555
+CopulaGAN,0,Naive Bayes,Age at Diagnosis,1,1,5.555555555555555
+CopulaGAN,0,Naive Bayes,BMI,1,1,5.555555555555555
+CopulaGAN,0,Naive Bayes,"Cranial Location (Infratentorial, supratentorial)",1,1,5.555555555555555
+CopulaGAN,0,Naive Bayes,"EOR (GTR, NTR, STR, biopsy)",1,1,5.555555555555555
+CopulaGAN,0,Naive Bayes,WHO Grade,1,1,5.555555555555555
+CopulaGAN,0,Random Forest,Death (Y/N),1,1,5.555555555555555
+CopulaGAN,0,Random Forest,Recurrence,1,1,5.555555555555555
+CopulaGAN,0,Random Forest,Postop complication,1,1,5.555555555555555
+CopulaGAN,0,Random Forest,Age at Diagnosis,1,1,5.555555555555555
+CopulaGAN,0,Random Forest,BMI,1,1,5.555555555555555
+CopulaGAN,0,Random Forest,"Cranial Location (Infratentorial, supratentorial)",1,1,5.555555555555555
+CopulaGAN,0,Random Forest,"EOR (GTR, NTR, STR, biopsy)",1,1,5.555555555555555
+CopulaGAN,0,Random Forest,WHO Grade,1,1,5.555555555555555
+CTGAN,0,kNN,Death (Y/N),1,1,5.555555555555555
+CTGAN,0,kNN,Recurrence,1,1,5.555555555555555
+CTGAN,0,kNN,Postop complication,1,1,5.555555555555555
+CTGAN,0,kNN,Age at Diagnosis,1,1,5.555555555555555
+CTGAN,0,kNN,BMI,1,1,5.555555555555555
+CTGAN,0,kNN,"Cranial Location (Infratentorial, supratentorial)",1,1,5.555555555555555
+CTGAN,0,kNN,"EOR (GTR, NTR, STR, biopsy)",1,1,5.555555555555555
+CTGAN,0,kNN,WHO Grade,1,1,5.555555555555555
+CTGAN,0,Naive Bayes,Death (Y/N),1,1,5.555555555555555
+CTGAN,0,Naive Bayes,Recurrence,1,1,5.555555555555555
+CTGAN,0,Naive Bayes,Postop complication,1,1,5.555555555555555
+CTGAN,0,Naive Bayes,Age at Diagnosis,1,1,5.555555555555555
+CTGAN,0,Naive Bayes,BMI,1,1,5.555555555555555
+CTGAN,0,Naive Bayes,"Cranial Location (Infratentorial, supratentorial)",1,1,5.555555555555555
+CTGAN,0,Naive Bayes,"EOR (GTR, NTR, STR, biopsy)",1,1,5.555555555555555
+CTGAN,0,Naive Bayes,WHO Grade,1,1,5.555555555555555
+CTGAN,0,Random Forest,Death (Y/N),1,1,5.555555555555555
+CTGAN,0,Random Forest,Recurrence,1,1,5.555555555555555
+CTGAN,0,Random Forest,Postop complication,1,1,5.555555555555555
+CTGAN,0,Random Forest,Age at Diagnosis,1,1,5.555555555555555
+CTGAN,0,Random Forest,BMI,1,1,5.555555555555555
+CTGAN,0,Random Forest,"Cranial Location (Infratentorial, supratentorial)",1,1,5.555555555555555
+CTGAN,0,Random Forest,"EOR (GTR, NTR, STR, biopsy)",1,1,5.555555555555555
+CTGAN,0,Random Forest,WHO Grade,1,1,5.555555555555555
+TVAE,0,kNN,Death (Y/N),0,0,0.0
+TVAE,0,kNN,Recurrence,0,0,0.0
+TVAE,0,kNN,Postop complication,0,0,0.0
+TVAE,0,kNN,Age at Diagnosis,0,0,0.0
+TVAE,0,kNN,BMI,0,0,0.0
+TVAE,0,kNN,"Cranial Location (Infratentorial, supratentorial)",0,0,0.0
+TVAE,0,kNN,"EOR (GTR, NTR, STR, biopsy)",0,0,0.0
+TVAE,0,kNN,WHO Grade,0,0,0.0
+TVAE,0,Naive Bayes,Death (Y/N),0,0,0.0
+TVAE,0,Naive Bayes,Recurrence,0,0,0.0
+TVAE,0,Naive Bayes,Postop complication,0,0,0.0
+TVAE,0,Naive Bayes,Age at Diagnosis,0,0,0.0
+TVAE,0,Naive Bayes,BMI,0,0,0.0
+TVAE,0,Naive Bayes,"Cranial Location (Infratentorial, supratentorial)",0,0,0.0
+TVAE,0,Naive Bayes,"EOR (GTR, NTR, STR, biopsy)",0,0,0.0
+TVAE,0,Naive Bayes,WHO Grade,0,0,0.0
+TVAE,0,Random Forest,Death (Y/N),0,0,0.0
+TVAE,0,Random Forest,Recurrence,0,0,0.0
+TVAE,0,Random Forest,Postop complication,0,0,0.0
+TVAE,0,Random Forest,Age at Diagnosis,0,0,0.0
+TVAE,0,Random Forest,BMI,0,0,0.0
+TVAE,0,Random Forest,"Cranial Location (Infratentorial, supratentorial)",0,0,0.0
+TVAE,0,Random Forest,"EOR (GTR, NTR, STR, biopsy)",0,0,0.0
+TVAE,0,Random Forest,WHO Grade,0,0,0.0
+Independent baseline,0,kNN,Death (Y/N),18,14,77.77777777777777
+Independent baseline,0,kNN,Recurrence,18,17,94.44444444444444
+Independent baseline,0,kNN,Postop complication,18,13,72.22222222222223
+Independent baseline,0,kNN,Age at Diagnosis,18,15,83.33333333333333
+Independent baseline,0,kNN,BMI,18,14,77.77777777777777
+Independent baseline,0,kNN,"Cranial Location (Infratentorial, supratentorial)",18,18,100.0
+Independent baseline,0,kNN,"EOR (GTR, NTR, STR, biopsy)",18,9,50.0
+Independent baseline,0,kNN,WHO Grade,18,17,94.44444444444444
+Independent baseline,0,Naive Bayes,Death (Y/N),18,15,83.33333333333333
+Independent baseline,0,Naive Bayes,Recurrence,18,17,94.44444444444444
+Independent baseline,0,Naive Bayes,Postop complication,18,11,61.111111111111114
+Independent baseline,0,Naive Bayes,Age at Diagnosis,18,18,100.0
+Independent baseline,0,Naive Bayes,BMI,18,18,100.0
+Independent baseline,0,Naive Bayes,"Cranial Location (Infratentorial, supratentorial)",18,18,100.0
+Independent baseline,0,Naive Bayes,"EOR (GTR, NTR, STR, biopsy)",18,12,66.66666666666667
+Independent baseline,0,Naive Bayes,WHO Grade,18,18,100.0
+Independent baseline,0,Random Forest,Death (Y/N),18,15,83.33333333333333
+Independent baseline,0,Random Forest,Recurrence,18,17,94.44444444444444
+Independent baseline,0,Random Forest,Postop complication,18,12,66.66666666666667
+Independent baseline,0,Random Forest,Age at Diagnosis,18,18,100.0
+Independent baseline,0,Random Forest,BMI,18,18,100.0
+Independent baseline,0,Random Forest,"Cranial Location (Infratentorial, supratentorial)",18,18,100.0
+Independent baseline,0,Random Forest,"EOR (GTR, NTR, STR, biopsy)",18,9,50.0
+Independent baseline,0,Random Forest,WHO Grade,18,18,100.0
+GaussianCopula,1,kNN,Death (Y/N),0,0,0.0
+GaussianCopula,1,kNN,Recurrence,0,0,0.0
+GaussianCopula,1,kNN,Postop complication,0,0,0.0
+GaussianCopula,1,kNN,Age at Diagnosis,0,0,0.0
+GaussianCopula,1,kNN,BMI,0,0,0.0
+GaussianCopula,1,kNN,"Cranial Location (Infratentorial, supratentorial)",0,0,0.0
+GaussianCopula,1,kNN,"EOR (GTR, NTR, STR, biopsy)",0,0,0.0
+GaussianCopula,1,kNN,WHO Grade,0,0,0.0
+GaussianCopula,1,Naive Bayes,Death (Y/N),0,0,0.0
+GaussianCopula,1,Naive Bayes,Recurrence,0,0,0.0
+GaussianCopula,1,Naive Bayes,Postop complication,0,0,0.0
+GaussianCopula,1,Naive Bayes,Age at Diagnosis,0,0,0.0
+GaussianCopula,1,Naive Bayes,BMI,0,0,0.0
+GaussianCopula,1,Naive Bayes,"Cranial Location (Infratentorial, supratentorial)",0,0,0.0
+GaussianCopula,1,Naive Bayes,"EOR (GTR, NTR, STR, biopsy)",0,0,0.0
+GaussianCopula,1,Naive Bayes,WHO Grade,0,0,0.0
+GaussianCopula,1,Random Forest,Death (Y/N),0,0,0.0
+GaussianCopula,1,Random Forest,Recurrence,0,0,0.0
+GaussianCopula,1,Random Forest,Postop complication,0,0,0.0
+GaussianCopula,1,Random Forest,Age at Diagnosis,0,0,0.0
+GaussianCopula,1,Random Forest,BMI,0,0,0.0
+GaussianCopula,1,Random Forest,"Cranial Location (Infratentorial, supratentorial)",0,0,0.0
+GaussianCopula,1,Random Forest,"EOR (GTR, NTR, STR, biopsy)",0,0,0.0
+GaussianCopula,1,Random Forest,WHO Grade,0,0,0.0
+CopulaGAN,1,kNN,Death (Y/N),1,1,5.555555555555555
+CopulaGAN,1,kNN,Recurrence,1,1,5.555555555555555
+CopulaGAN,1,kNN,Postop complication,1,1,5.555555555555555
+CopulaGAN,1,kNN,Age at Diagnosis,1,1,5.555555555555555
+CopulaGAN,1,kNN,BMI,1,1,5.555555555555555
+CopulaGAN,1,kNN,"Cranial Location (Infratentorial, supratentorial)",1,1,5.555555555555555
+CopulaGAN,1,kNN,"EOR (GTR, NTR, STR, biopsy)",1,1,5.555555555555555
+CopulaGAN,1,kNN,WHO Grade,1,1,5.555555555555555
+CopulaGAN,1,Naive Bayes,Death (Y/N),1,1,5.555555555555555
+CopulaGAN,1,Naive Bayes,Recurrence,1,1,5.555555555555555
+CopulaGAN,1,Naive Bayes,Postop complication,1,1,5.555555555555555
+CopulaGAN,1,Naive Bayes,Age at Diagnosis,1,1,5.555555555555555
+CopulaGAN,1,Naive Bayes,BMI,1,1,5.555555555555555
+CopulaGAN,1,Naive Bayes,"Cranial Location (Infratentorial, supratentorial)",1,1,5.555555555555555
+CopulaGAN,1,Naive Bayes,"EOR (GTR, NTR, STR, biopsy)",1,1,5.555555555555555
+CopulaGAN,1,Naive Bayes,WHO Grade,1,1,5.555555555555555
+CopulaGAN,1,Random Forest,Death (Y/N),1,1,5.555555555555555
+CopulaGAN,1,Random Forest,Recurrence,1,1,5.555555555555555
+CopulaGAN,1,Random Forest,Postop complication,1,1,5.555555555555555
+CopulaGAN,1,Random Forest,Age at Diagnosis,1,1,5.555555555555555
+CopulaGAN,1,Random Forest,BMI,1,1,5.555555555555555
+CopulaGAN,1,Random Forest,"Cranial Location (Infratentorial, supratentorial)",1,1,5.555555555555555
+CopulaGAN,1,Random Forest,"EOR (GTR, NTR, STR, biopsy)",1,1,5.555555555555555
+CopulaGAN,1,Random Forest,WHO Grade,1,1,5.555555555555555
+CTGAN,1,kNN,Death (Y/N),1,1,5.555555555555555
+CTGAN,1,kNN,Recurrence,1,1,5.555555555555555
+CTGAN,1,kNN,Postop complication,1,1,5.555555555555555
+CTGAN,1,kNN,Age at Diagnosis,1,1,5.555555555555555
+CTGAN,1,kNN,BMI,1,1,5.555555555555555
+CTGAN,1,kNN,"Cranial Location (Infratentorial, supratentorial)",1,1,5.555555555555555
+CTGAN,1,kNN,"EOR (GTR, NTR, STR, biopsy)",1,1,5.555555555555555
+CTGAN,1,kNN,WHO Grade,1,1,5.555555555555555
+CTGAN,1,Naive Bayes,Death (Y/N),1,1,5.555555555555555
+CTGAN,1,Naive Bayes,Recurrence,1,1,5.555555555555555
+CTGAN,1,Naive Bayes,Postop complication,1,1,5.555555555555555
+CTGAN,1,Naive Bayes,Age at Diagnosis,1,1,5.555555555555555
+CTGAN,1,Naive Bayes,BMI,1,1,5.555555555555555
+CTGAN,1,Naive Bayes,"Cranial Location (Infratentorial, supratentorial)",1,1,5.555555555555555
+CTGAN,1,Naive Bayes,"EOR (GTR, NTR, STR, biopsy)",1,1,5.555555555555555
+CTGAN,1,Naive Bayes,WHO Grade,1,1,5.555555555555555
+CTGAN,1,Random Forest,Death (Y/N),1,1,5.555555555555555
+CTGAN,1,Random Forest,Recurrence,1,1,5.555555555555555
+CTGAN,1,Random Forest,Postop complication,1,1,5.555555555555555
+CTGAN,1,Random Forest,Age at Diagnosis,1,1,5.555555555555555
+CTGAN,1,Random Forest,BMI,1,1,5.555555555555555
+CTGAN,1,Random Forest,"Cranial Location (Infratentorial, supratentorial)",1,1,5.555555555555555
+CTGAN,1,Random Forest,"EOR (GTR, NTR, STR, biopsy)",1,1,5.555555555555555
+CTGAN,1,Random Forest,WHO Grade,1,1,5.555555555555555
+TVAE,1,kNN,Death (Y/N),0,0,0.0
+TVAE,1,kNN,Recurrence,0,0,0.0
+TVAE,1,kNN,Postop complication,0,0,0.0
+TVAE,1,kNN,Age at Diagnosis,0,0,0.0
+TVAE,1,kNN,BMI,0,0,0.0
+TVAE,1,kNN,"Cranial Location (Infratentorial, supratentorial)",0,0,0.0
+TVAE,1,kNN,"EOR (GTR, NTR, STR, biopsy)",0,0,0.0
+TVAE,1,kNN,WHO Grade,0,0,0.0
+TVAE,1,Naive Bayes,Death (Y/N),0,0,0.0
+TVAE,1,Naive Bayes,Recurrence,0,0,0.0
+TVAE,1,Naive Bayes,Postop complication,0,0,0.0
+TVAE,1,Naive Bayes,Age at Diagnosis,0,0,0.0
+TVAE,1,Naive Bayes,BMI,0,0,0.0
+TVAE,1,Naive Bayes,"Cranial Location (Infratentorial, supratentorial)",0,0,0.0
+TVAE,1,Naive Bayes,"EOR (GTR, NTR, STR, biopsy)",0,0,0.0
+TVAE,1,Naive Bayes,WHO Grade,0,0,0.0
+TVAE,1,Random Forest,Death (Y/N),0,0,0.0
+TVAE,1,Random Forest,Recurrence,0,0,0.0
+TVAE,1,Random Forest,Postop complication,0,0,0.0
+TVAE,1,Random Forest,Age at Diagnosis,0,0,0.0
+TVAE,1,Random Forest,BMI,0,0,0.0
+TVAE,1,Random Forest,"Cranial Location (Infratentorial, supratentorial)",0,0,0.0
+TVAE,1,Random Forest,"EOR (GTR, NTR, STR, biopsy)",0,0,0.0
+TVAE,1,Random Forest,WHO Grade,0,0,0.0
+Independent baseline,1,kNN,Death (Y/N),18,14,77.77777777777777
+Independent baseline,1,kNN,Recurrence,18,17,94.44444444444444
+Independent baseline,1,kNN,Postop complication,18,8,44.44444444444444
+Independent baseline,1,kNN,Age at Diagnosis,18,13,72.22222222222223
+Independent baseline,1,kNN,BMI,18,14,77.77777777777777
+Independent baseline,1,kNN,"Cranial Location (Infratentorial, supratentorial)",18,18,100.0
+Independent baseline,1,kNN,"EOR (GTR, NTR, STR, biopsy)",18,12,66.66666666666667
+Independent baseline,1,kNN,WHO Grade,18,17,94.44444444444444
+Independent baseline,1,Naive Bayes,Death (Y/N),18,15,83.33333333333333
+Independent baseline,1,Naive Bayes,Recurrence,18,17,94.44444444444444
+Independent baseline,1,Naive Bayes,Postop complication,18,12,66.66666666666667
+Independent baseline,1,Naive Bayes,Age at Diagnosis,18,18,100.0
+Independent baseline,1,Naive Bayes,BMI,18,18,100.0
+Independent baseline,1,Naive Bayes,"Cranial Location (Infratentorial, supratentorial)",18,18,100.0
+Independent baseline,1,Naive Bayes,"EOR (GTR, NTR, STR, biopsy)",18,11,61.111111111111114
+Independent baseline,1,Naive Bayes,WHO Grade,18,18,100.0
+Independent baseline,1,Random Forest,Death (Y/N),18,15,83.33333333333333
+Independent baseline,1,Random Forest,Recurrence,18,17,94.44444444444444
+Independent baseline,1,Random Forest,Postop complication,18,11,61.111111111111114
+Independent baseline,1,Random Forest,Age at Diagnosis,18,18,100.0
+Independent baseline,1,Random Forest,BMI,18,18,100.0
+Independent baseline,1,Random Forest,"Cranial Location (Infratentorial, supratentorial)",18,18,100.0
+Independent baseline,1,Random Forest,"EOR (GTR, NTR, STR, biopsy)",18,10,55.55555555555556
+Independent baseline,1,Random Forest,WHO Grade,18,18,100.0
+GaussianCopula,2,kNN,Death (Y/N),1,1,5.555555555555555
+GaussianCopula,2,kNN,Recurrence,1,1,5.555555555555555
+GaussianCopula,2,kNN,Postop complication,1,1,5.555555555555555
+GaussianCopula,2,kNN,Age at Diagnosis,1,0,0.0
+GaussianCopula,2,kNN,BMI,1,0,0.0
+GaussianCopula,2,kNN,"Cranial Location (Infratentorial, supratentorial)",1,1,5.555555555555555
+GaussianCopula,2,kNN,"EOR (GTR, NTR, STR, biopsy)",1,1,5.555555555555555
+GaussianCopula,2,kNN,WHO Grade,1,1,5.555555555555555
+GaussianCopula,2,Naive Bayes,Death (Y/N),1,1,5.555555555555555
+GaussianCopula,2,Naive Bayes,Recurrence,1,1,5.555555555555555
+GaussianCopula,2,Naive Bayes,Postop complication,1,1,5.555555555555555
+GaussianCopula,2,Naive Bayes,Age at Diagnosis,1,0,0.0
+GaussianCopula,2,Naive Bayes,BMI,1,0,0.0
+GaussianCopula,2,Naive Bayes,"Cranial Location (Infratentorial, supratentorial)",1,1,5.555555555555555
+GaussianCopula,2,Naive Bayes,"EOR (GTR, NTR, STR, biopsy)",1,1,5.555555555555555
+GaussianCopula,2,Naive Bayes,WHO Grade,1,1,5.555555555555555
+GaussianCopula,2,Random Forest,Death (Y/N),1,1,5.555555555555555
+GaussianCopula,2,Random Forest,Recurrence,1,1,5.555555555555555
+GaussianCopula,2,Random Forest,Postop complication,1,1,5.555555555555555
+GaussianCopula,2,Random Forest,Age at Diagnosis,1,0,0.0
+GaussianCopula,2,Random Forest,BMI,1,0,0.0
+GaussianCopula,2,Random Forest,"Cranial Location (Infratentorial, supratentorial)",1,1,5.555555555555555
+GaussianCopula,2,Random Forest,"EOR (GTR, NTR, STR, biopsy)",1,1,5.555555555555555
+GaussianCopula,2,Random Forest,WHO Grade,1,1,5.555555555555555
+CopulaGAN,2,kNN,Death (Y/N),1,1,5.555555555555555
+CopulaGAN,2,kNN,Recurrence,1,1,5.555555555555555
+CopulaGAN,2,kNN,Postop complication,1,1,5.555555555555555
+CopulaGAN,2,kNN,Age at Diagnosis,1,1,5.555555555555555
+CopulaGAN,2,kNN,BMI,1,1,5.555555555555555
+CopulaGAN,2,kNN,"Cranial Location (Infratentorial, supratentorial)",1,1,5.555555555555555
+CopulaGAN,2,kNN,"EOR (GTR, NTR, STR, biopsy)",1,1,5.555555555555555
+CopulaGAN,2,kNN,WHO Grade,1,1,5.555555555555555
+CopulaGAN,2,Naive Bayes,Death (Y/N),1,1,5.555555555555555
+CopulaGAN,2,Naive Bayes,Recurrence,1,1,5.555555555555555
+CopulaGAN,2,Naive Bayes,Postop complication,1,1,5.555555555555555
+CopulaGAN,2,Naive Bayes,Age at Diagnosis,1,1,5.555555555555555
+CopulaGAN,2,Naive Bayes,BMI,1,1,5.555555555555555
+CopulaGAN,2,Naive Bayes,"Cranial Location (Infratentorial, supratentorial)",1,1,5.555555555555555
+CopulaGAN,2,Naive Bayes,"EOR (GTR, NTR, STR, biopsy)",1,1,5.555555555555555
+CopulaGAN,2,Naive Bayes,WHO Grade,1,1,5.555555555555555
+CopulaGAN,2,Random Forest,Death (Y/N),1,1,5.555555555555555
+CopulaGAN,2,Random Forest,Recurrence,1,1,5.555555555555555
+CopulaGAN,2,Random Forest,Postop complication,1,1,5.555555555555555
+CopulaGAN,2,Random Forest,Age at Diagnosis,1,1,5.555555555555555
+CopulaGAN,2,Random Forest,BMI,1,1,5.555555555555555
+CopulaGAN,2,Random Forest,"Cranial Location (Infratentorial, supratentorial)",1,1,5.555555555555555
+CopulaGAN,2,Random Forest,"EOR (GTR, NTR, STR, biopsy)",1,1,5.555555555555555
+CopulaGAN,2,Random Forest,WHO Grade,1,1,5.555555555555555
+CTGAN,2,kNN,Death (Y/N),1,1,5.555555555555555
+CTGAN,2,kNN,Recurrence,1,1,5.555555555555555
+CTGAN,2,kNN,Postop complication,1,1,5.555555555555555
+CTGAN,2,kNN,Age at Diagnosis,1,1,5.555555555555555
+CTGAN,2,kNN,BMI,1,1,5.555555555555555
+CTGAN,2,kNN,"Cranial Location (Infratentorial, supratentorial)",1,1,5.555555555555555
+CTGAN,2,kNN,"EOR (GTR, NTR, STR, biopsy)",1,1,5.555555555555555
+CTGAN,2,kNN,WHO Grade,1,1,5.555555555555555
+CTGAN,2,Naive Bayes,Death (Y/N),1,1,5.555555555555555
+CTGAN,2,Naive Bayes,Recurrence,1,1,5.555555555555555
+CTGAN,2,Naive Bayes,Postop complication,1,1,5.555555555555555
+CTGAN,2,Naive Bayes,Age at Diagnosis,1,1,5.555555555555555
+CTGAN,2,Naive Bayes,BMI,1,1,5.555555555555555
+CTGAN,2,Naive Bayes,"Cranial Location (Infratentorial, supratentorial)",1,1,5.555555555555555
+CTGAN,2,Naive Bayes,"EOR (GTR, NTR, STR, biopsy)",1,1,5.555555555555555
+CTGAN,2,Naive Bayes,WHO Grade,1,1,5.555555555555555
+CTGAN,2,Random Forest,Death (Y/N),1,1,5.555555555555555
+CTGAN,2,Random Forest,Recurrence,1,0,0.0
+CTGAN,2,Random Forest,Postop complication,1,1,5.555555555555555
+CTGAN,2,Random Forest,Age at Diagnosis,1,1,5.555555555555555
+CTGAN,2,Random Forest,BMI,1,1,5.555555555555555
+CTGAN,2,Random Forest,"Cranial Location (Infratentorial, supratentorial)",1,1,5.555555555555555
+CTGAN,2,Random Forest,"EOR (GTR, NTR, STR, biopsy)",1,1,5.555555555555555
+CTGAN,2,Random Forest,WHO Grade,1,1,5.555555555555555
+TVAE,2,kNN,Death (Y/N),0,0,0.0
+TVAE,2,kNN,Recurrence,0,0,0.0
+TVAE,2,kNN,Postop complication,0,0,0.0
+TVAE,2,kNN,Age at Diagnosis,0,0,0.0
+TVAE,2,kNN,BMI,0,0,0.0
+TVAE,2,kNN,"Cranial Location (Infratentorial, supratentorial)",0,0,0.0
+TVAE,2,kNN,"EOR (GTR, NTR, STR, biopsy)",0,0,0.0
+TVAE,2,kNN,WHO Grade,0,0,0.0
+TVAE,2,Naive Bayes,Death (Y/N),0,0,0.0
+TVAE,2,Naive Bayes,Recurrence,0,0,0.0
+TVAE,2,Naive Bayes,Postop complication,0,0,0.0
+TVAE,2,Naive Bayes,Age at Diagnosis,0,0,0.0
+TVAE,2,Naive Bayes,BMI,0,0,0.0
+TVAE,2,Naive Bayes,"Cranial Location (Infratentorial, supratentorial)",0,0,0.0
+TVAE,2,Naive Bayes,"EOR (GTR, NTR, STR, biopsy)",0,0,0.0
+TVAE,2,Naive Bayes,WHO Grade,0,0,0.0
+TVAE,2,Random Forest,Death (Y/N),0,0,0.0
+TVAE,2,Random Forest,Recurrence,0,0,0.0
+TVAE,2,Random Forest,Postop complication,0,0,0.0
+TVAE,2,Random Forest,Age at Diagnosis,0,0,0.0
+TVAE,2,Random Forest,BMI,0,0,0.0
+TVAE,2,Random Forest,"Cranial Location (Infratentorial, supratentorial)",0,0,0.0
+TVAE,2,Random Forest,"EOR (GTR, NTR, STR, biopsy)",0,0,0.0
+TVAE,2,Random Forest,WHO Grade,0,0,0.0
+Independent baseline,2,kNN,Death (Y/N),18,15,83.33333333333333
+Independent baseline,2,kNN,Recurrence,18,17,94.44444444444444
+Independent baseline,2,kNN,Postop complication,18,9,50.0
+Independent baseline,2,kNN,Age at Diagnosis,18,15,83.33333333333333
+Independent baseline,2,kNN,BMI,18,14,77.77777777777777
+Independent baseline,2,kNN,"Cranial Location (Infratentorial, supratentorial)",18,18,100.0
+Independent baseline,2,kNN,"EOR (GTR, NTR, STR, biopsy)",18,10,55.55555555555556
+Independent baseline,2,kNN,WHO Grade,18,18,100.0
+Independent baseline,2,Naive Bayes,Death (Y/N),18,15,83.33333333333333
+Independent baseline,2,Naive Bayes,Recurrence,18,17,94.44444444444444
+Independent baseline,2,Naive Bayes,Postop complication,18,12,66.66666666666667
+Independent baseline,2,Naive Bayes,Age at Diagnosis,18,18,100.0
+Independent baseline,2,Naive Bayes,BMI,18,18,100.0
+Independent baseline,2,Naive Bayes,"Cranial Location (Infratentorial, supratentorial)",18,18,100.0
+Independent baseline,2,Naive Bayes,"EOR (GTR, NTR, STR, biopsy)",18,10,55.55555555555556
+Independent baseline,2,Naive Bayes,WHO Grade,18,18,100.0
+Independent baseline,2,Random Forest,Death (Y/N),18,14,77.77777777777777
+Independent baseline,2,Random Forest,Recurrence,18,17,94.44444444444444
+Independent baseline,2,Random Forest,Postop complication,18,10,55.55555555555556
+Independent baseline,2,Random Forest,Age at Diagnosis,18,18,100.0
+Independent baseline,2,Random Forest,BMI,18,18,100.0
+Independent baseline,2,Random Forest,"Cranial Location (Infratentorial, supratentorial)",18,18,100.0
+Independent baseline,2,Random Forest,"EOR (GTR, NTR, STR, biopsy)",18,11,61.111111111111114
+Independent baseline,2,Random Forest,WHO Grade,18,18,100.0
+GaussianCopula,3,kNN,Death (Y/N),2,1,5.555555555555555
+GaussianCopula,3,kNN,Recurrence,2,2,11.11111111111111
+GaussianCopula,3,kNN,Postop complication,2,1,5.555555555555555
+GaussianCopula,3,kNN,Age at Diagnosis,2,1,5.555555555555555
+GaussianCopula,3,kNN,BMI,2,0,0.0
+GaussianCopula,3,kNN,"Cranial Location (Infratentorial, supratentorial)",2,2,11.11111111111111
+GaussianCopula,3,kNN,"EOR (GTR, NTR, STR, biopsy)",2,0,0.0
+GaussianCopula,3,kNN,WHO Grade,2,2,11.11111111111111
+GaussianCopula,3,Naive Bayes,Death (Y/N),2,2,11.11111111111111
+GaussianCopula,3,Naive Bayes,Recurrence,2,2,11.11111111111111
+GaussianCopula,3,Naive Bayes,Postop complication,2,1,5.555555555555555
+GaussianCopula,3,Naive Bayes,Age at Diagnosis,2,1,5.555555555555555
+GaussianCopula,3,Naive Bayes,BMI,2,0,0.0
+GaussianCopula,3,Naive Bayes,"Cranial Location (Infratentorial, supratentorial)",2,2,11.11111111111111
+GaussianCopula,3,Naive Bayes,"EOR (GTR, NTR, STR, biopsy)",2,1,5.555555555555555
+GaussianCopula,3,Naive Bayes,WHO Grade,2,2,11.11111111111111
+GaussianCopula,3,Random Forest,Death (Y/N),2,2,11.11111111111111
+GaussianCopula,3,Random Forest,Recurrence,2,2,11.11111111111111
+GaussianCopula,3,Random Forest,Postop complication,2,1,5.555555555555555
+GaussianCopula,3,Random Forest,Age at Diagnosis,2,2,11.11111111111111
+GaussianCopula,3,Random Forest,BMI,2,1,5.555555555555555
+GaussianCopula,3,Random Forest,"Cranial Location (Infratentorial, supratentorial)",2,2,11.11111111111111
+GaussianCopula,3,Random Forest,"EOR (GTR, NTR, STR, biopsy)",2,1,5.555555555555555
+GaussianCopula,3,Random Forest,WHO Grade,2,2,11.11111111111111
+CopulaGAN,3,kNN,Death (Y/N),1,1,5.555555555555555
+CopulaGAN,3,kNN,Recurrence,1,1,5.555555555555555
+CopulaGAN,3,kNN,Postop complication,1,1,5.555555555555555
+CopulaGAN,3,kNN,Age at Diagnosis,1,1,5.555555555555555
+CopulaGAN,3,kNN,BMI,1,1,5.555555555555555
+CopulaGAN,3,kNN,"Cranial Location (Infratentorial, supratentorial)",1,1,5.555555555555555
+CopulaGAN,3,kNN,"EOR (GTR, NTR, STR, biopsy)",1,1,5.555555555555555
+CopulaGAN,3,kNN,WHO Grade,1,1,5.555555555555555
+CopulaGAN,3,Naive Bayes,Death (Y/N),1,1,5.555555555555555
+CopulaGAN,3,Naive Bayes,Recurrence,1,1,5.555555555555555
+CopulaGAN,3,Naive Bayes,Postop complication,1,1,5.555555555555555
+CopulaGAN,3,Naive Bayes,Age at Diagnosis,1,1,5.555555555555555
+CopulaGAN,3,Naive Bayes,BMI,1,1,5.555555555555555
+CopulaGAN,3,Naive Bayes,"Cranial Location (Infratentorial, supratentorial)",1,1,5.555555555555555
+CopulaGAN,3,Naive Bayes,"EOR (GTR, NTR, STR, biopsy)",1,1,5.555555555555555
+CopulaGAN,3,Naive Bayes,WHO Grade,1,1,5.555555555555555
+CopulaGAN,3,Random Forest,Death (Y/N),1,1,5.555555555555555
+CopulaGAN,3,Random Forest,Recurrence,1,1,5.555555555555555
+CopulaGAN,3,Random Forest,Postop complication,1,1,5.555555555555555
+CopulaGAN,3,Random Forest,Age at Diagnosis,1,1,5.555555555555555
+CopulaGAN,3,Random Forest,BMI,1,1,5.555555555555555
+CopulaGAN,3,Random Forest,"Cranial Location (Infratentorial, supratentorial)",1,1,5.555555555555555
+CopulaGAN,3,Random Forest,"EOR (GTR, NTR, STR, biopsy)",1,1,5.555555555555555
+CopulaGAN,3,Random Forest,WHO Grade,1,1,5.555555555555555
+CTGAN,3,kNN,Death (Y/N),1,1,5.555555555555555
+CTGAN,3,kNN,Recurrence,1,1,5.555555555555555
+CTGAN,3,kNN,Postop complication,1,1,5.555555555555555
+CTGAN,3,kNN,Age at Diagnosis,1,1,5.555555555555555
+CTGAN,3,kNN,BMI,1,1,5.555555555555555
+CTGAN,3,kNN,"Cranial Location (Infratentorial, supratentorial)",1,1,5.555555555555555
+CTGAN,3,kNN,"EOR (GTR, NTR, STR, biopsy)",1,1,5.555555555555555
+CTGAN,3,kNN,WHO Grade,1,1,5.555555555555555
+CTGAN,3,Naive Bayes,Death (Y/N),1,1,5.555555555555555
+CTGAN,3,Naive Bayes,Recurrence,1,1,5.555555555555555
+CTGAN,3,Naive Bayes,Postop complication,1,1,5.555555555555555
+CTGAN,3,Naive Bayes,Age at Diagnosis,1,1,5.555555555555555
+CTGAN,3,Naive Bayes,BMI,1,1,5.555555555555555
+CTGAN,3,Naive Bayes,"Cranial Location (Infratentorial, supratentorial)",1,1,5.555555555555555
+CTGAN,3,Naive Bayes,"EOR (GTR, NTR, STR, biopsy)",1,1,5.555555555555555
+CTGAN,3,Naive Bayes,WHO Grade,1,1,5.555555555555555
+CTGAN,3,Random Forest,Death (Y/N),1,1,5.555555555555555
+CTGAN,3,Random Forest,Recurrence,1,1,5.555555555555555
+CTGAN,3,Random Forest,Postop complication,1,1,5.555555555555555
+CTGAN,3,Random Forest,Age at Diagnosis,1,1,5.555555555555555
+CTGAN,3,Random Forest,BMI,1,1,5.555555555555555
+CTGAN,3,Random Forest,"Cranial Location (Infratentorial, supratentorial)",1,1,5.555555555555555
+CTGAN,3,Random Forest,"EOR (GTR, NTR, STR, biopsy)",1,1,5.555555555555555
+CTGAN,3,Random Forest,WHO Grade,1,1,5.555555555555555
+TVAE,3,kNN,Death (Y/N),0,0,0.0
+TVAE,3,kNN,Recurrence,0,0,0.0
+TVAE,3,kNN,Postop complication,0,0,0.0
+TVAE,3,kNN,Age at Diagnosis,0,0,0.0
+TVAE,3,kNN,BMI,0,0,0.0
+TVAE,3,kNN,"Cranial Location (Infratentorial, supratentorial)",0,0,0.0
+TVAE,3,kNN,"EOR (GTR, NTR, STR, biopsy)",0,0,0.0
+TVAE,3,kNN,WHO Grade,0,0,0.0
+TVAE,3,Naive Bayes,Death (Y/N),0,0,0.0
+TVAE,3,Naive Bayes,Recurrence,0,0,0.0
+TVAE,3,Naive Bayes,Postop complication,0,0,0.0
+TVAE,3,Naive Bayes,Age at Diagnosis,0,0,0.0
+TVAE,3,Naive Bayes,BMI,0,0,0.0
+TVAE,3,Naive Bayes,"Cranial Location (Infratentorial, supratentorial)",0,0,0.0
+TVAE,3,Naive Bayes,"EOR (GTR, NTR, STR, biopsy)",0,0,0.0
+TVAE,3,Naive Bayes,WHO Grade,0,0,0.0
+TVAE,3,Random Forest,Death (Y/N),0,0,0.0
+TVAE,3,Random Forest,Recurrence,0,0,0.0
+TVAE,3,Random Forest,Postop complication,0,0,0.0
+TVAE,3,Random Forest,Age at Diagnosis,0,0,0.0
+TVAE,3,Random Forest,BMI,0,0,0.0
+TVAE,3,Random Forest,"Cranial Location (Infratentorial, supratentorial)",0,0,0.0
+TVAE,3,Random Forest,"EOR (GTR, NTR, STR, biopsy)",0,0,0.0
+TVAE,3,Random Forest,WHO Grade,0,0,0.0
+Independent baseline,3,kNN,Death (Y/N),18,15,83.33333333333333
+Independent baseline,3,kNN,Recurrence,18,17,94.44444444444444
+Independent baseline,3,kNN,Postop complication,18,9,50.0
+Independent baseline,3,kNN,Age at Diagnosis,18,16,88.88888888888889
+Independent baseline,3,kNN,BMI,18,11,61.111111111111114
+Independent baseline,3,kNN,"Cranial Location (Infratentorial, supratentorial)",18,18,100.0
+Independent baseline,3,kNN,"EOR (GTR, NTR, STR, biopsy)",18,10,55.55555555555556
+Independent baseline,3,kNN,WHO Grade,18,18,100.0
+Independent baseline,3,Naive Bayes,Death (Y/N),18,15,83.33333333333333
+Independent baseline,3,Naive Bayes,Recurrence,18,17,94.44444444444444
+Independent baseline,3,Naive Bayes,Postop complication,18,11,61.111111111111114
+Independent baseline,3,Naive Bayes,Age at Diagnosis,18,18,100.0
+Independent baseline,3,Naive Bayes,BMI,18,18,100.0
+Independent baseline,3,Naive Bayes,"Cranial Location (Infratentorial, supratentorial)",18,18,100.0
+Independent baseline,3,Naive Bayes,"EOR (GTR, NTR, STR, biopsy)",18,9,50.0
+Independent baseline,3,Naive Bayes,WHO Grade,18,18,100.0
+Independent baseline,3,Random Forest,Death (Y/N),18,15,83.33333333333333
+Independent baseline,3,Random Forest,Recurrence,18,17,94.44444444444444
+Independent baseline,3,Random Forest,Postop complication,18,10,55.55555555555556
+Independent baseline,3,Random Forest,Age at Diagnosis,18,18,100.0
+Independent baseline,3,Random Forest,BMI,18,18,100.0
+Independent baseline,3,Random Forest,"Cranial Location (Infratentorial, supratentorial)",18,18,100.0
+Independent baseline,3,Random Forest,"EOR (GTR, NTR, STR, biopsy)",18,10,55.55555555555556
+Independent baseline,3,Random Forest,WHO Grade,18,18,100.0
+GaussianCopula,4,kNN,Death (Y/N),7,6,33.333333333333336
+GaussianCopula,4,kNN,Recurrence,7,7,38.888888888888886
+GaussianCopula,4,kNN,Postop complication,7,6,33.333333333333336
+GaussianCopula,4,kNN,Age at Diagnosis,7,2,11.11111111111111
+GaussianCopula,4,kNN,BMI,7,0,0.0
+GaussianCopula,4,kNN,"Cranial Location (Infratentorial, supratentorial)",7,7,38.888888888888886
+GaussianCopula,4,kNN,"EOR (GTR, NTR, STR, biopsy)",7,5,27.77777777777778
+GaussianCopula,4,kNN,WHO Grade,7,7,38.888888888888886
+GaussianCopula,4,Naive Bayes,Death (Y/N),7,6,33.333333333333336
+GaussianCopula,4,Naive Bayes,Recurrence,7,7,38.888888888888886
+GaussianCopula,4,Naive Bayes,Postop complication,7,6,33.333333333333336
+GaussianCopula,4,Naive Bayes,Age at Diagnosis,7,2,11.11111111111111
+GaussianCopula,4,Naive Bayes,BMI,7,1,5.555555555555555
+GaussianCopula,4,Naive Bayes,"Cranial Location (Infratentorial, supratentorial)",7,7,38.888888888888886
+GaussianCopula,4,Naive Bayes,"EOR (GTR, NTR, STR, biopsy)",7,1,5.555555555555555
+GaussianCopula,4,Naive Bayes,WHO Grade,7,7,38.888888888888886
+GaussianCopula,4,Random Forest,Death (Y/N),7,6,33.333333333333336
+GaussianCopula,4,Random Forest,Recurrence,7,7,38.888888888888886
+GaussianCopula,4,Random Forest,Postop complication,7,5,27.77777777777778
+GaussianCopula,4,Random Forest,Age at Diagnosis,7,4,22.22222222222222
+GaussianCopula,4,Random Forest,BMI,7,5,27.77777777777778
+GaussianCopula,4,Random Forest,"Cranial Location (Infratentorial, supratentorial)",7,7,38.888888888888886
+GaussianCopula,4,Random Forest,"EOR (GTR, NTR, STR, biopsy)",7,4,22.22222222222222
+GaussianCopula,4,Random Forest,WHO Grade,7,7,38.888888888888886
+CopulaGAN,4,kNN,Death (Y/N),1,1,5.555555555555555
+CopulaGAN,4,kNN,Recurrence,1,1,5.555555555555555
+CopulaGAN,4,kNN,Postop complication,1,1,5.555555555555555
+CopulaGAN,4,kNN,Age at Diagnosis,1,1,5.555555555555555
+CopulaGAN,4,kNN,BMI,1,1,5.555555555555555
+CopulaGAN,4,kNN,"Cranial Location (Infratentorial, supratentorial)",1,1,5.555555555555555
+CopulaGAN,4,kNN,"EOR (GTR, NTR, STR, biopsy)",1,1,5.555555555555555
+CopulaGAN,4,kNN,WHO Grade,1,1,5.555555555555555
+CopulaGAN,4,Naive Bayes,Death (Y/N),1,1,5.555555555555555
+CopulaGAN,4,Naive Bayes,Recurrence,1,1,5.555555555555555
+CopulaGAN,4,Naive Bayes,Postop complication,1,1,5.555555555555555
+CopulaGAN,4,Naive Bayes,Age at Diagnosis,1,1,5.555555555555555
+CopulaGAN,4,Naive Bayes,BMI,1,1,5.555555555555555
+CopulaGAN,4,Naive Bayes,"Cranial Location (Infratentorial, supratentorial)",1,1,5.555555555555555
+CopulaGAN,4,Naive Bayes,"EOR (GTR, NTR, STR, biopsy)",1,1,5.555555555555555
+CopulaGAN,4,Naive Bayes,WHO Grade,1,1,5.555555555555555
+CopulaGAN,4,Random Forest,Death (Y/N),1,1,5.555555555555555
+CopulaGAN,4,Random Forest,Recurrence,1,1,5.555555555555555
+CopulaGAN,4,Random Forest,Postop complication,1,1,5.555555555555555
+CopulaGAN,4,Random Forest,Age at Diagnosis,1,1,5.555555555555555
+CopulaGAN,4,Random Forest,BMI,1,1,5.555555555555555
+CopulaGAN,4,Random Forest,"Cranial Location (Infratentorial, supratentorial)",1,1,5.555555555555555
+CopulaGAN,4,Random Forest,"EOR (GTR, NTR, STR, biopsy)",1,0,0.0
+CopulaGAN,4,Random Forest,WHO Grade,1,1,5.555555555555555
+CTGAN,4,kNN,Death (Y/N),1,1,5.555555555555555
+CTGAN,4,kNN,Recurrence,1,1,5.555555555555555
+CTGAN,4,kNN,Postop complication,1,1,5.555555555555555
+CTGAN,4,kNN,Age at Diagnosis,1,1,5.555555555555555
+CTGAN,4,kNN,BMI,1,1,5.555555555555555
+CTGAN,4,kNN,"Cranial Location (Infratentorial, supratentorial)",1,1,5.555555555555555
+CTGAN,4,kNN,"EOR (GTR, NTR, STR, biopsy)",1,1,5.555555555555555
+CTGAN,4,kNN,WHO Grade,1,1,5.555555555555555
+CTGAN,4,Naive Bayes,Death (Y/N),1,1,5.555555555555555
+CTGAN,4,Naive Bayes,Recurrence,1,1,5.555555555555555
+CTGAN,4,Naive Bayes,Postop complication,1,1,5.555555555555555
+CTGAN,4,Naive Bayes,Age at Diagnosis,1,1,5.555555555555555
+CTGAN,4,Naive Bayes,BMI,1,1,5.555555555555555
+CTGAN,4,Naive Bayes,"Cranial Location (Infratentorial, supratentorial)",1,1,5.555555555555555
+CTGAN,4,Naive Bayes,"EOR (GTR, NTR, STR, biopsy)",1,0,0.0
+CTGAN,4,Naive Bayes,WHO Grade,1,1,5.555555555555555
+CTGAN,4,Random Forest,Death (Y/N),1,1,5.555555555555555
+CTGAN,4,Random Forest,Recurrence,1,1,5.555555555555555
+CTGAN,4,Random Forest,Postop complication,1,1,5.555555555555555
+CTGAN,4,Random Forest,Age at Diagnosis,1,1,5.555555555555555
+CTGAN,4,Random Forest,BMI,1,1,5.555555555555555
+CTGAN,4,Random Forest,"Cranial Location (Infratentorial, supratentorial)",1,1,5.555555555555555
+CTGAN,4,Random Forest,"EOR (GTR, NTR, STR, biopsy)",1,0,0.0
+CTGAN,4,Random Forest,WHO Grade,1,1,5.555555555555555
+TVAE,4,kNN,Death (Y/N),0,0,0.0
+TVAE,4,kNN,Recurrence,0,0,0.0
+TVAE,4,kNN,Postop complication,0,0,0.0
+TVAE,4,kNN,Age at Diagnosis,0,0,0.0
+TVAE,4,kNN,BMI,0,0,0.0
+TVAE,4,kNN,"Cranial Location (Infratentorial, supratentorial)",0,0,0.0
+TVAE,4,kNN,"EOR (GTR, NTR, STR, biopsy)",0,0,0.0
+TVAE,4,kNN,WHO Grade,0,0,0.0
+TVAE,4,Naive Bayes,Death (Y/N),0,0,0.0
+TVAE,4,Naive Bayes,Recurrence,0,0,0.0
+TVAE,4,Naive Bayes,Postop complication,0,0,0.0
+TVAE,4,Naive Bayes,Age at Diagnosis,0,0,0.0
+TVAE,4,Naive Bayes,BMI,0,0,0.0
+TVAE,4,Naive Bayes,"Cranial Location (Infratentorial, supratentorial)",0,0,0.0
+TVAE,4,Naive Bayes,"EOR (GTR, NTR, STR, biopsy)",0,0,0.0
+TVAE,4,Naive Bayes,WHO Grade,0,0,0.0
+TVAE,4,Random Forest,Death (Y/N),0,0,0.0
+TVAE,4,Random Forest,Recurrence,0,0,0.0
+TVAE,4,Random Forest,Postop complication,0,0,0.0
+TVAE,4,Random Forest,Age at Diagnosis,0,0,0.0
+TVAE,4,Random Forest,BMI,0,0,0.0
+TVAE,4,Random Forest,"Cranial Location (Infratentorial, supratentorial)",0,0,0.0
+TVAE,4,Random Forest,"EOR (GTR, NTR, STR, biopsy)",0,0,0.0
+TVAE,4,Random Forest,WHO Grade,0,0,0.0
+Independent baseline,4,kNN,Death (Y/N),18,14,77.77777777777777
+Independent baseline,4,kNN,Recurrence,18,17,94.44444444444444
+Independent baseline,4,kNN,Postop complication,18,11,61.111111111111114
+Independent baseline,4,kNN,Age at Diagnosis,18,15,83.33333333333333
+Independent baseline,4,kNN,BMI,18,14,77.77777777777777
+Independent baseline,4,kNN,"Cranial Location (Infratentorial, supratentorial)",18,18,100.0
+Independent baseline,4,kNN,"EOR (GTR, NTR, STR, biopsy)",18,7,38.888888888888886
+Independent baseline,4,kNN,WHO Grade,18,18,100.0
+Independent baseline,4,Naive Bayes,Death (Y/N),18,15,83.33333333333333
+Independent baseline,4,Naive Bayes,Recurrence,18,17,94.44444444444444
+Independent baseline,4,Naive Bayes,Postop complication,18,13,72.22222222222223
+Independent baseline,4,Naive Bayes,Age at Diagnosis,18,18,100.0
+Independent baseline,4,Naive Bayes,BMI,18,18,100.0
+Independent baseline,4,Naive Bayes,"Cranial Location (Infratentorial, supratentorial)",18,18,100.0
+Independent baseline,4,Naive Bayes,"EOR (GTR, NTR, STR, biopsy)",18,10,55.55555555555556
+Independent baseline,4,Naive Bayes,WHO Grade,18,18,100.0
+Independent baseline,4,Random Forest,Death (Y/N),18,15,83.33333333333333
+Independent baseline,4,Random Forest,Recurrence,18,17,94.44444444444444
+Independent baseline,4,Random Forest,Postop complication,18,14,77.77777777777777
+Independent baseline,4,Random Forest,Age at Diagnosis,18,18,100.0
+Independent baseline,4,Random Forest,BMI,18,18,100.0
+Independent baseline,4,Random Forest,"Cranial Location (Infratentorial, supratentorial)",18,18,100.0
+Independent baseline,4,Random Forest,"EOR (GTR, NTR, STR, biopsy)",18,7,38.888888888888886
+Independent baseline,4,Random Forest,WHO Grade,18,18,100.0
+GaussianCopula,5,kNN,Death (Y/N),1,0,0.0
+GaussianCopula,5,kNN,Recurrence,1,0,0.0
+GaussianCopula,5,kNN,Postop complication,1,1,5.555555555555555
+GaussianCopula,5,kNN,Age at Diagnosis,1,0,0.0
+GaussianCopula,5,kNN,BMI,1,0,0.0
+GaussianCopula,5,kNN,"Cranial Location (Infratentorial, supratentorial)",1,1,5.555555555555555
+GaussianCopula,5,kNN,"EOR (GTR, NTR, STR, biopsy)",1,0,0.0
+GaussianCopula,5,kNN,WHO Grade,1,1,5.555555555555555
+GaussianCopula,5,Naive Bayes,Death (Y/N),1,0,0.0
+GaussianCopula,5,Naive Bayes,Recurrence,1,0,0.0
+GaussianCopula,5,Naive Bayes,Postop complication,1,0,0.0
+GaussianCopula,5,Naive Bayes,Age at Diagnosis,1,0,0.0
+GaussianCopula,5,Naive Bayes,BMI,1,0,0.0
+GaussianCopula,5,Naive Bayes,"Cranial Location (Infratentorial, supratentorial)",1,1,5.555555555555555
+GaussianCopula,5,Naive Bayes,"EOR (GTR, NTR, STR, biopsy)",1,0,0.0
+GaussianCopula,5,Naive Bayes,WHO Grade,1,1,5.555555555555555
+GaussianCopula,5,Random Forest,Death (Y/N),1,0,0.0
+GaussianCopula,5,Random Forest,Recurrence,1,0,0.0
+GaussianCopula,5,Random Forest,Postop complication,1,1,5.555555555555555
+GaussianCopula,5,Random Forest,Age at Diagnosis,1,1,5.555555555555555
+GaussianCopula,5,Random Forest,BMI,1,1,5.555555555555555
+GaussianCopula,5,Random Forest,"Cranial Location (Infratentorial, supratentorial)",1,1,5.555555555555555
+GaussianCopula,5,Random Forest,"EOR (GTR, NTR, STR, biopsy)",1,0,0.0
+GaussianCopula,5,Random Forest,WHO Grade,1,1,5.555555555555555
+CopulaGAN,5,kNN,Death (Y/N),1,1,5.555555555555555
+CopulaGAN,5,kNN,Recurrence,1,1,5.555555555555555
+CopulaGAN,5,kNN,Postop complication,1,1,5.555555555555555
+CopulaGAN,5,kNN,Age at Diagnosis,1,1,5.555555555555555
+CopulaGAN,5,kNN,BMI,1,1,5.555555555555555
+CopulaGAN,5,kNN,"Cranial Location (Infratentorial, supratentorial)",1,1,5.555555555555555
+CopulaGAN,5,kNN,"EOR (GTR, NTR, STR, biopsy)",1,1,5.555555555555555
+CopulaGAN,5,kNN,WHO Grade,1,1,5.555555555555555
+CopulaGAN,5,Naive Bayes,Death (Y/N),1,1,5.555555555555555
+CopulaGAN,5,Naive Bayes,Recurrence,1,1,5.555555555555555
+CopulaGAN,5,Naive Bayes,Postop complication,1,1,5.555555555555555
+CopulaGAN,5,Naive Bayes,Age at Diagnosis,1,1,5.555555555555555
+CopulaGAN,5,Naive Bayes,BMI,1,1,5.555555555555555
+CopulaGAN,5,Naive Bayes,"Cranial Location (Infratentorial, supratentorial)",1,1,5.555555555555555
+CopulaGAN,5,Naive Bayes,"EOR (GTR, NTR, STR, biopsy)",1,1,5.555555555555555
+CopulaGAN,5,Naive Bayes,WHO Grade,1,1,5.555555555555555
+CopulaGAN,5,Random Forest,Death (Y/N),1,1,5.555555555555555
+CopulaGAN,5,Random Forest,Recurrence,1,1,5.555555555555555
+CopulaGAN,5,Random Forest,Postop complication,1,1,5.555555555555555
+CopulaGAN,5,Random Forest,Age at Diagnosis,1,1,5.555555555555555
+CopulaGAN,5,Random Forest,BMI,1,1,5.555555555555555
+CopulaGAN,5,Random Forest,"Cranial Location (Infratentorial, supratentorial)",1,1,5.555555555555555
+CopulaGAN,5,Random Forest,"EOR (GTR, NTR, STR, biopsy)",1,1,5.555555555555555
+CopulaGAN,5,Random Forest,WHO Grade,1,1,5.555555555555555
+CTGAN,5,kNN,Death (Y/N),1,1,5.555555555555555
+CTGAN,5,kNN,Recurrence,1,1,5.555555555555555
+CTGAN,5,kNN,Postop complication,1,1,5.555555555555555
+CTGAN,5,kNN,Age at Diagnosis,1,1,5.555555555555555
+CTGAN,5,kNN,BMI,1,1,5.555555555555555
+CTGAN,5,kNN,"Cranial Location (Infratentorial, supratentorial)",1,1,5.555555555555555
+CTGAN,5,kNN,"EOR (GTR, NTR, STR, biopsy)",1,1,5.555555555555555
+CTGAN,5,kNN,WHO Grade,1,1,5.555555555555555
+CTGAN,5,Naive Bayes,Death (Y/N),1,1,5.555555555555555
+CTGAN,5,Naive Bayes,Recurrence,1,1,5.555555555555555
+CTGAN,5,Naive Bayes,Postop complication,1,1,5.555555555555555
+CTGAN,5,Naive Bayes,Age at Diagnosis,1,1,5.555555555555555
+CTGAN,5,Naive Bayes,BMI,1,1,5.555555555555555
+CTGAN,5,Naive Bayes,"Cranial Location (Infratentorial, supratentorial)",1,1,5.555555555555555
+CTGAN,5,Naive Bayes,"EOR (GTR, NTR, STR, biopsy)",1,1,5.555555555555555
+CTGAN,5,Naive Bayes,WHO Grade,1,1,5.555555555555555
+CTGAN,5,Random Forest,Death (Y/N),1,1,5.555555555555555
+CTGAN,5,Random Forest,Recurrence,1,1,5.555555555555555
+CTGAN,5,Random Forest,Postop complication,1,1,5.555555555555555
+CTGAN,5,Random Forest,Age at Diagnosis,1,1,5.555555555555555
+CTGAN,5,Random Forest,BMI,1,1,5.555555555555555
+CTGAN,5,Random Forest,"Cranial Location (Infratentorial, supratentorial)",1,1,5.555555555555555
+CTGAN,5,Random Forest,"EOR (GTR, NTR, STR, biopsy)",1,1,5.555555555555555
+CTGAN,5,Random Forest,WHO Grade,1,1,5.555555555555555
+TVAE,5,kNN,Death (Y/N),0,0,0.0
+TVAE,5,kNN,Recurrence,0,0,0.0
+TVAE,5,kNN,Postop complication,0,0,0.0
+TVAE,5,kNN,Age at Diagnosis,0,0,0.0
+TVAE,5,kNN,BMI,0,0,0.0
+TVAE,5,kNN,"Cranial Location (Infratentorial, supratentorial)",0,0,0.0
+TVAE,5,kNN,"EOR (GTR, NTR, STR, biopsy)",0,0,0.0
+TVAE,5,kNN,WHO Grade,0,0,0.0
+TVAE,5,Naive Bayes,Death (Y/N),0,0,0.0
+TVAE,5,Naive Bayes,Recurrence,0,0,0.0
+TVAE,5,Naive Bayes,Postop complication,0,0,0.0
+TVAE,5,Naive Bayes,Age at Diagnosis,0,0,0.0
+TVAE,5,Naive Bayes,BMI,0,0,0.0
+TVAE,5,Naive Bayes,"Cranial Location (Infratentorial, supratentorial)",0,0,0.0
+TVAE,5,Naive Bayes,"EOR (GTR, NTR, STR, biopsy)",0,0,0.0
+TVAE,5,Naive Bayes,WHO Grade,0,0,0.0
+TVAE,5,Random Forest,Death (Y/N),0,0,0.0
+TVAE,5,Random Forest,Recurrence,0,0,0.0
+TVAE,5,Random Forest,Postop complication,0,0,0.0
+TVAE,5,Random Forest,Age at Diagnosis,0,0,0.0
+TVAE,5,Random Forest,BMI,0,0,0.0
+TVAE,5,Random Forest,"Cranial Location (Infratentorial, supratentorial)",0,0,0.0
+TVAE,5,Random Forest,"EOR (GTR, NTR, STR, biopsy)",0,0,0.0
+TVAE,5,Random Forest,WHO Grade,0,0,0.0
+Independent baseline,5,kNN,Death (Y/N),18,14,77.77777777777777
+Independent baseline,5,kNN,Recurrence,18,17,94.44444444444444
+Independent baseline,5,kNN,Postop complication,18,12,66.66666666666667
+Independent baseline,5,kNN,Age at Diagnosis,18,14,77.77777777777777
+Independent baseline,5,kNN,BMI,18,11,61.111111111111114
+Independent baseline,5,kNN,"Cranial Location (Infratentorial, supratentorial)",18,18,100.0
+Independent baseline,5,kNN,"EOR (GTR, NTR, STR, biopsy)",18,9,50.0
+Independent baseline,5,kNN,WHO Grade,18,18,100.0
+Independent baseline,5,Naive Bayes,Death (Y/N),18,15,83.33333333333333
+Independent baseline,5,Naive Bayes,Recurrence,18,17,94.44444444444444
+Independent baseline,5,Naive Bayes,Postop complication,18,12,66.66666666666667
+Independent baseline,5,Naive Bayes,Age at Diagnosis,18,18,100.0
+Independent baseline,5,Naive Bayes,BMI,18,18,100.0
+Independent baseline,5,Naive Bayes,"Cranial Location (Infratentorial, supratentorial)",18,18,100.0
+Independent baseline,5,Naive Bayes,"EOR (GTR, NTR, STR, biopsy)",18,9,50.0
+Independent baseline,5,Naive Bayes,WHO Grade,18,18,100.0
+Independent baseline,5,Random Forest,Death (Y/N),18,14,77.77777777777777
+Independent baseline,5,Random Forest,Recurrence,18,17,94.44444444444444
+Independent baseline,5,Random Forest,Postop complication,18,14,77.77777777777777
+Independent baseline,5,Random Forest,Age at Diagnosis,18,18,100.0
+Independent baseline,5,Random Forest,BMI,18,18,100.0
+Independent baseline,5,Random Forest,"Cranial Location (Infratentorial, supratentorial)",18,18,100.0
+Independent baseline,5,Random Forest,"EOR (GTR, NTR, STR, biopsy)",18,9,50.0
+Independent baseline,5,Random Forest,WHO Grade,18,18,100.0
+GaussianCopula,6,kNN,Death (Y/N),2,1,5.555555555555555
+GaussianCopula,6,kNN,Recurrence,2,2,11.11111111111111
+GaussianCopula,6,kNN,Postop complication,2,2,11.11111111111111
+GaussianCopula,6,kNN,Age at Diagnosis,2,0,0.0
+GaussianCopula,6,kNN,BMI,2,0,0.0
+GaussianCopula,6,kNN,"Cranial Location (Infratentorial, supratentorial)",2,2,11.11111111111111
+GaussianCopula,6,kNN,"EOR (GTR, NTR, STR, biopsy)",2,1,5.555555555555555
+GaussianCopula,6,kNN,WHO Grade,2,2,11.11111111111111
+GaussianCopula,6,Naive Bayes,Death (Y/N),2,1,5.555555555555555
+GaussianCopula,6,Naive Bayes,Recurrence,2,2,11.11111111111111
+GaussianCopula,6,Naive Bayes,Postop complication,2,2,11.11111111111111
+GaussianCopula,6,Naive Bayes,Age at Diagnosis,2,0,0.0
+GaussianCopula,6,Naive Bayes,BMI,2,0,0.0
+GaussianCopula,6,Naive Bayes,"Cranial Location (Infratentorial, supratentorial)",2,2,11.11111111111111
+GaussianCopula,6,Naive Bayes,"EOR (GTR, NTR, STR, biopsy)",2,1,5.555555555555555
+GaussianCopula,6,Naive Bayes,WHO Grade,2,2,11.11111111111111
+GaussianCopula,6,Random Forest,Death (Y/N),2,1,5.555555555555555
+GaussianCopula,6,Random Forest,Recurrence,2,2,11.11111111111111
+GaussianCopula,6,Random Forest,Postop complication,2,1,5.555555555555555
+GaussianCopula,6,Random Forest,Age at Diagnosis,2,1,5.555555555555555
+GaussianCopula,6,Random Forest,BMI,2,1,5.555555555555555
+GaussianCopula,6,Random Forest,"Cranial Location (Infratentorial, supratentorial)",2,2,11.11111111111111
+GaussianCopula,6,Random Forest,"EOR (GTR, NTR, STR, biopsy)",2,1,5.555555555555555
+GaussianCopula,6,Random Forest,WHO Grade,2,2,11.11111111111111
+CopulaGAN,6,kNN,Death (Y/N),1,1,5.555555555555555
+CopulaGAN,6,kNN,Recurrence,1,1,5.555555555555555
+CopulaGAN,6,kNN,Postop complication,1,1,5.555555555555555
+CopulaGAN,6,kNN,Age at Diagnosis,1,1,5.555555555555555
+CopulaGAN,6,kNN,BMI,1,1,5.555555555555555
+CopulaGAN,6,kNN,"Cranial Location (Infratentorial, supratentorial)",1,1,5.555555555555555
+CopulaGAN,6,kNN,"EOR (GTR, NTR, STR, biopsy)",1,1,5.555555555555555
+CopulaGAN,6,kNN,WHO Grade,1,1,5.555555555555555
+CopulaGAN,6,Naive Bayes,Death (Y/N),1,1,5.555555555555555
+CopulaGAN,6,Naive Bayes,Recurrence,1,1,5.555555555555555
+CopulaGAN,6,Naive Bayes,Postop complication,1,1,5.555555555555555
+CopulaGAN,6,Naive Bayes,Age at Diagnosis,1,1,5.555555555555555
+CopulaGAN,6,Naive Bayes,BMI,1,1,5.555555555555555
+CopulaGAN,6,Naive Bayes,"Cranial Location (Infratentorial, supratentorial)",1,1,5.555555555555555
+CopulaGAN,6,Naive Bayes,"EOR (GTR, NTR, STR, biopsy)",1,1,5.555555555555555
+CopulaGAN,6,Naive Bayes,WHO Grade,1,1,5.555555555555555
+CopulaGAN,6,Random Forest,Death (Y/N),1,1,5.555555555555555
+CopulaGAN,6,Random Forest,Recurrence,1,1,5.555555555555555
+CopulaGAN,6,Random Forest,Postop complication,1,1,5.555555555555555
+CopulaGAN,6,Random Forest,Age at Diagnosis,1,1,5.555555555555555
+CopulaGAN,6,Random Forest,BMI,1,1,5.555555555555555
+CopulaGAN,6,Random Forest,"Cranial Location (Infratentorial, supratentorial)",1,1,5.555555555555555
+CopulaGAN,6,Random Forest,"EOR (GTR, NTR, STR, biopsy)",1,1,5.555555555555555
+CopulaGAN,6,Random Forest,WHO Grade,1,1,5.555555555555555
+CTGAN,6,kNN,Death (Y/N),1,1,5.555555555555555
+CTGAN,6,kNN,Recurrence,1,1,5.555555555555555
+CTGAN,6,kNN,Postop complication,1,1,5.555555555555555
+CTGAN,6,kNN,Age at Diagnosis,1,1,5.555555555555555
+CTGAN,6,kNN,BMI,1,1,5.555555555555555
+CTGAN,6,kNN,"Cranial Location (Infratentorial, supratentorial)",1,1,5.555555555555555
+CTGAN,6,kNN,"EOR (GTR, NTR, STR, biopsy)",1,1,5.555555555555555
+CTGAN,6,kNN,WHO Grade,1,1,5.555555555555555
+CTGAN,6,Naive Bayes,Death (Y/N),1,1,5.555555555555555
+CTGAN,6,Naive Bayes,Recurrence,1,1,5.555555555555555
+CTGAN,6,Naive Bayes,Postop complication,1,1,5.555555555555555
+CTGAN,6,Naive Bayes,Age at Diagnosis,1,1,5.555555555555555
+CTGAN,6,Naive Bayes,BMI,1,1,5.555555555555555
+CTGAN,6,Naive Bayes,"Cranial Location (Infratentorial, supratentorial)",1,1,5.555555555555555
+CTGAN,6,Naive Bayes,"EOR (GTR, NTR, STR, biopsy)",1,1,5.555555555555555
+CTGAN,6,Naive Bayes,WHO Grade,1,1,5.555555555555555
+CTGAN,6,Random Forest,Death (Y/N),1,1,5.555555555555555
+CTGAN,6,Random Forest,Recurrence,1,1,5.555555555555555
+CTGAN,6,Random Forest,Postop complication,1,1,5.555555555555555
+CTGAN,6,Random Forest,Age at Diagnosis,1,1,5.555555555555555
+CTGAN,6,Random Forest,BMI,1,1,5.555555555555555
+CTGAN,6,Random Forest,"Cranial Location (Infratentorial, supratentorial)",1,1,5.555555555555555
+CTGAN,6,Random Forest,"EOR (GTR, NTR, STR, biopsy)",1,0,0.0
+CTGAN,6,Random Forest,WHO Grade,1,1,5.555555555555555
+TVAE,6,kNN,Death (Y/N),0,0,0.0
+TVAE,6,kNN,Recurrence,0,0,0.0
+TVAE,6,kNN,Postop complication,0,0,0.0
+TVAE,6,kNN,Age at Diagnosis,0,0,0.0
+TVAE,6,kNN,BMI,0,0,0.0
+TVAE,6,kNN,"Cranial Location (Infratentorial, supratentorial)",0,0,0.0
+TVAE,6,kNN,"EOR (GTR, NTR, STR, biopsy)",0,0,0.0
+TVAE,6,kNN,WHO Grade,0,0,0.0
+TVAE,6,Naive Bayes,Death (Y/N),0,0,0.0
+TVAE,6,Naive Bayes,Recurrence,0,0,0.0
+TVAE,6,Naive Bayes,Postop complication,0,0,0.0
+TVAE,6,Naive Bayes,Age at Diagnosis,0,0,0.0
+TVAE,6,Naive Bayes,BMI,0,0,0.0
+TVAE,6,Naive Bayes,"Cranial Location (Infratentorial, supratentorial)",0,0,0.0
+TVAE,6,Naive Bayes,"EOR (GTR, NTR, STR, biopsy)",0,0,0.0
+TVAE,6,Naive Bayes,WHO Grade,0,0,0.0
+TVAE,6,Random Forest,Death (Y/N),0,0,0.0
+TVAE,6,Random Forest,Recurrence,0,0,0.0
+TVAE,6,Random Forest,Postop complication,0,0,0.0
+TVAE,6,Random Forest,Age at Diagnosis,0,0,0.0
+TVAE,6,Random Forest,BMI,0,0,0.0
+TVAE,6,Random Forest,"Cranial Location (Infratentorial, supratentorial)",0,0,0.0
+TVAE,6,Random Forest,"EOR (GTR, NTR, STR, biopsy)",0,0,0.0
+TVAE,6,Random Forest,WHO Grade,0,0,0.0
+Independent baseline,6,kNN,Death (Y/N),18,14,77.77777777777777
+Independent baseline,6,kNN,Recurrence,18,17,94.44444444444444
+Independent baseline,6,kNN,Postop complication,18,13,72.22222222222223
+Independent baseline,6,kNN,Age at Diagnosis,18,16,88.88888888888889
+Independent baseline,6,kNN,BMI,18,14,77.77777777777777
+Independent baseline,6,kNN,"Cranial Location (Infratentorial, supratentorial)",18,18,100.0
+Independent baseline,6,kNN,"EOR (GTR, NTR, STR, biopsy)",18,9,50.0
+Independent baseline,6,kNN,WHO Grade,18,18,100.0
+Independent baseline,6,Naive Bayes,Death (Y/N),18,15,83.33333333333333
+Independent baseline,6,Naive Bayes,Recurrence,18,17,94.44444444444444
+Independent baseline,6,Naive Bayes,Postop complication,18,11,61.111111111111114
+Independent baseline,6,Naive Bayes,Age at Diagnosis,18,18,100.0
+Independent baseline,6,Naive Bayes,BMI,18,18,100.0
+Independent baseline,6,Naive Bayes,"Cranial Location (Infratentorial, supratentorial)",18,18,100.0
+Independent baseline,6,Naive Bayes,"EOR (GTR, NTR, STR, biopsy)",18,10,55.55555555555556
+Independent baseline,6,Naive Bayes,WHO Grade,18,18,100.0
+Independent baseline,6,Random Forest,Death (Y/N),18,15,83.33333333333333
+Independent baseline,6,Random Forest,Recurrence,18,17,94.44444444444444
+Independent baseline,6,Random Forest,Postop complication,18,12,66.66666666666667
+Independent baseline,6,Random Forest,Age at Diagnosis,18,18,100.0
+Independent baseline,6,Random Forest,BMI,18,18,100.0
+Independent baseline,6,Random Forest,"Cranial Location (Infratentorial, supratentorial)",18,18,100.0
+Independent baseline,6,Random Forest,"EOR (GTR, NTR, STR, biopsy)",18,11,61.111111111111114
+Independent baseline,6,Random Forest,WHO Grade,18,18,100.0
+GaussianCopula,7,kNN,Death (Y/N),4,4,22.22222222222222
+GaussianCopula,7,kNN,Recurrence,4,4,22.22222222222222
+GaussianCopula,7,kNN,Postop complication,4,3,16.666666666666668
+GaussianCopula,7,kNN,Age at Diagnosis,4,1,5.555555555555555
+GaussianCopula,7,kNN,BMI,4,0,0.0
+GaussianCopula,7,kNN,"Cranial Location (Infratentorial, supratentorial)",4,4,22.22222222222222
+GaussianCopula,7,kNN,"EOR (GTR, NTR, STR, biopsy)",4,2,11.11111111111111
+GaussianCopula,7,kNN,WHO Grade,4,4,22.22222222222222
+GaussianCopula,7,Naive Bayes,Death (Y/N),4,3,16.666666666666668
+GaussianCopula,7,Naive Bayes,Recurrence,4,4,22.22222222222222
+GaussianCopula,7,Naive Bayes,Postop complication,4,3,16.666666666666668
+GaussianCopula,7,Naive Bayes,Age at Diagnosis,4,1,5.555555555555555
+GaussianCopula,7,Naive Bayes,BMI,4,0,0.0
+GaussianCopula,7,Naive Bayes,"Cranial Location (Infratentorial, supratentorial)",4,4,22.22222222222222
+GaussianCopula,7,Naive Bayes,"EOR (GTR, NTR, STR, biopsy)",4,1,5.555555555555555
+GaussianCopula,7,Naive Bayes,WHO Grade,4,4,22.22222222222222
+GaussianCopula,7,Random Forest,Death (Y/N),4,4,22.22222222222222
+GaussianCopula,7,Random Forest,Recurrence,4,4,22.22222222222222
+GaussianCopula,7,Random Forest,Postop complication,4,3,16.666666666666668
+GaussianCopula,7,Random Forest,Age at Diagnosis,4,3,16.666666666666668
+GaussianCopula,7,Random Forest,BMI,4,3,16.666666666666668
+GaussianCopula,7,Random Forest,"Cranial Location (Infratentorial, supratentorial)",4,4,22.22222222222222
+GaussianCopula,7,Random Forest,"EOR (GTR, NTR, STR, biopsy)",4,2,11.11111111111111
+GaussianCopula,7,Random Forest,WHO Grade,4,4,22.22222222222222
+CopulaGAN,7,kNN,Death (Y/N),1,1,5.555555555555555
+CopulaGAN,7,kNN,Recurrence,1,1,5.555555555555555
+CopulaGAN,7,kNN,Postop complication,1,1,5.555555555555555
+CopulaGAN,7,kNN,Age at Diagnosis,1,1,5.555555555555555
+CopulaGAN,7,kNN,BMI,1,1,5.555555555555555
+CopulaGAN,7,kNN,"Cranial Location (Infratentorial, supratentorial)",1,1,5.555555555555555
+CopulaGAN,7,kNN,"EOR (GTR, NTR, STR, biopsy)",1,1,5.555555555555555
+CopulaGAN,7,kNN,WHO Grade,1,1,5.555555555555555
+CopulaGAN,7,Naive Bayes,Death (Y/N),1,1,5.555555555555555
+CopulaGAN,7,Naive Bayes,Recurrence,1,1,5.555555555555555
+CopulaGAN,7,Naive Bayes,Postop complication,1,1,5.555555555555555
+CopulaGAN,7,Naive Bayes,Age at Diagnosis,1,1,5.555555555555555
+CopulaGAN,7,Naive Bayes,BMI,1,1,5.555555555555555
+CopulaGAN,7,Naive Bayes,"Cranial Location (Infratentorial, supratentorial)",1,1,5.555555555555555
+CopulaGAN,7,Naive Bayes,"EOR (GTR, NTR, STR, biopsy)",1,1,5.555555555555555
+CopulaGAN,7,Naive Bayes,WHO Grade,1,1,5.555555555555555
+CopulaGAN,7,Random Forest,Death (Y/N),1,1,5.555555555555555
+CopulaGAN,7,Random Forest,Recurrence,1,1,5.555555555555555
+CopulaGAN,7,Random Forest,Postop complication,1,1,5.555555555555555
+CopulaGAN,7,Random Forest,Age at Diagnosis,1,1,5.555555555555555
+CopulaGAN,7,Random Forest,BMI,1,1,5.555555555555555
+CopulaGAN,7,Random Forest,"Cranial Location (Infratentorial, supratentorial)",1,1,5.555555555555555
+CopulaGAN,7,Random Forest,"EOR (GTR, NTR, STR, biopsy)",1,1,5.555555555555555
+CopulaGAN,7,Random Forest,WHO Grade,1,1,5.555555555555555
+CTGAN,7,kNN,Death (Y/N),1,1,5.555555555555555
+CTGAN,7,kNN,Recurrence,1,1,5.555555555555555
+CTGAN,7,kNN,Postop complication,1,1,5.555555555555555
+CTGAN,7,kNN,Age at Diagnosis,1,1,5.555555555555555
+CTGAN,7,kNN,BMI,1,1,5.555555555555555
+CTGAN,7,kNN,"Cranial Location (Infratentorial, supratentorial)",1,1,5.555555555555555
+CTGAN,7,kNN,"EOR (GTR, NTR, STR, biopsy)",1,1,5.555555555555555
+CTGAN,7,kNN,WHO Grade,1,1,5.555555555555555
+CTGAN,7,Naive Bayes,Death (Y/N),1,1,5.555555555555555
+CTGAN,7,Naive Bayes,Recurrence,1,1,5.555555555555555
+CTGAN,7,Naive Bayes,Postop complication,1,1,5.555555555555555
+CTGAN,7,Naive Bayes,Age at Diagnosis,1,1,5.555555555555555
+CTGAN,7,Naive Bayes,BMI,1,1,5.555555555555555
+CTGAN,7,Naive Bayes,"Cranial Location (Infratentorial, supratentorial)",1,1,5.555555555555555
+CTGAN,7,Naive Bayes,"EOR (GTR, NTR, STR, biopsy)",1,1,5.555555555555555
+CTGAN,7,Naive Bayes,WHO Grade,1,1,5.555555555555555
+CTGAN,7,Random Forest,Death (Y/N),1,1,5.555555555555555
+CTGAN,7,Random Forest,Recurrence,1,1,5.555555555555555
+CTGAN,7,Random Forest,Postop complication,1,1,5.555555555555555
+CTGAN,7,Random Forest,Age at Diagnosis,1,1,5.555555555555555
+CTGAN,7,Random Forest,BMI,1,1,5.555555555555555
+CTGAN,7,Random Forest,"Cranial Location (Infratentorial, supratentorial)",1,1,5.555555555555555
+CTGAN,7,Random Forest,"EOR (GTR, NTR, STR, biopsy)",1,1,5.555555555555555
+CTGAN,7,Random Forest,WHO Grade,1,1,5.555555555555555
+TVAE,7,kNN,Death (Y/N),0,0,0.0
+TVAE,7,kNN,Recurrence,0,0,0.0
+TVAE,7,kNN,Postop complication,0,0,0.0
+TVAE,7,kNN,Age at Diagnosis,0,0,0.0
+TVAE,7,kNN,BMI,0,0,0.0
+TVAE,7,kNN,"Cranial Location (Infratentorial, supratentorial)",0,0,0.0
+TVAE,7,kNN,"EOR (GTR, NTR, STR, biopsy)",0,0,0.0
+TVAE,7,kNN,WHO Grade,0,0,0.0
+TVAE,7,Naive Bayes,Death (Y/N),0,0,0.0
+TVAE,7,Naive Bayes,Recurrence,0,0,0.0
+TVAE,7,Naive Bayes,Postop complication,0,0,0.0
+TVAE,7,Naive Bayes,Age at Diagnosis,0,0,0.0
+TVAE,7,Naive Bayes,BMI,0,0,0.0
+TVAE,7,Naive Bayes,"Cranial Location (Infratentorial, supratentorial)",0,0,0.0
+TVAE,7,Naive Bayes,"EOR (GTR, NTR, STR, biopsy)",0,0,0.0
+TVAE,7,Naive Bayes,WHO Grade,0,0,0.0
+TVAE,7,Random Forest,Death (Y/N),0,0,0.0
+TVAE,7,Random Forest,Recurrence,0,0,0.0
+TVAE,7,Random Forest,Postop complication,0,0,0.0
+TVAE,7,Random Forest,Age at Diagnosis,0,0,0.0
+TVAE,7,Random Forest,BMI,0,0,0.0
+TVAE,7,Random Forest,"Cranial Location (Infratentorial, supratentorial)",0,0,0.0
+TVAE,7,Random Forest,"EOR (GTR, NTR, STR, biopsy)",0,0,0.0
+TVAE,7,Random Forest,WHO Grade,0,0,0.0
+Independent baseline,7,kNN,Death (Y/N),18,15,83.33333333333333
+Independent baseline,7,kNN,Recurrence,18,17,94.44444444444444
+Independent baseline,7,kNN,Postop complication,18,11,61.111111111111114
+Independent baseline,7,kNN,Age at Diagnosis,18,17,94.44444444444444
+Independent baseline,7,kNN,BMI,18,14,77.77777777777777
+Independent baseline,7,kNN,"Cranial Location (Infratentorial, supratentorial)",18,18,100.0
+Independent baseline,7,kNN,"EOR (GTR, NTR, STR, biopsy)",18,9,50.0
+Independent baseline,7,kNN,WHO Grade,18,16,88.88888888888889
+Independent baseline,7,Naive Bayes,Death (Y/N),18,15,83.33333333333333
+Independent baseline,7,Naive Bayes,Recurrence,18,17,94.44444444444444
+Independent baseline,7,Naive Bayes,Postop complication,18,12,66.66666666666667
+Independent baseline,7,Naive Bayes,Age at Diagnosis,18,18,100.0
+Independent baseline,7,Naive Bayes,BMI,18,18,100.0
+Independent baseline,7,Naive Bayes,"Cranial Location (Infratentorial, supratentorial)",18,18,100.0
+Independent baseline,7,Naive Bayes,"EOR (GTR, NTR, STR, biopsy)",18,10,55.55555555555556
+Independent baseline,7,Naive Bayes,WHO Grade,18,18,100.0
+Independent baseline,7,Random Forest,Death (Y/N),18,15,83.33333333333333
+Independent baseline,7,Random Forest,Recurrence,18,17,94.44444444444444
+Independent baseline,7,Random Forest,Postop complication,18,10,55.55555555555556
+Independent baseline,7,Random Forest,Age at Diagnosis,18,18,100.0
+Independent baseline,7,Random Forest,BMI,18,18,100.0
+Independent baseline,7,Random Forest,"Cranial Location (Infratentorial, supratentorial)",18,18,100.0
+Independent baseline,7,Random Forest,"EOR (GTR, NTR, STR, biopsy)",18,10,55.55555555555556
+Independent baseline,7,Random Forest,WHO Grade,18,18,100.0
+GaussianCopula,8,kNN,Death (Y/N),1,1,5.555555555555555
+GaussianCopula,8,kNN,Recurrence,1,1,5.555555555555555
+GaussianCopula,8,kNN,Postop complication,1,1,5.555555555555555
+GaussianCopula,8,kNN,Age at Diagnosis,1,1,5.555555555555555
+GaussianCopula,8,kNN,BMI,1,0,0.0
+GaussianCopula,8,kNN,"Cranial Location (Infratentorial, supratentorial)",1,1,5.555555555555555
+GaussianCopula,8,kNN,"EOR (GTR, NTR, STR, biopsy)",1,0,0.0
+GaussianCopula,8,kNN,WHO Grade,1,0,0.0
+GaussianCopula,8,Naive Bayes,Death (Y/N),1,1,5.555555555555555
+GaussianCopula,8,Naive Bayes,Recurrence,1,1,5.555555555555555
+GaussianCopula,8,Naive Bayes,Postop complication,1,1,5.555555555555555
+GaussianCopula,8,Naive Bayes,Age at Diagnosis,1,1,5.555555555555555
+GaussianCopula,8,Naive Bayes,BMI,1,1,5.555555555555555
+GaussianCopula,8,Naive Bayes,"Cranial Location (Infratentorial, supratentorial)",1,1,5.555555555555555
+GaussianCopula,8,Naive Bayes,"EOR (GTR, NTR, STR, biopsy)",1,0,0.0
+GaussianCopula,8,Naive Bayes,WHO Grade,1,1,5.555555555555555
+GaussianCopula,8,Random Forest,Death (Y/N),1,1,5.555555555555555
+GaussianCopula,8,Random Forest,Recurrence,1,1,5.555555555555555
+GaussianCopula,8,Random Forest,Postop complication,1,1,5.555555555555555
+GaussianCopula,8,Random Forest,Age at Diagnosis,1,1,5.555555555555555
+GaussianCopula,8,Random Forest,BMI,1,1,5.555555555555555
+GaussianCopula,8,Random Forest,"Cranial Location (Infratentorial, supratentorial)",1,1,5.555555555555555
+GaussianCopula,8,Random Forest,"EOR (GTR, NTR, STR, biopsy)",1,0,0.0
+GaussianCopula,8,Random Forest,WHO Grade,1,1,5.555555555555555
+CopulaGAN,8,kNN,Death (Y/N),1,1,5.555555555555555
+CopulaGAN,8,kNN,Recurrence,1,1,5.555555555555555
+CopulaGAN,8,kNN,Postop complication,1,1,5.555555555555555
+CopulaGAN,8,kNN,Age at Diagnosis,1,1,5.555555555555555
+CopulaGAN,8,kNN,BMI,1,1,5.555555555555555
+CopulaGAN,8,kNN,"Cranial Location (Infratentorial, supratentorial)",1,1,5.555555555555555
+CopulaGAN,8,kNN,"EOR (GTR, NTR, STR, biopsy)",1,1,5.555555555555555
+CopulaGAN,8,kNN,WHO Grade,1,1,5.555555555555555
+CopulaGAN,8,Naive Bayes,Death (Y/N),1,1,5.555555555555555
+CopulaGAN,8,Naive Bayes,Recurrence,1,1,5.555555555555555
+CopulaGAN,8,Naive Bayes,Postop complication,1,1,5.555555555555555
+CopulaGAN,8,Naive Bayes,Age at Diagnosis,1,1,5.555555555555555
+CopulaGAN,8,Naive Bayes,BMI,1,1,5.555555555555555
+CopulaGAN,8,Naive Bayes,"Cranial Location (Infratentorial, supratentorial)",1,1,5.555555555555555
+CopulaGAN,8,Naive Bayes,"EOR (GTR, NTR, STR, biopsy)",1,1,5.555555555555555
+CopulaGAN,8,Naive Bayes,WHO Grade,1,1,5.555555555555555
+CopulaGAN,8,Random Forest,Death (Y/N),1,1,5.555555555555555
+CopulaGAN,8,Random Forest,Recurrence,1,1,5.555555555555555
+CopulaGAN,8,Random Forest,Postop complication,1,1,5.555555555555555
+CopulaGAN,8,Random Forest,Age at Diagnosis,1,1,5.555555555555555
+CopulaGAN,8,Random Forest,BMI,1,1,5.555555555555555
+CopulaGAN,8,Random Forest,"Cranial Location (Infratentorial, supratentorial)",1,1,5.555555555555555
+CopulaGAN,8,Random Forest,"EOR (GTR, NTR, STR, biopsy)",1,1,5.555555555555555
+CopulaGAN,8,Random Forest,WHO Grade,1,1,5.555555555555555
+CTGAN,8,kNN,Death (Y/N),1,1,5.555555555555555
+CTGAN,8,kNN,Recurrence,1,1,5.555555555555555
+CTGAN,8,kNN,Postop complication,1,1,5.555555555555555
+CTGAN,8,kNN,Age at Diagnosis,1,1,5.555555555555555
+CTGAN,8,kNN,BMI,1,1,5.555555555555555
+CTGAN,8,kNN,"Cranial Location (Infratentorial, supratentorial)",1,1,5.555555555555555
+CTGAN,8,kNN,"EOR (GTR, NTR, STR, biopsy)",1,0,0.0
+CTGAN,8,kNN,WHO Grade,1,1,5.555555555555555
+CTGAN,8,Naive Bayes,Death (Y/N),1,1,5.555555555555555
+CTGAN,8,Naive Bayes,Recurrence,1,1,5.555555555555555
+CTGAN,8,Naive Bayes,Postop complication,1,1,5.555555555555555
+CTGAN,8,Naive Bayes,Age at Diagnosis,1,1,5.555555555555555
+CTGAN,8,Naive Bayes,BMI,1,1,5.555555555555555
+CTGAN,8,Naive Bayes,"Cranial Location (Infratentorial, supratentorial)",1,1,5.555555555555555
+CTGAN,8,Naive Bayes,"EOR (GTR, NTR, STR, biopsy)",1,0,0.0
+CTGAN,8,Naive Bayes,WHO Grade,1,1,5.555555555555555
+CTGAN,8,Random Forest,Death (Y/N),1,1,5.555555555555555
+CTGAN,8,Random Forest,Recurrence,1,1,5.555555555555555
+CTGAN,8,Random Forest,Postop complication,1,1,5.555555555555555
+CTGAN,8,Random Forest,Age at Diagnosis,1,1,5.555555555555555
+CTGAN,8,Random Forest,BMI,1,1,5.555555555555555
+CTGAN,8,Random Forest,"Cranial Location (Infratentorial, supratentorial)",1,1,5.555555555555555
+CTGAN,8,Random Forest,"EOR (GTR, NTR, STR, biopsy)",1,1,5.555555555555555
+CTGAN,8,Random Forest,WHO Grade,1,1,5.555555555555555
+TVAE,8,kNN,Death (Y/N),0,0,0.0
+TVAE,8,kNN,Recurrence,0,0,0.0
+TVAE,8,kNN,Postop complication,0,0,0.0
+TVAE,8,kNN,Age at Diagnosis,0,0,0.0
+TVAE,8,kNN,BMI,0,0,0.0
+TVAE,8,kNN,"Cranial Location (Infratentorial, supratentorial)",0,0,0.0
+TVAE,8,kNN,"EOR (GTR, NTR, STR, biopsy)",0,0,0.0
+TVAE,8,kNN,WHO Grade,0,0,0.0
+TVAE,8,Naive Bayes,Death (Y/N),0,0,0.0
+TVAE,8,Naive Bayes,Recurrence,0,0,0.0
+TVAE,8,Naive Bayes,Postop complication,0,0,0.0
+TVAE,8,Naive Bayes,Age at Diagnosis,0,0,0.0
+TVAE,8,Naive Bayes,BMI,0,0,0.0
+TVAE,8,Naive Bayes,"Cranial Location (Infratentorial, supratentorial)",0,0,0.0
+TVAE,8,Naive Bayes,"EOR (GTR, NTR, STR, biopsy)",0,0,0.0
+TVAE,8,Naive Bayes,WHO Grade,0,0,0.0
+TVAE,8,Random Forest,Death (Y/N),0,0,0.0
+TVAE,8,Random Forest,Recurrence,0,0,0.0
+TVAE,8,Random Forest,Postop complication,0,0,0.0
+TVAE,8,Random Forest,Age at Diagnosis,0,0,0.0
+TVAE,8,Random Forest,BMI,0,0,0.0
+TVAE,8,Random Forest,"Cranial Location (Infratentorial, supratentorial)",0,0,0.0
+TVAE,8,Random Forest,"EOR (GTR, NTR, STR, biopsy)",0,0,0.0
+TVAE,8,Random Forest,WHO Grade,0,0,0.0
+Independent baseline,8,kNN,Death (Y/N),18,15,83.33333333333333
+Independent baseline,8,kNN,Recurrence,18,17,94.44444444444444
+Independent baseline,8,kNN,Postop complication,18,9,50.0
+Independent baseline,8,kNN,Age at Diagnosis,18,15,83.33333333333333
+Independent baseline,8,kNN,BMI,18,12,66.66666666666667
+Independent baseline,8,kNN,"Cranial Location (Infratentorial, supratentorial)",18,18,100.0
+Independent baseline,8,kNN,"EOR (GTR, NTR, STR, biopsy)",18,8,44.44444444444444
+Independent baseline,8,kNN,WHO Grade,18,17,94.44444444444444
+Independent baseline,8,Naive Bayes,Death (Y/N),18,15,83.33333333333333
+Independent baseline,8,Naive Bayes,Recurrence,18,17,94.44444444444444
+Independent baseline,8,Naive Bayes,Postop complication,18,11,61.111111111111114
+Independent baseline,8,Naive Bayes,Age at Diagnosis,18,18,100.0
+Independent baseline,8,Naive Bayes,BMI,18,18,100.0
+Independent baseline,8,Naive Bayes,"Cranial Location (Infratentorial, supratentorial)",18,18,100.0
+Independent baseline,8,Naive Bayes,"EOR (GTR, NTR, STR, biopsy)",18,9,50.0
+Independent baseline,8,Naive Bayes,WHO Grade,18,18,100.0
+Independent baseline,8,Random Forest,Death (Y/N),18,15,83.33333333333333
+Independent baseline,8,Random Forest,Recurrence,18,17,94.44444444444444
+Independent baseline,8,Random Forest,Postop complication,18,11,61.111111111111114
+Independent baseline,8,Random Forest,Age at Diagnosis,18,18,100.0
+Independent baseline,8,Random Forest,BMI,18,18,100.0
+Independent baseline,8,Random Forest,"Cranial Location (Infratentorial, supratentorial)",18,18,100.0
+Independent baseline,8,Random Forest,"EOR (GTR, NTR, STR, biopsy)",18,8,44.44444444444444
+Independent baseline,8,Random Forest,WHO Grade,18,18,100.0
+GaussianCopula,9,kNN,Death (Y/N),2,2,11.11111111111111
+GaussianCopula,9,kNN,Recurrence,2,2,11.11111111111111
+GaussianCopula,9,kNN,Postop complication,2,0,0.0
+GaussianCopula,9,kNN,Age at Diagnosis,2,0,0.0
+GaussianCopula,9,kNN,BMI,2,0,0.0
+GaussianCopula,9,kNN,"Cranial Location (Infratentorial, supratentorial)",2,2,11.11111111111111
+GaussianCopula,9,kNN,"EOR (GTR, NTR, STR, biopsy)",2,2,11.11111111111111
+GaussianCopula,9,kNN,WHO Grade,2,1,5.555555555555555
+GaussianCopula,9,Naive Bayes,Death (Y/N),2,1,5.555555555555555
+GaussianCopula,9,Naive Bayes,Recurrence,2,2,11.11111111111111
+GaussianCopula,9,Naive Bayes,Postop complication,2,0,0.0
+GaussianCopula,9,Naive Bayes,Age at Diagnosis,2,0,0.0
+GaussianCopula,9,Naive Bayes,BMI,2,0,0.0
+GaussianCopula,9,Naive Bayes,"Cranial Location (Infratentorial, supratentorial)",2,2,11.11111111111111
+GaussianCopula,9,Naive Bayes,"EOR (GTR, NTR, STR, biopsy)",2,2,11.11111111111111
+GaussianCopula,9,Naive Bayes,WHO Grade,2,2,11.11111111111111
+GaussianCopula,9,Random Forest,Death (Y/N),2,2,11.11111111111111
+GaussianCopula,9,Random Forest,Recurrence,2,2,11.11111111111111
+GaussianCopula,9,Random Forest,Postop complication,2,0,0.0
+GaussianCopula,9,Random Forest,Age at Diagnosis,2,1,5.555555555555555
+GaussianCopula,9,Random Forest,BMI,2,1,5.555555555555555
+GaussianCopula,9,Random Forest,"Cranial Location (Infratentorial, supratentorial)",2,2,11.11111111111111
+GaussianCopula,9,Random Forest,"EOR (GTR, NTR, STR, biopsy)",2,2,11.11111111111111
+GaussianCopula,9,Random Forest,WHO Grade,2,2,11.11111111111111
+CopulaGAN,9,kNN,Death (Y/N),1,1,5.555555555555555
+CopulaGAN,9,kNN,Recurrence,1,1,5.555555555555555
+CopulaGAN,9,kNN,Postop complication,1,1,5.555555555555555
+CopulaGAN,9,kNN,Age at Diagnosis,1,1,5.555555555555555
+CopulaGAN,9,kNN,BMI,1,1,5.555555555555555
+CopulaGAN,9,kNN,"Cranial Location (Infratentorial, supratentorial)",1,1,5.555555555555555
+CopulaGAN,9,kNN,"EOR (GTR, NTR, STR, biopsy)",1,1,5.555555555555555
+CopulaGAN,9,kNN,WHO Grade,1,1,5.555555555555555
+CopulaGAN,9,Naive Bayes,Death (Y/N),1,1,5.555555555555555
+CopulaGAN,9,Naive Bayes,Recurrence,1,1,5.555555555555555
+CopulaGAN,9,Naive Bayes,Postop complication,1,1,5.555555555555555
+CopulaGAN,9,Naive Bayes,Age at Diagnosis,1,1,5.555555555555555
+CopulaGAN,9,Naive Bayes,BMI,1,1,5.555555555555555
+CopulaGAN,9,Naive Bayes,"Cranial Location (Infratentorial, supratentorial)",1,1,5.555555555555555
+CopulaGAN,9,Naive Bayes,"EOR (GTR, NTR, STR, biopsy)",1,1,5.555555555555555
+CopulaGAN,9,Naive Bayes,WHO Grade,1,1,5.555555555555555
+CopulaGAN,9,Random Forest,Death (Y/N),1,1,5.555555555555555
+CopulaGAN,9,Random Forest,Recurrence,1,1,5.555555555555555
+CopulaGAN,9,Random Forest,Postop complication,1,1,5.555555555555555
+CopulaGAN,9,Random Forest,Age at Diagnosis,1,1,5.555555555555555
+CopulaGAN,9,Random Forest,BMI,1,1,5.555555555555555
+CopulaGAN,9,Random Forest,"Cranial Location (Infratentorial, supratentorial)",1,1,5.555555555555555
+CopulaGAN,9,Random Forest,"EOR (GTR, NTR, STR, biopsy)",1,1,5.555555555555555
+CopulaGAN,9,Random Forest,WHO Grade,1,1,5.555555555555555
+CTGAN,9,kNN,Death (Y/N),1,1,5.555555555555555
+CTGAN,9,kNN,Recurrence,1,1,5.555555555555555
+CTGAN,9,kNN,Postop complication,1,1,5.555555555555555
+CTGAN,9,kNN,Age at Diagnosis,1,1,5.555555555555555
+CTGAN,9,kNN,BMI,1,1,5.555555555555555
+CTGAN,9,kNN,"Cranial Location (Infratentorial, supratentorial)",1,1,5.555555555555555
+CTGAN,9,kNN,"EOR (GTR, NTR, STR, biopsy)",1,1,5.555555555555555
+CTGAN,9,kNN,WHO Grade,1,1,5.555555555555555
+CTGAN,9,Naive Bayes,Death (Y/N),1,1,5.555555555555555
+CTGAN,9,Naive Bayes,Recurrence,1,1,5.555555555555555
+CTGAN,9,Naive Bayes,Postop complication,1,1,5.555555555555555
+CTGAN,9,Naive Bayes,Age at Diagnosis,1,1,5.555555555555555
+CTGAN,9,Naive Bayes,BMI,1,1,5.555555555555555
+CTGAN,9,Naive Bayes,"Cranial Location (Infratentorial, supratentorial)",1,1,5.555555555555555
+CTGAN,9,Naive Bayes,"EOR (GTR, NTR, STR, biopsy)",1,1,5.555555555555555
+CTGAN,9,Naive Bayes,WHO Grade,1,1,5.555555555555555
+CTGAN,9,Random Forest,Death (Y/N),1,1,5.555555555555555
+CTGAN,9,Random Forest,Recurrence,1,1,5.555555555555555
+CTGAN,9,Random Forest,Postop complication,1,1,5.555555555555555
+CTGAN,9,Random Forest,Age at Diagnosis,1,1,5.555555555555555
+CTGAN,9,Random Forest,BMI,1,1,5.555555555555555
+CTGAN,9,Random Forest,"Cranial Location (Infratentorial, supratentorial)",1,1,5.555555555555555
+CTGAN,9,Random Forest,"EOR (GTR, NTR, STR, biopsy)",1,1,5.555555555555555
+CTGAN,9,Random Forest,WHO Grade,1,1,5.555555555555555
+TVAE,9,kNN,Death (Y/N),0,0,0.0
+TVAE,9,kNN,Recurrence,0,0,0.0
+TVAE,9,kNN,Postop complication,0,0,0.0
+TVAE,9,kNN,Age at Diagnosis,0,0,0.0
+TVAE,9,kNN,BMI,0,0,0.0
+TVAE,9,kNN,"Cranial Location (Infratentorial, supratentorial)",0,0,0.0
+TVAE,9,kNN,"EOR (GTR, NTR, STR, biopsy)",0,0,0.0
+TVAE,9,kNN,WHO Grade,0,0,0.0
+TVAE,9,Naive Bayes,Death (Y/N),0,0,0.0
+TVAE,9,Naive Bayes,Recurrence,0,0,0.0
+TVAE,9,Naive Bayes,Postop complication,0,0,0.0
+TVAE,9,Naive Bayes,Age at Diagnosis,0,0,0.0
+TVAE,9,Naive Bayes,BMI,0,0,0.0
+TVAE,9,Naive Bayes,"Cranial Location (Infratentorial, supratentorial)",0,0,0.0
+TVAE,9,Naive Bayes,"EOR (GTR, NTR, STR, biopsy)",0,0,0.0
+TVAE,9,Naive Bayes,WHO Grade,0,0,0.0
+TVAE,9,Random Forest,Death (Y/N),0,0,0.0
+TVAE,9,Random Forest,Recurrence,0,0,0.0
+TVAE,9,Random Forest,Postop complication,0,0,0.0
+TVAE,9,Random Forest,Age at Diagnosis,0,0,0.0
+TVAE,9,Random Forest,BMI,0,0,0.0
+TVAE,9,Random Forest,"Cranial Location (Infratentorial, supratentorial)",0,0,0.0
+TVAE,9,Random Forest,"EOR (GTR, NTR, STR, biopsy)",0,0,0.0
+TVAE,9,Random Forest,WHO Grade,0,0,0.0
+Independent baseline,9,kNN,Death (Y/N),18,13,72.22222222222223
+Independent baseline,9,kNN,Recurrence,18,17,94.44444444444444
+Independent baseline,9,kNN,Postop complication,18,11,61.111111111111114
+Independent baseline,9,kNN,Age at Diagnosis,18,16,88.88888888888889
+Independent baseline,9,kNN,BMI,18,13,72.22222222222223
+Independent baseline,9,kNN,"Cranial Location (Infratentorial, supratentorial)",18,18,100.0
+Independent baseline,9,kNN,"EOR (GTR, NTR, STR, biopsy)",18,8,44.44444444444444
+Independent baseline,9,kNN,WHO Grade,18,18,100.0
+Independent baseline,9,Naive Bayes,Death (Y/N),18,15,83.33333333333333
+Independent baseline,9,Naive Bayes,Recurrence,18,17,94.44444444444444
+Independent baseline,9,Naive Bayes,Postop complication,18,11,61.111111111111114
+Independent baseline,9,Naive Bayes,Age at Diagnosis,18,18,100.0
+Independent baseline,9,Naive Bayes,BMI,18,18,100.0
+Independent baseline,9,Naive Bayes,"Cranial Location (Infratentorial, supratentorial)",18,18,100.0
+Independent baseline,9,Naive Bayes,"EOR (GTR, NTR, STR, biopsy)",18,9,50.0
+Independent baseline,9,Naive Bayes,WHO Grade,18,18,100.0
+Independent baseline,9,Random Forest,Death (Y/N),18,15,83.33333333333333
+Independent baseline,9,Random Forest,Recurrence,18,17,94.44444444444444
+Independent baseline,9,Random Forest,Postop complication,18,11,61.111111111111114
+Independent baseline,9,Random Forest,Age at Diagnosis,18,18,100.0
+Independent baseline,9,Random Forest,BMI,18,18,100.0
+Independent baseline,9,Random Forest,"Cranial Location (Infratentorial, supratentorial)",18,18,100.0
+Independent baseline,9,Random Forest,"EOR (GTR, NTR, STR, biopsy)",18,7,38.888888888888886
+Independent baseline,9,Random Forest,WHO Grade,18,18,100.0

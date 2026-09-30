@@ -1,0 +1,45 @@
+Metric,Comparison,Statistic,p,p_Holm
+Near_copies_95_pct,Kruskal-Wallis (4 models),16.666666666666703,0.0008275246236931372,
+Near_copies_95_pct,GaussianCopula vs CopulaGAN,,1.0,1.0
+Near_copies_95_pct,GaussianCopula vs CTGAN,,1.0,1.0
+Near_copies_95_pct,GaussianCopula vs TVAE,,0.01428562147054283,0.1428562147054283
+Near_copies_95_pct,CopulaGAN vs CTGAN,,1.0,1.0
+Near_copies_95_pct,CopulaGAN vs TVAE,,0.01428562147054283,0.1428562147054283
+Near_copies_95_pct,CTGAN vs TVAE,,0.01428562147054283,0.1428562147054283
+Near_copies_95_pct,GaussianCopula vs Independent baseline,,1.0,1.0
+Near_copies_95_pct,CopulaGAN vs Independent baseline,,1.0,1.0
+Near_copies_95_pct,CTGAN vs Independent baseline,,1.0,1.0
+Near_copies_95_pct,TVAE vs Independent baseline,,0.01428562147054283,0.1428562147054283
+Too_close_pct,Kruskal-Wallis (4 models),22.844373533552332,4.351436984025947e-05,
+Too_close_pct,GaussianCopula vs CopulaGAN,,0.4721755506404459,0.8543629720136023
+Too_close_pct,GaussianCopula vs CTGAN,,0.24096755111721346,0.7229026533516404
+Too_close_pct,GaussianCopula vs TVAE,,0.0001806347208075351,0.0017962250499070809
+Too_close_pct,CopulaGAN vs CTGAN,,0.42718148600680117,0.8543629720136023
+Too_close_pct,CopulaGAN vs TVAE,,0.000181651146091465,0.0017962250499070809
+Too_close_pct,CTGAN vs TVAE,,0.0001806347208075351,0.0017962250499070809
+Too_close_pct,GaussianCopula vs Independent baseline,,0.0001796225049907081,0.0017962250499070809
+Too_close_pct,CopulaGAN vs Independent baseline,,0.0001806347208075351,0.0017962250499070809
+Too_close_pct,CTGAN vs Independent baseline,,0.0001796225049907081,0.0017962250499070809
+Too_close_pct,TVAE vs Independent baseline,,0.0001796225049907081,0.0017962250499070809
+DCR_5th_pct,Kruskal-Wallis (4 models),29.000828787242977,2.2385311698896714e-06,
+DCR_5th_pct,GaussianCopula vs CopulaGAN,,0.005745341447596881,0.017236024342790642
+DCR_5th_pct,GaussianCopula vs CTGAN,,0.005858054962094738,0.017236024342790642
+DCR_5th_pct,GaussianCopula vs TVAE,,2.428174732475476e-05,0.00021853572592279283
+DCR_5th_pct,CopulaGAN vs CTGAN,,0.7509366527743149,0.7509366527743149
+DCR_5th_pct,CopulaGAN vs TVAE,,7.733307765332116e-05,0.0003915917723781808
+DCR_5th_pct,CTGAN vs TVAE,,7.949979465052689e-05,0.0003915917723781808
+DCR_5th_pct,GaussianCopula vs Independent baseline,,1.593791168806624e-05,0.0001593791168806624
+DCR_5th_pct,CopulaGAN vs Independent baseline,,5.5941681768311536e-05,0.0003915917723781808
+DCR_5th_pct,CTGAN vs Independent baseline,,5.763287113977497e-05,0.0003915917723781808
+DCR_5th_pct,TVAE vs Independent baseline,,2.428174732475476e-05,0.00021853572592279283
+QI_disclosed_patients,Kruskal-Wallis (4 models),2.2495946351716705,0.5222459467860803,
+QI_disclosed_patients,GaussianCopula vs CopulaGAN,,0.9682728647269632,1.0
+QI_disclosed_patients,GaussianCopula vs CTGAN,,0.2895874244268877,1.0
+QI_disclosed_patients,GaussianCopula vs TVAE,,0.14518492453470896,0.8711095472082537
+QI_disclosed_patients,CopulaGAN vs CTGAN,,0.4918630345468539,1.0
+QI_disclosed_patients,CopulaGAN vs TVAE,,0.36872459901990207,1.0
+QI_disclosed_patients,CTGAN vs TVAE,,0.876852758516108,1.0
+QI_disclosed_patients,GaussianCopula vs Independent baseline,,0.00012353633193714936,0.0011208465410317624
+QI_disclosed_patients,CopulaGAN vs Independent baseline,,0.00027098802431354776,0.0018969161701948344
+QI_disclosed_patients,CTGAN vs Independent baseline,,0.00014673981568988492,0.0011739185255190793
+QI_disclosed_patients,TVAE vs Independent baseline,,0.00011208465410317622,0.0011208465410317624

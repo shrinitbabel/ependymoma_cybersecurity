@@ -1,0 +1,6 @@
+Source,Evaluable_mean,Evaluable_max,Reported_risk_mean_pct,Reported_risk_max_pct
+CTGAN,1.0,1,5.416666666666667,5.555555555555555
+CopulaGAN,1.0,1,5.532407407407407,5.555555555555555
+GaussianCopula,2.3,7,8.703703703703702,38.888888888888886
+Independent baseline,18.0,18,84.44444444444444,100.0
+TVAE,0.0,0,0.0,0.0

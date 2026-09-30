@@ -1,0 +1,33 @@
+Model,Version,Identifier,Exact_mean,Exact_range,Chance_mean,Runs_above_chance,p_Wilcoxon
+CTGAN,AnonymizedFaker,Initials,13.4,11-16,13.898767061357827,5,0.556640625
+CTGAN,AnonymizedFaker,Date of Birth,0.3,0-1,0.20434782608695654,3,0.984375
+CTGAN,AnonymizedFaker,Date of Sx,1.3,0-4,0.8869565217391304,7,0.220703125
+CTGAN,AnonymizedFaker,MRN,0.0,0-0,0.0,0,
+CTGAN,Identifiers retained,Initials,0.0,0-0,0.0,0,1.0
+CTGAN,Identifiers retained,Date of Birth,2.6,2-4,0.4413043478260869,10,0.001953125
+CTGAN,Identifiers retained,Date of Sx,3.1,2-5,1.0869565217391304,10,0.001953125
+CTGAN,Identifiers retained,MRN,0.0,0-0,0.0,0,
+CopulaGAN,AnonymizedFaker,Initials,13.4,11-16,13.898767061357827,5,0.556640625
+CopulaGAN,AnonymizedFaker,Date of Birth,0.3,0-1,0.20434782608695654,3,0.984375
+CopulaGAN,AnonymizedFaker,Date of Sx,1.3,0-4,0.8869565217391304,7,0.220703125
+CopulaGAN,AnonymizedFaker,MRN,0.0,0-0,0.0,0,
+CopulaGAN,Identifiers retained,Initials,0.0,0-0,0.0,0,1.0
+CopulaGAN,Identifiers retained,Date of Birth,2.3,2-3,0.5239130434782608,10,0.001953125
+CopulaGAN,Identifiers retained,Date of Sx,3.8,2-6,3.0000000000000004,6,0.16015625
+CopulaGAN,Identifiers retained,MRN,0.0,0-0,0.0,0,
+GaussianCopula,AnonymizedFaker,Initials,13.4,11-16,13.888017527217418,5,0.556640625
+GaussianCopula,AnonymizedFaker,Date of Birth,0.3,0-1,0.20434782608695654,3,0.984375
+GaussianCopula,AnonymizedFaker,Date of Sx,1.3,0-4,0.8869565217391304,7,0.220703125
+GaussianCopula,AnonymizedFaker,MRN,0.0,0-0,0.0,0,
+GaussianCopula,Identifiers retained,Initials,0.0,0-0,0.0,0,1.0
+GaussianCopula,Identifiers retained,Date of Birth,0.8,0-2,1.0130434782608695,3,0.578125
+GaussianCopula,Identifiers retained,Date of Sx,2.4,1-5,2.3043478260869565,6,0.921875
+GaussianCopula,Identifiers retained,MRN,0.0,0-0,0.0,0,
+TVAE,AnonymizedFaker,Initials,13.4,11-16,13.898767061357827,5,0.556640625
+TVAE,AnonymizedFaker,Date of Birth,0.3,0-1,0.20434782608695654,3,0.984375
+TVAE,AnonymizedFaker,Date of Sx,1.3,0-4,0.8869565217391304,7,0.220703125
+TVAE,AnonymizedFaker,MRN,0.0,0-0,0.0,0,
+TVAE,Identifiers retained,Initials,0.0,0-0,0.0,0,1.0
+TVAE,Identifiers retained,Date of Birth,1.0,0-3,0.8869565217391304,4,0.40625
+TVAE,Identifiers retained,Date of Sx,3.8,2-5,1.826086956521739,10,0.001953125
+TVAE,Identifiers retained,MRN,0.0,0-0,0.0,0,

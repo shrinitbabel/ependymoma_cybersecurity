@@ -1,0 +1,33 @@
+Comparison,Metric,Model,Retained_mean,Anonymized_mean,Difference,p,p_Holm
+AnonymizedFaker vs Identifiers retained,Attack_lift_pp,GaussianCopula,1.7361111111111114,1.8749999999999996,0.13888888888888817,0.8187785839872179,1.0
+AnonymizedFaker vs Identifiers retained,Attack_lift_pp,CopulaGAN,-2.708333333333333,-3.2638888888888884,-0.5555555555555554,0.9697703583295203,1.0
+AnonymizedFaker vs Identifiers retained,Attack_lift_pp,CTGAN,-2.361111111111111,-0.48611111111111116,1.875,0.21108844562718387,0.8443537825087355
+AnonymizedFaker vs Identifiers retained,Attack_lift_pp,TVAE,10.833333333333332,11.73611111111111,0.9027777777777786,0.3810685413202518,1.0
+AnonymizedFaker vs Identifiers retained,Too_close_pct,GaussianCopula,16.67,16.599999999999998,-0.07000000000000384,0.8203966178058115,1.0
+AnonymizedFaker vs Identifiers retained,Too_close_pct,CopulaGAN,15.95,19.21,3.2600000000000016,0.17345557371239162,0.6938222948495665
+AnonymizedFaker vs Identifiers retained,Too_close_pct,CTGAN,17.110000000000003,16.669999999999998,-0.44000000000000483,0.4490089734245807,1.0
+AnonymizedFaker vs Identifiers retained,Too_close_pct,TVAE,89.27,89.07000000000001,-0.19999999999998863,1.0,1.0
+AnonymizedFaker vs Identifiers retained,QI_disclosed_patients,GaussianCopula,4.0,4.3,0.2999999999999998,0.24970408281734358,0.9988163312693743
+AnonymizedFaker vs Identifiers retained,QI_disclosed_patients,CopulaGAN,4.8,4.4,-0.39999999999999947,0.9695393533848865,1.0
+AnonymizedFaker vs Identifiers retained,QI_disclosed_patients,CTGAN,4.4,5.0,0.5999999999999996,0.395917782906936,1.0
+AnonymizedFaker vs Identifiers retained,QI_disclosed_patients,TVAE,4.6,5.1,0.5,0.3793605336225645,1.0
+AnonymizedFaker vs Identifiers retained,Spearman_r,GaussianCopula,0.5286047699135125,0.530783300484474,0.002178530570961512,0.6775849579524755,1.0
+AnonymizedFaker vs Identifiers retained,Spearman_r,CopulaGAN,0.47828361362566396,0.5050827127586739,0.02679909913300993,0.3846730627355087,1.0
+AnonymizedFaker vs Identifiers retained,Spearman_r,CTGAN,0.5289262135078727,0.5316494781523257,0.0027232646444529385,0.47267559351158717,1.0
+AnonymizedFaker vs Identifiers retained,Spearman_r,TVAE,0.8981021066111217,0.8980978838127844,-4.222798337227829e-06,0.9698499769931556,1.0
+Identifiers excluded vs Identifiers retained,Attack_lift_pp,GaussianCopula,1.7361111111111114,1.8749999999999996,0.13888888888888817,0.8187785839872179,1.0
+Identifiers excluded vs Identifiers retained,Attack_lift_pp,CopulaGAN,-2.708333333333333,-3.2638888888888884,-0.5555555555555554,0.9697703583295203,1.0
+Identifiers excluded vs Identifiers retained,Attack_lift_pp,CTGAN,-2.361111111111111,-0.48611111111111116,1.875,0.21108844562718387,0.8443537825087355
+Identifiers excluded vs Identifiers retained,Attack_lift_pp,TVAE,10.833333333333332,11.73611111111111,0.9027777777777786,0.3810685413202518,1.0
+Identifiers excluded vs Identifiers retained,Too_close_pct,GaussianCopula,16.67,16.599999999999998,-0.07000000000000384,0.8203966178058115,1.0
+Identifiers excluded vs Identifiers retained,Too_close_pct,CopulaGAN,15.95,19.21,3.2600000000000016,0.17345557371239162,0.6938222948495665
+Identifiers excluded vs Identifiers retained,Too_close_pct,CTGAN,17.110000000000003,16.669999999999998,-0.44000000000000483,0.4490089734245807,1.0
+Identifiers excluded vs Identifiers retained,Too_close_pct,TVAE,89.27,89.07000000000001,-0.19999999999998863,1.0,1.0
+Identifiers excluded vs Identifiers retained,QI_disclosed_patients,GaussianCopula,4.0,4.3,0.2999999999999998,0.24970408281734358,0.9988163312693743
+Identifiers excluded vs Identifiers retained,QI_disclosed_patients,CopulaGAN,4.8,4.4,-0.39999999999999947,0.9695393533848865,1.0
+Identifiers excluded vs Identifiers retained,QI_disclosed_patients,CTGAN,4.4,5.0,0.5999999999999996,0.395917782906936,1.0
+Identifiers excluded vs Identifiers retained,QI_disclosed_patients,TVAE,4.6,5.1,0.5,0.3793605336225645,1.0
+Identifiers excluded vs Identifiers retained,Spearman_r,GaussianCopula,0.5286047699135125,0.530783300484474,0.002178530570961512,0.6775849579524755,1.0
+Identifiers excluded vs Identifiers retained,Spearman_r,CopulaGAN,0.47828361362566396,0.505083118024522,0.02679950439885803,0.3846730627355087,1.0
+Identifiers excluded vs Identifiers retained,Spearman_r,CTGAN,0.5289262135078727,0.5316494781523257,0.0027232646444529385,0.47267559351158717,1.0
+Identifiers excluded vs Identifiers retained,Spearman_r,TVAE,0.8981021066111217,0.8980978838127844,-4.222798337227829e-06,0.9698499769931556,1.0

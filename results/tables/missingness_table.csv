@@ -1,0 +1,62 @@
+Variable,Source column,Missing,Missing_pct,Type,Imputation
+Preop Papilledema (Y/N),Preop Papilledema (Y/N),8,44.44444444444444,Categorical,Most frequent category
+Enhancement,Enhancement,7,38.888888888888886,Categorical,Most frequent category
+GFAP_marker,molecular marker(s),7,38.888888888888886,Categorical,Most frequent category
+Olig2_marker,molecular marker(s),7,38.888888888888886,Categorical,Most frequent category
+Synaptophysin_marker,molecular marker(s),7,38.888888888888886,Categorical,Most frequent category
+TERT_marker,molecular marker(s),7,38.888888888888886,Categorical,Most frequent category
+Mitotic figures in 10 hpf,Mitotic figures in 10 hpf,5,27.77777777777778,Numerical,Iterative (multivariate)
+Adjuvant chemo,Adjuvant chemo,4,22.22222222222222,Categorical,Most frequent category
+EBL,EBL,4,22.22222222222222,Numerical,Iterative (multivariate)
+Ki-67_index_7%,Ki-67,4,22.22222222222222,Categorical,Most frequent category
+LOS (days),LOS (days),3,16.666666666666668,Numerical,Iterative (multivariate)
+Cerebellar function at followup compared to preop,Cerebellar function at followup compared to preop,2,11.11111111111111,Categorical,Most frequent category
+Duration of symptoms preop (months),Duration of symptoms preop (months),2,11.11111111111111,Numerical,Iterative (multivariate)
+Postop cerebellar deficit,Postop cerebellar deficit,2,11.11111111111111,Categorical,Most frequent category
+Prior Chemo,Prior Chemo,2,11.11111111111111,Categorical,Most frequent category
+Adjuvant therapy (Y/N),Adjuvant therapy (Y/N),1,5.555555555555555,Categorical,Most frequent category
+Age at Diagnosis,Age at Diagnosis,1,5.555555555555555,Numerical,Iterative (multivariate)
+BMI,BMI,1,5.555555555555555,Numerical,Iterative (multivariate)
+Discharge dispo,Discharge dispo,1,5.555555555555555,Categorical,Most frequent category
+New/worse Postop CN Palsy Y/N,New/worse Postop CN Palsy Y/N,1,5.555555555555555,Categorical,Most frequent category
+Postop Hydrocephalus,Postop Hydrocephalus,1,5.555555555555555,Categorical,Most frequent category
+Postop Sensory Changes,Postop Sensory Changes,1,5.555555555555555,Categorical,Most frequent category
+Postop Weakness,Postop Weakness,1,5.555555555555555,Categorical,Most frequent category
+Preop CN Palsy (Y/N),Preop CN Palsy (Y/N),1,5.555555555555555,Categorical,Most frequent category
+Preop Cerebellar Signs,Preop Cerebellar Signs,1,5.555555555555555,Categorical,Most frequent category
+Preop HA,Preop HA,1,5.555555555555555,Categorical,Most frequent category
+Preop Hydrocephalus,Preop Hydrocephalus,1,5.555555555555555,Categorical,Most frequent category
+Preop Nausea/Vomiting,Preop Nausea/Vomiting,1,5.555555555555555,Categorical,Most frequent category
+Preop Sensory Loss,Preop Sensory Loss,1,5.555555555555555,Categorical,Most frequent category
+Preop vertigo,Preop vertigo,1,5.555555555555555,Categorical,Most frequent category
+Radiotherapy (Y/N),Radiotherapy (Y/N),1,5.555555555555555,Categorical,Most frequent category
+Shunt placed postop,Shunt placed postop,1,5.555555555555555,Categorical,Most frequent category
+Shunt placed preop,Shunt placed preop,1,5.555555555555555,Categorical,Most frequent category
+Surgical Approach,Surgical Approach,1,5.555555555555555,Categorical,Most frequent category
+Temporary EVD required,Temporary EVD required,1,5.555555555555555,Categorical,Most frequent category
+Tumor Size 1 (cm),Tumor Size 1 (cm),1,5.555555555555555,Numerical,Iterative (multivariate)
+Tumor Size 2 (cm),Tumor Size 2 (cm),1,5.555555555555555,Numerical,Iterative (multivariate)
+Tumor Size 3 (cm),Tumor Size 3 (cm),1,5.555555555555555,Numerical,Iterative (multivariate)
+Vertigo at followup,Vertigo at followup,1,5.555555555555555,Categorical,Most frequent category
+WHO Grade,WHO Grade,1,5.555555555555555,Categorical,Most frequent category
+Age at Sx,Age at Sx,0,0.0,Numerical,—
+"Cranial Location (Infratentorial, supratentorial)","Cranial Location (Infratentorial, supratentorial)",0,0.0,Categorical,—
+Cyst?,Cyst?,0,0.0,Categorical,—
+Death (Y/N),Death (Y/N),0,0.0,Categorical,—
+"EOR (GTR, NTR, STR, biopsy)","EOR (GTR, NTR, STR, biopsy)",0,0.0,Categorical,—
+Followup CN Palsy Y/N,Followup CN Palsy Y/N,0,0.0,Categorical,—
+Followup Sensory Changes,Followup Sensory Changes,0,0.0,Categorical,—
+Followup Weakness,Followup Weakness,0,0.0,Categorical,—
+Intra vs Extra Ventricular vs Both,Intra vs Extra Ventricular vs Both,0,0.0,Categorical,—
+Intraop Complications,Intraop Complications,0,0.0,Categorical,—
+Laterality,Laterality,0,0.0,Categorical,—
+Length of followup (months),Length of followup (months),0,0.0,Numerical,—
+Overall Survival (yrs),Overall Survival (yrs),0,0.0,Numerical,—
+PFS (After Sx; Months),PFS (After Sx; Months),0,0.0,Numerical,—
+Postop complication,Postop complication,0,0.0,Categorical,—
+Preop Weakness,Preop Weakness,0,0.0,Categorical,—
+Prior radiation,Prior radiation,0,0.0,Categorical,—
+Prior surgery,Prior surgery,0,0.0,Categorical,—
+Recurrence,Recurrence,0,0.0,Categorical,—
+Recurrent Tumor (Y/N),Recurrent Tumor (Y/N),0,0.0,Categorical,—
+Sex,Sex,0,0.0,Categorical,—

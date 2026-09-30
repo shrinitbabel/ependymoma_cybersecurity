@@ -1,0 +1,23 @@
+Metric,Comparison,Statistic,p,p_Holm
+Corr_of_correlations,Kruskal-Wallis (4 models),31.018536585365865,8.424428780983547e-07,
+Corr_of_correlations,GaussianCopula vs CopulaGAN,,0.0010079762403767444,0.0020159524807534888
+Corr_of_correlations,GaussianCopula vs CTGAN,,0.47267559351158717,0.47267559351158717
+Corr_of_correlations,GaussianCopula vs TVAE,,0.00018267179110955002,0.0018267179110955
+Corr_of_correlations,CopulaGAN vs CTGAN,,0.0005828399431792743,0.0018267179110955
+Corr_of_correlations,CopulaGAN vs TVAE,,0.00018267179110955002,0.0018267179110955
+Corr_of_correlations,CTGAN vs TVAE,,0.00018267179110955002,0.0018267179110955
+Corr_of_correlations,GaussianCopula vs Independent baseline,,0.00018267179110955002,0.0018267179110955
+Corr_of_correlations,CopulaGAN vs Independent baseline,,0.00018267179110955002,0.0018267179110955
+Corr_of_correlations,CTGAN vs Independent baseline,,0.00018267179110955002,0.0018267179110955
+Corr_of_correlations,TVAE vs Independent baseline,,0.00018267179110955002,0.0018267179110955
+Sign_agreement_strong_pct,Kruskal-Wallis (4 models),33.79205976320242,2.1918939689599275e-07,
+Sign_agreement_strong_pct,GaussianCopula vs CopulaGAN,,0.0001806347208075351,0.0016304893553653749
+Sign_agreement_strong_pct,GaussianCopula vs CTGAN,,0.0001806347208075351,0.0016304893553653749
+Sign_agreement_strong_pct,GaussianCopula vs TVAE,,0.00016780051625813784,0.0016304893553653749
+Sign_agreement_strong_pct,CopulaGAN vs CTGAN,,0.0817535829999502,0.0817535829999502
+Sign_agreement_strong_pct,CopulaGAN vs TVAE,,0.00016780051625813784,0.0016304893553653749
+Sign_agreement_strong_pct,CTGAN vs TVAE,,0.00016780051625813784,0.0016304893553653749
+Sign_agreement_strong_pct,GaussianCopula vs Independent baseline,,0.00017561553104590864,0.0016304893553653749
+Sign_agreement_strong_pct,CopulaGAN vs Independent baseline,,0.00017561553104590864,0.0016304893553653749
+Sign_agreement_strong_pct,CTGAN vs Independent baseline,,0.00017561553104590864,0.0016304893553653749
+Sign_agreement_strong_pct,TVAE vs Independent baseline,,0.00016304893553653748,0.0016304893553653749
