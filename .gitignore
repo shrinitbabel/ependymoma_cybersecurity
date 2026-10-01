@@ -39,3 +39,6 @@ __pycache__/
 .DS_Store
 Thumbs.db
 .vscode/
+
+# Separate slides-only side project (not published)
+tradeoffs_project/
